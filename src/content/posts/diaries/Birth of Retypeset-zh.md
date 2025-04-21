@@ -14,7 +14,7 @@ Retypeset 是一款基于 Astro 框架的静态博客主题，中文名为重新
 
 去年入坑博客以后，就很喜欢刷别人的博客。一来是可以看看别人的博客主题，二来是能刷到别人分享的故事。
 
-![活版印字](https://image.radishzz.cc/birth-of-retypeset/typograph.webp)
+![_活版印字](https://image.radishzz.cc/birth-of-retypeset/typograph.webp)
 
 几个月前，我偶然在 V2 刷到 [活版印字](https://astro-theme-typography.vercel.app/) 这个主题，简约的风格直接戳中我的审美。再加上之前的 Hexo 博客性能太差，我一直想换来着，于是就决定迁移博客到这个主题。
 

@@ -8,7 +8,7 @@ lang: en
 abbrlink: rashomon
 ---
 
-![Here's the description of the picture](https://image.radishzz.cc/picsmaller/06.webp)
+![_Here's the description of the picture](https://image.radishzz.cc/picsmaller/06.webp)
 
 It happened in the evening of one day. There was a retainer who was waiting for the rain under Rashomon.
 

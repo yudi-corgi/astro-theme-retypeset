@@ -119,14 +119,12 @@ Para agregar una tabla, use tres o más guiones `---` para crear el encabezado d
 | --------- | ----------- | -------- |
 | _cursiva_ | **negrita** | `código` |
 | _cursiva_ | **negrita** | `código` |
-| _cursiva_ | **negrita** | `código` |
 ```
 
 ### Resultado
 
 | Cursiva   | Negrita     | Código   |
 | --------- | ----------- | -------- |
-| _cursiva_ | **negrita** | `código` |
 | _cursiva_ | **negrita** | `código` |
 | _cursiva_ | **negrita** | `código` |
 

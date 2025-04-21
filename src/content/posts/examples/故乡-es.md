@@ -8,7 +8,7 @@ lang: es
 abbrlink: my-native-heath
 ---
 
-![Here's the description of the picture](https://image.radishzz.cc/picsmaller/03.webp)
+![_Here's the description of the picture](https://image.radishzz.cc/picsmaller/03.webp)
 
 Hacía un frío glacial cuando, tras una ausencia de más de veinte años, partí para visitar mi páramo natal, a más de dos mil li de distancia.
 

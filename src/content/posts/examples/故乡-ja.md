@@ -8,7 +8,7 @@ lang: ja
 abbrlink: my-native-heath
 ---
 
-![Here's the description of the picture](https://image.radishzz.cc/picsmaller/03.webp)
+![_Here's the description of the picture](https://image.radishzz.cc/picsmaller/03.webp)
 
 わたしは厳寒を冒して、二千余里を隔て二十余年も別れていた故郷に帰って来た。時はもう冬の最中で故郷に近づくに従って天気は小闇くなり、身を切るような風が船室に吹き込んでびゅうびゅうと鳴る。苫の隙間から外を見ると、蒼黄いろい空の下にしめやかな荒村があちこちに横たわっていささかの活気もない。わたしはうら悲しき心の動きが抑え切れなくなった。
 

@@ -8,7 +8,7 @@ lang: zh-tw
 abbrlink: rashomon
 ---
 
-![Here's the description of the picture](https://image.radishzz.cc/picsmaller/06.webp)
+![_Here's the description of the picture](https://image.radishzz.cc/picsmaller/06.webp)
 
 是一日的傍晚的事。有一個家將，在羅生門下待著雨住。
 
