@@ -237,7 +237,7 @@ X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 
 書籍是人類進步的<del>樓梯</del>階梯。
 
-優秀的作者總是會仔細檢查<u title="拼">拚</u>寫錯誤。
+優秀的作家總是會仔細檢查<u title="拼寫">拚寫</u>問題。
 
 按下 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Delete</kbd> 以結束會話。
 
