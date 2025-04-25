@@ -60,7 +60,7 @@ abbrlink: markdown-style-guide
 
 ### 構文
 
-```markdown
+```
 ![画像の説明](./full/or/relative/path/of/image)
 ```
 
@@ -228,7 +228,7 @@ abbrlink: markdown-style-guide
 
 ### 構文
 
-```markdown
+```html
 H<sub>2</sub>O
 
 X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>

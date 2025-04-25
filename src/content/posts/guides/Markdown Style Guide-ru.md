@@ -60,7 +60,7 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
 
 ### Синтаксис
 
-```markdown
+```
 ![Описание изображения](./full/or/relative/path/of/image)
 ```
 
@@ -228,7 +228,7 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
 
 ### Синтаксис
 
-```markdown
+```html
 H<sub>2</sub>O
 
 X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>

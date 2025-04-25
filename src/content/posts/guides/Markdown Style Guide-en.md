@@ -60,7 +60,7 @@ To add an image, add an exclamation mark `!`, followed by alt text in brackets `
 
 ### Syntax
 
-```markdown
+```
 ![Image Description](./full/or/relative/path/of/image)
 ```
 
@@ -228,7 +228,7 @@ Including `<sup>` superscript, `<sub>` subscript, `<abbr>` abbreviation, `<del>`
 
 ### Syntax
 
-```markdown
+```html
 H<sub>2</sub>O
 
 X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>

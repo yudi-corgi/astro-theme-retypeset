@@ -60,7 +60,7 @@ Para agregar una imagen, añada un signo de exclamación `!`, seguido de texto a
 
 ### Sintaxis
 
-```markdown
+```
 ![Descripción de la Imagen](./full/or/relative/path/of/image)
 ```
 
@@ -228,7 +228,7 @@ Incluyendo superíndice `<sup>`, subíndice `<sub>`, abreviatura `<abbr>`, tacha
 
 ### Sintaxis
 
-```markdown
+```html
 H<sub>2</sub>O
 
 X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
