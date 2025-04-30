@@ -3,6 +3,7 @@ title: Markdown 扩展功能
 published: 2025-04-25
 tags:
   - 指南
+draft: true
 toc: false
 lang: zh
 abbrlink: markdown-extended-features
@@ -24,7 +25,7 @@ Useful information that users should know, even when skimming content.
 > [!NOTE]
 > Useful information that users should know, even when skimming content.
 
-:::note{title="YOUR CUSTOM TITLE"}
+:::note[YOUR CUSTOM TITLE]
 This is a note with a custom title.
 :::
 ```
@@ -48,7 +49,7 @@ Urgent info that needs immediate user attention to avoid problems.
 Advises about risks or negative outcomes of certain actions.
 :::
 
-:::note{title="YOUR CUSTOM TITLE"}
+:::note[YOUR CUSTOM TITLE]
 This is a note with a custom title.
 :::
 
