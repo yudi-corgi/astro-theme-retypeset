@@ -50,38 +50,38 @@ abbrlink: markdown-extended-features
 
 ```
 > [!NOTE]
-> Useful information that users should know, even when skimming content.
+> 基础的信息内容。
 
 :::note
-Useful information that users should know, even when skimming content.
+基础的信息内容。
 :::
 
-:::note[YOUR CUSTOM TITLE]
-This is a note with a custom title.
+:::note[自定义标题]
+自定义标题的提示块。
 :::
 ```
 
 ### 效果
 
 > [!NOTE]
-> Useful information that users should know, even when skimming content.
+> 基础的信息内容。
 
 > [!TIP]
-> Helpful advice for doing things better or more easily.
+> 实用的提示建议。
 
 > [!IMPORTANT]
-> Key information users need to know to achieve their goal.
+> 重要的通知提醒。
 
 :::warning
-Urgent info that needs immediate user attention to avoid problems.
+紧急的警告事项。
 :::
 
 :::caution
-Advises about risks or negative outcomes of certain actions.
+潜在的风险预警。
 :::
 
-:::note[YOUR CUSTOM TITLE]
-This is a note with a custom title.
+:::note[自定义标题]
+自定义标题的提示块。
 :::
 
 <!-- <details>
