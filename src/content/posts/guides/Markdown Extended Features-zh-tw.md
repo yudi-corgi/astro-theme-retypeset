@@ -73,11 +73,11 @@ abbrlink: markdown-extended-features
 > 重要的通知提醒。
 
 :::warning
-緊急的警告事項。
+緊急的事項說明。
 :::
 
 :::caution
-潛在的風險預警。
+嚴重的風險警告。
 :::
 
 :::note[自定義標題]
