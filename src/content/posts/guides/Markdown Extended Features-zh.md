@@ -30,7 +30,7 @@ abbrlink: markdown-extended-features
 
 ## Github 仓库卡片
 
-使用双冒号语法 `::github{repo="owner/repo"}`，即可创建 Github 仓库卡片。在页面加载后，从 GitHub API 中实时获取仓库数据。
+使用双冒号语法 `::github{repo="owner/repo"}`，即可创建 Github 仓库卡片。在页面加载后，从 GitHub API 中获取仓库数据。
 
 ### 语法
 
@@ -44,17 +44,17 @@ abbrlink: markdown-extended-features
 
 ## 提示块
 
-使用三冒号语法 `:::type` 或 GitHub 语法 `> [!TYPE]`，即可创建提示块。支持 `note`、`tip`、`important`、`warning` 和 `caution` 五种类型。
+使用 GitHub 语法 `> [!TYPE]` 或三冒号语法 `:::type`，即可创建提示块。支持 `note`、`tip`、`important`、`warning` 和 `caution` 五种类型。
 
 ### 语法
 
 ```
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
 :::note
 Useful information that users should know, even when skimming content.
 :::
-
-> [!NOTE]
-> Useful information that users should know, even when skimming content.
 
 :::note[YOUR CUSTOM TITLE]
 This is a note with a custom title.
