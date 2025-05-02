@@ -259,15 +259,3 @@ X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 按下 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Delete</kbd> 以结束会话。
 
 大多数<mark>蝾螈</mark>昼伏夜出，以昆虫、蠕虫等小生物为食。
-
-<!-- <details>
-  <summary>
-    我有钥匙却无门，有空间却无房间。你能进入却无法离开。我是什么？
-  </summary>
-  键盘。
-</details>
-
-<figure>
-  <img src="https://image.radishzz.cc/picsmaller/03.webp">
-  <figcaption text-center="">Node 模块检查器 - 概览</figcaption>
-</figure> -->
