@@ -42,7 +42,7 @@ abbrlink: markdown-extended-features
 
 ::github{repo="radishzzz/astro-theme-retypeset"}
 
-## Блоки примечаний
+## Примечания
 
 Для создания блоков примечаний используйте синтаксис GitHub `> [!TYPE]` или синтаксис с тройным двоеточием `:::type`. Поддерживаются пять типов: `note`, `tip`, `important`, `warning` и `caution`.
 

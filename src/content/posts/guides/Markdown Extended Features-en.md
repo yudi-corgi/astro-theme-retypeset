@@ -42,7 +42,7 @@ To create a Github repository card, use the double colon syntax `::github{repo="
 
 ::github{repo="radishzzz/astro-theme-retypeset"}
 
-## Admonition Blocks
+## Admonition
 
 To create admonition blocks, use the GitHub syntax `> [!TYPE]` or the triple colon syntax `:::type`. Following types are supported: `note`, `tip`, `important`, `warning`, and `caution`.
 

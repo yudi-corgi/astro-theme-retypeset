@@ -42,7 +42,7 @@ Para crear una tarjeta de repositorio de Github, utilice la sintaxis de doble do
 
 ::github{repo="radishzzz/astro-theme-retypeset"}
 
-## Bloques de Advertencia
+## Advertencia
 
 Para crear bloques de advertencia, utilice la sintaxis de GitHub `> [!TYPE]` o la sintaxis de triple dos puntos `:::type`. Se admiten cinco tipos: `note`, `tip`, `important`, `warning` y `caution`.
 
