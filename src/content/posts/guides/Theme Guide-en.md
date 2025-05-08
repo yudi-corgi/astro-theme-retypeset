@@ -75,12 +75,13 @@ global: {
   // language of the site root path '/'
   locale: 'zh' // zh, zh-tw, ja, en, es, ru
   // more languages
-  // Generate multi-language paths such as '/es/' '/ru/'
-  // do not include the default language again, can be an empty array []
+  // generate multi-language paths such as '/es/' '/ru/'
+  // not fill in the locale code above again, can be an empty array []
   moreLocales: ['zh-tw', 'ja', 'en', 'es', 'ru'] // ['zh', 'zh-tw', 'ja', 'en', 'es', 'ru']
   // font style
   fontStyle: 'sans' // sans, serif
   // date format for posts
+  // 2025-04-13, 04-13-2025, 13-04-2025, Mar 13 2025，13 Mar 2025
   dateFormat: 'YYYY-MM-DD' // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
   // enable KaTeX for mathematical formulas rendering
   katex: true // true, false
@@ -205,11 +206,11 @@ Code block syntax highlighting themes.
 // astro.config.ts
 
 shikiConfig: {
-  // available themes: https://shiki.style/themes
-  // background color follows the blog theme by default, not the syntax highlighting theme
+  // Available themes: https://shiki.style/themes
+  // Background color follows the blog theme by default, not the syntax highlighting theme
   themes: {
-    light: 'github-light' // light theme
-    dark: 'github-dark' // dark theme
+    light: 'github-light' // Light theme
+    dark: 'github-dark' // Dark theme
   }
 }
 ```
@@ -241,23 +242,23 @@ Open Graph social image styles.
 
 getImageOptions: (_path, page) => ({
   logo: {
-    path: './public/icon/og-logo.png', // required local path and PNG format
-    size: [250], // logo width
+    path: './public/icon/og-logo.png', // Required local path and PNG format
+    size: [250], // Logo width
   },
   font: {
-    title: { // title
-      families: ['Noto Sans SC'], // font
-      weight: 'Bold', // weight
-      color: [34, 33, 36], // color
-      lineHeight: 1.5, // line height
+    title: { // Title
+      families: ['Noto Sans SC'], // Font
+      weight: 'Bold', // Weight
+      color: [34, 33, 36], // Color
+      lineHeight: 1.5, // Line height
     },
   },
-  fonts: [ // font paths (local or remote)
-    'https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/SubsetOTF/SC/NotoSansSC-Bold.otf',
-    'https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/SubsetOTF/SC/NotoSansSC-Regular.otf',
+  fonts: [ // Font paths (local or remote)
+    'https://cdn.jsdelivr.net/gh/notofonts/noto-cjk@main/Sans/SubsetOTF/SC/NotoSansSC-Bold.otf',
+    'https://cdn.jsdelivr.net/gh/notofonts/noto-cjk@main/Sans/SubsetOTF/SC/NotoSansSC-Regular.otf',
   ],
-  bgGradient: [[242, 241, 245]], // background color
-  // more configurations: https://github.com/delucis/astro-og-canvas/tree/latest/packages/astro-og-canvas
+  bgGradient: [[242, 241, 245]], // Background color
+  // More configurations: https://github.com/delucis/astro-og-canvas/tree/latest/packages/astro-og-canvas
 })
 ```
 
@@ -269,9 +270,9 @@ RSS feed page styles.
 <!-- public/rss/rss-style.xsl -->
 
 <style type="text/css">
-body{color:oklch(25% 0.005 298)} /* font color */
-.bg-white{background-color:oklch(0.96 0.005 298)!important} /* background color */
-.text-gray{color:oklch(0.25 0.005 298 / 75%)!important} /* secondary font color */
+body{color:oklch(25% 0.005 298)} /* Font color */
+.bg-white{background-color:oklch(0.96 0.005 298)!important} /* Background color */
+.text-gray{color:oklch(0.25 0.005 298 / 75%)!important} /* Secondary font color */
 </style>
 ```
 

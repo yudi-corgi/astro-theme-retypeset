@@ -75,12 +75,13 @@ global: {
   // idioma de la ruta raíz del sitio '/'
   locale: 'zh' // zh, zh-tw, ja, en, es, ru
   // más idiomas
-  // Genera rutas multilingües como '/es/' '/ru/'
-  // no incluir el idioma predeterminado nuevamente, puede ser un array vacío []
+  // genera rutas multilingües como '/es/' '/ru/'
+  // no incluir el código de idioma anterior nuevamente, puede ser un array vacío []
   moreLocales: ['zh-tw', 'ja', 'en', 'es', 'ru'] // ['zh', 'zh-tw', 'ja', 'en', 'es', 'ru']
   // estilo de fuente
   fontStyle: 'sans' // sans, serif
   // formato de fecha para publicaciones
+  // 2025-04-13, 04-13-2025, 13-04-2025, Mar 13 2025, 13 Mar 2025
   dateFormat: 'YYYY-MM-DD' // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
   // habilitar KaTeX para renderizar fórmulas matemáticas
   katex: true // true, false
@@ -205,11 +206,11 @@ Temas de resaltado de sintaxis para bloques de código.
 // astro.config.ts
 
 shikiConfig: {
-  // temas disponibles: https://shiki.style/themes
-  // el color de fondo sigue el tema del blog por defecto, no el tema de resaltado de sintaxis
+  // Temas disponibles: https://shiki.style/themes
+  // El color de fondo sigue el tema del blog por defecto, no el tema de resaltado de sintaxis
   themes: {
-    light: 'github-light' // tema claro
-    dark: 'github-dark' // tema oscuro
+    light: 'github-light' // Tema claro
+    dark: 'github-dark' // Tema oscuro
   }
 }
 ```
@@ -241,23 +242,23 @@ Estilos de imágenes sociales Open Graph.
 
 getImageOptions: (_path, page) => ({
   logo: {
-    path: './public/icon/og-logo.png', // ruta local requerida y formato PNG
-    size: [250], // ancho del logo
+    path: './public/icon/og-logo.png', // Ruta local requerida y formato PNG
+    size: [250], // Ancho del logo
   },
   font: {
-    title: { // título
-      families: ['Noto Sans SC'], // fuente
-      weight: 'Bold', // peso
-      color: [34, 33, 36], // color
-      lineHeight: 1.5, // altura de línea
+    title: { // Título
+      families: ['Noto Sans SC'], // Fuente
+      weight: 'Bold', // Peso
+      color: [34, 33, 36], // Color
+      lineHeight: 1.5, // Altura de línea
     },
   },
-  fonts: [ // rutas de fuentes (locales o remotas)
-    'https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/SubsetOTF/SC/NotoSansSC-Bold.otf',
-    'https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/SubsetOTF/SC/NotoSansSC-Regular.otf',
+  fonts: [ // Rutas de fuentes (locales o remotas)
+    'https://cdn.jsdelivr.net/gh/notofonts/noto-cjk@main/Sans/SubsetOTF/SC/NotoSansSC-Bold.otf',
+    'https://cdn.jsdelivr.net/gh/notofonts/noto-cjk@main/Sans/SubsetOTF/SC/NotoSansSC-Regular.otf',
   ],
-  bgGradient: [[242, 241, 245]], // color de fondo
-  // más configuraciones: https://github.com/delucis/astro-og-canvas/tree/latest/packages/astro-og-canvas
+  bgGradient: [[242, 241, 245]], // Color de fondo
+  // Más configuraciones: https://github.com/delucis/astro-og-canvas/tree/latest/packages/astro-og-canvas
 })
 ```
 
@@ -269,9 +270,9 @@ Estilos de página del feed RSS.
 <!-- public/rss/rss-style.xsl -->
 
 <style type="text/css">
-body{color:oklch(25% 0.005 298)} /* color de fuente */
-.bg-white{background-color:oklch(0.96 0.005 298)!important} /* color de fondo */
-.text-gray{color:oklch(0.25 0.005 298 / 75%)!important} /* color de fuente secundario */
+body{color:oklch(25% 0.005 298)} /* Color de fuente */
+.bg-white{background-color:oklch(0.96 0.005 298)!important} /* Color de fondo */
+.text-gray{color:oklch(0.25 0.005 298 / 75%)!important} /* Color de fuente secundario */
 </style>
 ```
 

@@ -75,12 +75,13 @@ global: {
   // язык корневого пути сайта '/'
   locale: 'zh' // zh, zh-tw, ja, en, es, ru
   // дополнительные языки
-  // Создает многоязычные пути, такие как '/es/' '/ru/'
-  // не указывайте повторно язык по умолчанию, можно оставить пустым массивом []
+  // создает многоязычные пути, такие как '/es/' '/ru/'
+  // не указывайте код языка, указанный выше, можно оставить пустым массивом []
   moreLocales: ['zh-tw', 'ja', 'en', 'es', 'ru'] // ['zh', 'zh-tw', 'ja', 'en', 'es', 'ru']
   // стиль шрифта
   fontStyle: 'sans' // sans, serif
   // формат даты для постов
+  // 2025-04-13, 04-13-2025, 13-04-2025, Мар 13 2025, 13 Мар 2025
   dateFormat: 'YYYY-MM-DD' // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
   // включить KaTeX для отображения математических формул
   katex: true // true, false
@@ -205,11 +206,11 @@ preload: {
 // astro.config.ts
 
 shikiConfig: {
-  // доступные темы: https://shiki.style/themes
-  // цвет фона по умолчанию следует теме блога, а не теме подсветки синтаксиса
+  // Доступные темы: https://shiki.style/themes
+  // Цвет фона по умолчанию следует теме блога, а не теме подсветки синтаксиса
   themes: {
-    light: 'github-light' // светлая тема
-    dark: 'github-dark' // темная тема
+    light: 'github-light' // Светлая тема
+    dark: 'github-dark' // Темная тема
   }
 }
 ```
@@ -241,23 +242,23 @@ const EXCERPT_LENGTHS: Record<ExcerptScene, {
 
 getImageOptions: (_path, page) => ({
   logo: {
-    path: './public/icon/og-logo.png', // требуется локальный путь и формат PNG
-    size: [250], // ширина логотипа
+    path: './public/icon/og-logo.png', // Требуется локальный путь и формат PNG
+    size: [250], // Ширина логотипа
   },
   font: {
-    title: { // заголовок
-      families: ['Noto Sans SC'], // шрифт
-      weight: 'Bold', // вес
-      color: [34, 33, 36], // цвет
-      lineHeight: 1.5, // высота строки
+    title: { // Заголовок
+      families: ['Noto Sans SC'], // Шрифт
+      weight: 'Bold', // Вес
+      color: [34, 33, 36], // Цвет
+      lineHeight: 1.5, // Высота строки
     },
   },
-  fonts: [ // пути к шрифтам (локальные или удаленные)
-    'https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/SubsetOTF/SC/NotoSansSC-Bold.otf',
-    'https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/SubsetOTF/SC/NotoSansSC-Regular.otf',
+  fonts: [ // Пути к шрифтам (локальные или удаленные)
+    'https://cdn.jsdelivr.net/gh/notofonts/noto-cjk@main/Sans/SubsetOTF/SC/NotoSansSC-Bold.otf',
+    'https://cdn.jsdelivr.net/gh/notofonts/noto-cjk@main/Sans/SubsetOTF/SC/NotoSansSC-Regular.otf',
   ],
-  bgGradient: [[242, 241, 245]], // цвет фона
-  // дополнительные настройки: https://github.com/delucis/astro-og-canvas/tree/latest/packages/astro-og-canvas
+  bgGradient: [[242, 241, 245]], // Цвет фона
+  // Дополнительные настройки: https://github.com/delucis/astro-og-canvas/tree/latest/packages/astro-og-canvas
 })
 ```
 
@@ -269,92 +270,8 @@ getImageOptions: (_path, page) => ({
 <!-- public/rss/rss-style.xsl -->
 
 <style type="text/css">
-body{color:oklch(25% 0.005 298)} /* цвет шрифта */
-.bg-white{background-color:oklch(0.96 0.005 298)!important} /* цвет фона */
-.text-gray{color:oklch(0.25 0.005 298 / 75%)!important} /* вторичный цвет шрифта */
+body{color:oklch(25% 0.005 298)} /* Цвет шрифта */
+.bg-white{background-color:oklch(0.96 0.005 298)!important} /* Цвет фона */
+.text-gray{color:oklch(0.25 0.005 298 / 75%)!important} /* Вторичный цвет шрифта */
 </style>
-```
-
-## Создание Новой Статьи
-
-Создайте новый файл с расширением `.md` или `.mdx` в директории `src/content/posts/` и добавьте метаданные `Front Matter` в верхней части файла.
-
-### Front Matter
-
-```markdown
----
-# Обязательно
-title: Руководство по теме
-published: 2025-01-26
-
-# Опционально
-description: Первые 240 символов статьи будут автоматически выбраны в качестве выдержки.
-updated: 2025-03-26
-tags:
-  - Тема блога
-  - Руководство
-
-# Расширенные настройки, Опционально
-draft: true/false
-pin: 1-99
-toc: true/false
-lang: en/es/ru/zh/zh-tw/ja
-abbrlink: theme-guide
----
-```
-
-### Расширенная Конфигурация
-
-#### draft
-
-Помечает статью как черновик. Если установлено значение true, статья не может быть опубликована и доступна только для предварительного просмотра при локальной разработке. По умолчанию - false.
-
-#### pin
-
-Закрепляет статью вверху. Чем выше число, тем выше приоритет закрепленной статьи. По умолчанию - 0, что означает отсутствие закрепления.
-
-#### toc
-
-Генерировать оглавление. Показывает заголовки от h2 до h4. По умолчанию: true.
-
-#### lang
-
-Указывает язык статьи. Можно указать только один язык. Если не указано, статья будет отображаться во всех языковых путях по умолчанию.
-
-```md
-# src/config.ts
-# locale: 'en'
-# moreLocales: ['es', 'ru']
-
-# lang: ''
-src/content/posts/apple.md   -> example.com/posts/apple/
-                             -> example.com/es/posts/apple/
-                             -> example.com/ru/posts/apple/
-# lang: en
-src/content/posts/apple.md   -> example.com/posts/apple/
-# lang: es
-src/content/posts/apple.md   -> example.com/es/posts/apple/
-# lang: ru
-src/content/posts/apple.md   -> example.com/ru/posts/apple/
-```
-
-#### abbrlink
-
-Настраивает URL статьи. Может содержать только строчные буквы, цифры и дефисы `-`.
-
-```md
-# src/config.ts
-# locale: 'en'
-# moreLocales: ['es', 'ru']
-# lang: 'es'
-
-# abbrlink: ''
-src/content/posts/apple.md           ->  example.com/es/posts/apple/
-src/content/posts/guide/apple.md     ->  example.com/es/posts/guide/apple/
-src/content/posts/2025/03/apple.md   ->  example.com/es/posts/2025/03/apple/
-
-# abbrlink: 'banana'
-src/content/posts/apple.md           ->  example.com/es/posts/banana/
-src/content/posts/guide/apple.md     ->  example.com/es/posts/banana/
-src/content/posts/2025/03/apple.md   ->  example.com/es/posts/banana/
 ```

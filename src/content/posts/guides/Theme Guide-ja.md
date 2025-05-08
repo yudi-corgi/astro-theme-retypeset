@@ -81,6 +81,7 @@ global: {
   // フォントスタイル
   fontStyle: 'sans' // sans, serif
   // 記事の日付フォーマット
+  // 2025-04-13, 04-13-2025, 13-04-2025, Mar 13 2025，13 Mar 2025
   dateFormat: 'YYYY-MM-DD' // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
   // 数式表示のためのKaTeXを有効化
   katex: true // true, false
@@ -253,8 +254,8 @@ getImageOptions: (_path, page) => ({
     },
   },
   fonts: [ // フォントパス（ローカルまたはリモート）
-    'https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/SubsetOTF/SC/NotoSansSC-Bold.otf',
-    'https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/SubsetOTF/SC/NotoSansSC-Regular.otf',
+    'https://cdn.jsdelivr.net/gh/notofonts/noto-cjk@main/Sans/SubsetOTF/SC/NotoSansSC-Bold.otf',
+    'https://cdn.jsdelivr.net/gh/notofonts/noto-cjk@main/Sans/SubsetOTF/SC/NotoSansSC-Regular.otf',
   ],
   bgGradient: [[242, 241, 245]], // 背景色
   // その他の設定: https://github.com/delucis/astro-og-canvas/tree/latest/packages/astro-og-canvas
