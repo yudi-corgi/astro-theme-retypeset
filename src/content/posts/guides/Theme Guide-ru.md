@@ -82,8 +82,6 @@ global: {
   fontStyle: 'sans' // sans, serif
   // формат даты для постов
   dateFormat: 'YYYY-MM-DD' // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
-  // промежуток между заголовком и подзаголовком
-  titleGap: 2 // 1, 2, 3
   // включить KaTeX для отображения математических формул
   katex: true // true, false
 }

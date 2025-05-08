@@ -82,8 +82,6 @@ global: {
   fontStyle: 'sans' // sans, serif
   // 文章日期格式
   dateFormat: 'YYYY-MM-DD' // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
-  // 标题与副标题之间的距离
-  titleGap: 2 // 1, 2, 3
   // 启用 KaTeX 数学公式渲染
   katex: true // true, false
 }

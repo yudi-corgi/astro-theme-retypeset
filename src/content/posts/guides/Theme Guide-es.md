@@ -82,8 +82,6 @@ global: {
   fontStyle: 'sans' // sans, serif
   // formato de fecha para publicaciones
   dateFormat: 'YYYY-MM-DD' // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
-  // espacio entre título y subtítulo
-  titleGap: 2 // 1, 2, 3
   // habilitar KaTeX para renderizar fórmulas matemáticas
   katex: true // true, false
 }

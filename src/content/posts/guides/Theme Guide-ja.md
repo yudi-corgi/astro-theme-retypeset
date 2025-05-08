@@ -82,8 +82,6 @@ global: {
   fontStyle: 'sans' // sans, serif
   // 記事の日付フォーマット
   dateFormat: 'YYYY-MM-DD' // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
-  // タイトルとサブタイトルの間隔
-  titleGap: 2 // 1, 2, 3
   // 数式表示のためのKaTeXを有効化
   katex: true // true, false
 }
