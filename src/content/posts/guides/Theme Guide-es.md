@@ -81,8 +81,9 @@ global: {
   // estilo de fuente
   fontStyle: 'sans' // sans, serif
   // formato de fecha para publicaciones
-  // 2025-04-13, 04-13-2025, 13-04-2025, Mar 13 2025, 13 Mar 2025
-  dateFormat: 'YYYY-MM-DD' // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
+  // 2025-04-13, 04-13-2025, 13-04-2025, Mar 13 2025，13 Mar 2025
+  // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
+  dateFormat: 'YYYY-MM-DD'
   // habilitar KaTeX para renderizar fórmulas matemáticas
   katex: true // true, false
 }

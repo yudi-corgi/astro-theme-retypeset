@@ -82,7 +82,8 @@ global: {
   fontStyle: 'sans' // sans, serif
   // date format for posts
   // 2025-04-13, 04-13-2025, 13-04-2025, Mar 13 2025，13 Mar 2025
-  dateFormat: 'YYYY-MM-DD' // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
+  // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
+  dateFormat: 'YYYY-MM-DD'
   // enable KaTeX for mathematical formulas rendering
   katex: true // true, false
 }
