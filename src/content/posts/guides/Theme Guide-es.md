@@ -34,7 +34,7 @@ site: {
   url: 'https://retypeset.radishzz.cc'
   // url del favicon
   // formatos recomendados: svg, png o ico
-  favicon: '/icon/favicon.svg' // o https://example.com/favicon.svg
+  favicon: '/icons/favicon.svg' // o https://example.com/favicon.svg
 }
 ```
 
@@ -242,7 +242,7 @@ Estilos de imágenes sociales Open Graph.
 
 getImageOptions: (_path, page) => ({
   logo: {
-    path: './public/icon/og-logo.png', // Ruta local requerida y formato PNG
+    path: './public/icons/og-logo.png', // Ruta local requerida y formato PNG
     size: [250], // Ancho del logo
   },
   font: {

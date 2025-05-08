@@ -14,8 +14,8 @@ Retypeset 基于 [OKLCH](https://oklch.com/) 颜色空间来定义主题配色�
 
 ## 葱白
 
-![Light mode](../../../assets/1-light.jpeg)
-![Dark mode](../../../assets/1-dark.jpeg)
+![Light mode](../../../assets/images/1-light.jpeg)
+![Dark mode](../../../assets/images/1-dark.jpeg)
 
 ```
 light: {
@@ -32,8 +32,8 @@ dark: {
 
 ## 鸦青
 
-![Light mode](../../../assets/2-light.jpeg)
-![Dark mode](../../../assets/2-dark.jpeg)
+![Light mode](../../../assets/images/2-light.jpeg)
+![Dark mode](../../../assets/images/2-dark.jpeg)
 
 ```
 light: {
@@ -50,8 +50,8 @@ dark: {
 
 ## 墨蓝
 
-![Light mode](../../../assets/4-light.jpeg)
-![Dark mode](../../../assets/4-dark.jpeg)
+![Light mode](../../../assets/images/4-light.jpeg)
+![Dark mode](../../../assets/images/4-dark.jpeg)
 
 ```
 light: {
@@ -68,8 +68,8 @@ dark: {
 
 ## 米黄
 
-![Light mode](../../../assets/3-light.jpeg)
-![Dark mode](../../../assets/3-dark.jpeg)
+![Light mode](../../../assets/images/3-light.jpeg)
+![Dark mode](../../../assets/images/3-dark.jpeg)
 
 ```
 light: {

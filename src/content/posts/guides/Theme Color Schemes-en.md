@@ -14,8 +14,8 @@ To meet personalization needs, I've created several color schemes for the theme.
 
 ## Scallion White
 
-![Light mode](../../../assets/1-light.jpeg)
-![Dark mode](../../../assets/1-dark.jpeg)
+![Light mode](../../../assets/images/1-light.jpeg)
+![Dark mode](../../../assets/images/1-dark.jpeg)
 
 ```
 light: {
@@ -32,8 +32,8 @@ dark: {
 
 ## Raven Teal
 
-![Light mode](../../../assets/2-light.jpeg)
-![Dark mode](../../../assets/2-dark.jpeg)
+![Light mode](../../../assets/images/2-light.jpeg)
+![Dark mode](../../../assets/images/2-dark.jpeg)
 
 ```
 light: {
@@ -50,8 +50,8 @@ dark: {
 
 ## Ink Blue
 
-![Light mode](../../../assets/4-light.jpeg)
-![Dark mode](../../../assets/4-dark.jpeg)
+![Light mode](../../../assets/images/4-light.jpeg)
+![Dark mode](../../../assets/images/4-dark.jpeg)
 
 ```
 light: {
@@ -68,8 +68,8 @@ dark: {
 
 ## Ecru
 
-![Light mode](../../../assets/3-light.jpeg)
-![Dark mode](../../../assets/3-dark.jpeg)
+![Light mode](../../../assets/images/3-light.jpeg)
+![Dark mode](../../../assets/images/3-dark.jpeg)
 
 ```
 light: {

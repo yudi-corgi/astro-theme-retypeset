@@ -34,7 +34,7 @@ site: {
   url: 'https://retypeset.radishzz.cc'
   // ファビコンURL
   // 推奨フォーマット: svg, png, ico
-  favicon: '/icon/favicon.svg' // または https://example.com/favicon.svg
+  favicon: '/icons/favicon.svg' // または https://example.com/favicon.svg
 }
 ```
 
@@ -242,7 +242,7 @@ Open Graphソーシャル画像スタイル。
 
 getImageOptions: (_path, page) => ({
   logo: {
-    path: './public/icon/og-logo.png', // ローカルパスのPNG形式が必要
+    path: './public/icons/og-logo.png', // ローカルパスのPNG形式が必要
     size: [250], // ロゴの幅
   },
   font: {

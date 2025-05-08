@@ -34,7 +34,7 @@ site: {
   url: 'https://retypeset.radishzz.cc'
   // url фавикона
   // рекомендуемые форматы: svg, png или ico
-  favicon: '/icon/favicon.svg' // или https://example.com/favicon.svg
+  favicon: '/icons/favicon.svg' // или https://example.com/favicon.svg
 }
 ```
 
@@ -242,7 +242,7 @@ const EXCERPT_LENGTHS: Record<ExcerptScene, {
 
 getImageOptions: (_path, page) => ({
   logo: {
-    path: './public/icon/og-logo.png', // Требуется локальный путь и формат PNG
+    path: './public/icons/og-logo.png', // Требуется локальный путь и формат PNG
     size: [250], // Ширина логотипа
   },
   font: {

@@ -34,7 +34,7 @@ site: {
   url: 'https://retypeset.radishzz.cc'
   // 站點圖標
   // 推薦格式: svg, png, ico
-  favicon: '/icon/favicon.svg' // 或 https://example.com/favicon.svg
+  favicon: '/icons/favicon.svg' // 或 https://example.com/favicon.svg
 }
 ```
 
@@ -242,7 +242,7 @@ Open Graph 社交圖片樣式。
 
 getImageOptions: (_path, page) => ({
   logo: {
-    path: './public/icon/og-logo.png', // 本地路徑的 PNG 圖片
+    path: './public/icons/og-logo.png', // 本地路徑的 PNG 圖片
     size: [250], // logo 寬度
   },
   font: {
