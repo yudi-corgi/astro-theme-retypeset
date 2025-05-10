@@ -14,8 +14,8 @@ Retypesetは、[OKLCH](https://oklch.com/)カラースペースに基づいて�
 
 ## 葱白色
 
-![Light mode](../../../assets/images/1-light.jpeg)
-![Dark mode](../../../assets/images/1-dark.jpeg)
+![Light mode](../_images/1-light.jpeg)
+![Dark mode](../_images/1-dark.jpeg)
 
 ```
 light: {
@@ -32,8 +32,8 @@ dark: {
 
 ## 烏青
 
-![Light mode](../../../assets/images/2-light.jpeg)
-![Dark mode](../../../assets/images/2-dark.jpeg)
+![Light mode](../_images/2-light.jpeg)
+![Dark mode](../_images/2-dark.jpeg)
 
 ```
 light: {
@@ -50,8 +50,8 @@ dark: {
 
 ## 墨藍
 
-![Light mode](../../../assets/images/4-light.jpeg)
-![Dark mode](../../../assets/images/4-dark.jpeg)
+![Light mode](../_images/4-light.jpeg)
+![Dark mode](../_images/4-dark.jpeg)
 
 ```
 light: {
@@ -68,8 +68,8 @@ dark: {
 
 ## 米色
 
-![Light mode](../../../assets/images/3-light.jpeg)
-![Dark mode](../../../assets/images/3-dark.jpeg)
+![Light mode](../_images/3-light.jpeg)
+![Dark mode](../_images/3-dark.jpeg)
 
 ```
 light: {

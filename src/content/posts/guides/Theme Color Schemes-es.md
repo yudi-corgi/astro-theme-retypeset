@@ -14,8 +14,8 @@ Para satisfacer las necesidades de personalización, he creado varios esquemas d
 
 ## Blanco Cebollino
 
-![Light mode](../../../assets/images/1-light.jpeg)
-![Dark mode](../../../assets/images/1-dark.jpeg)
+![Light mode](../_images/1-light.jpeg)
+![Dark mode](../_images/1-dark.jpeg)
 
 ```
 light: {
@@ -32,8 +32,8 @@ dark: {
 
 ## Azul Cuervo
 
-![Light mode](../../../assets/images/2-light.jpeg)
-![Dark mode](../../../assets/images/2-dark.jpeg)
+![Light mode](../_images/2-light.jpeg)
+![Dark mode](../_images/2-dark.jpeg)
 
 ```
 light: {
@@ -50,8 +50,8 @@ dark: {
 
 ## Azul Tinta
 
-![Light mode](../../../assets/images/4-light.jpeg)
-![Dark mode](../../../assets/images/4-dark.jpeg)
+![Light mode](../_images/4-light.jpeg)
+![Dark mode](../_images/4-dark.jpeg)
 
 ```
 light: {
@@ -68,8 +68,8 @@ dark: {
 
 ## Beige
 
-![Light mode](../../../assets/images/3-light.jpeg)
-![Dark mode](../../../assets/images/3-dark.jpeg)
+![Light mode](../_images/3-light.jpeg)
+![Dark mode](../_images/3-dark.jpeg)
 
 ```
 light: {

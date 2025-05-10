@@ -14,8 +14,8 @@ Retypeset определяет цветовые схемы темы на осн�
 
 ## Бледно-зелёный
 
-![Light mode](../../../assets/images/1-light.jpeg)
-![Dark mode](../../../assets/images/1-dark.jpeg)
+![Light mode](../_images/1-light.jpeg)
+![Dark mode](../_images/1-dark.jpeg)
 
 ```
 light: {
@@ -32,8 +32,8 @@ dark: {
 
 ## Воронёный
 
-![Light mode](../../../assets/images/2-light.jpeg)
-![Dark mode](../../../assets/images/2-dark.jpeg)
+![Light mode](../_images/2-light.jpeg)
+![Dark mode](../_images/2-dark.jpeg)
 
 ```
 light: {
@@ -50,8 +50,8 @@ dark: {
 
 ## Чернильно-синий
 
-![Light mode](../../../assets/images/4-light.jpeg)
-![Dark mode](../../../assets/images/4-dark.jpeg)
+![Light mode](../_images/4-light.jpeg)
+![Dark mode](../_images/4-dark.jpeg)
 
 ```
 light: {
@@ -68,8 +68,8 @@ dark: {
 
 ## Кремовый
 
-![Light mode](../../../assets/images/3-light.jpeg)
-![Dark mode](../../../assets/images/3-dark.jpeg)
+![Light mode](../_images/3-light.jpeg)
+![Dark mode](../_images/3-dark.jpeg)
 
 ```
 light: {
