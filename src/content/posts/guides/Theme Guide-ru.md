@@ -276,3 +276,87 @@ body{color:oklch(25% 0.005 298)} /* Цвет шрифта */
 .text-gray{color:oklch(0.25 0.005 298 / 75%)!important} /* Вторичный цвет шрифта */
 </style>
 ```
+
+## Создание новой статьи
+
+Создайте новый файл с расширением `.md` или `.mdx` в директории `src/content/posts/`, и добавьте метаданные `Front Matter` в верхней части файла.
+
+### Front Matter
+
+```markdown
+---
+# Обязательные
+title: Руководство по теме
+published: 2025-01-26
+
+# Опциональные
+description: Первые 240 символов статьи будут автоматически выбраны в качестве отрывка.
+updated: 2025-03-26
+tags:
+  - Тема блога
+  - Руководство
+
+# Расширенные, опциональные
+draft: true/false
+pin: 1-99
+toc: true/false
+lang: en/es/ru/zh/zh-tw/ja
+abbrlink: theme-guide
+---
+```
+
+### Расширенные настройки
+
+#### draft
+
+Отметить статью как черновик. Когда установлено значение true, статью нельзя опубликовать, и она доступна только для локального предварительного просмотра. По умолчанию — false.
+
+#### pin
+
+Закрепить статью вверху. Чем выше число, тем выше приоритет закрепленной статьи. По умолчанию — 0, что означает отсутствие закрепления.
+
+#### toc
+
+Генерировать оглавление. Показывает заголовки от h2 до h4. По умолчанию — true.
+
+#### lang
+
+Указывает язык статьи. Можно указать только один язык. Если не указано, статья будет отображаться по умолчанию во всех языковых путях.
+
+```md
+# src/config.ts
+# locale: 'en'
+# moreLocales: ['es', 'ru']
+
+# lang: ''
+src/content/posts/apple.md   -> example.com/posts/apple/
+                             -> example.com/es/posts/apple/
+                             -> example.com/ru/posts/apple/
+# lang: en
+src/content/posts/apple.md   -> example.com/posts/apple/
+# lang: es
+src/content/posts/apple.md   -> example.com/es/posts/apple/
+# lang: ru
+src/content/posts/apple.md   -> example.com/ru/posts/apple/
+```
+
+#### abbrlink
+
+Настраивает URL статьи. Может содержать только строчные буквы, цифры и дефисы `-`.
+
+```md
+# src/config.ts
+# locale: 'en'
+# moreLocales: ['es', 'ru']
+# lang: 'es'
+
+# abbrlink: ''
+src/content/posts/apple.md           ->  example.com/es/posts/apple/
+src/content/posts/guide/apple.md     ->  example.com/es/posts/guide/apple/
+src/content/posts/2025/03/apple.md   ->  example.com/es/posts/2025/03/apple/
+
+# abbrlink: 'banana'
+src/content/posts/apple.md           ->  example.com/es/posts/banana/
+src/content/posts/guide/apple.md     ->  example.com/es/posts/banana/
+src/content/posts/2025/03/apple.md   ->  example.com/es/posts/banana/
+```
