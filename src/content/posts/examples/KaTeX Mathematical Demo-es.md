@@ -17,7 +17,7 @@ $$
 t=\frac{1}{|G|}\sum_{g\in G}|\text{Fix}(g)|
 $$
 
-Para cada entero $n\ge2$, el grupo cociente $\mathbb{Z}/n\mathbb{Z}$ es un grupo cíclico generado por $1+n\mathbb{Z}$ y por tanto $\color{red}{\mathbb{Z}/n\mathbb{Z}\cong\mathbb{Z}_n}$.
+Para cada entero $n\ge2$, el grupo cociente $\mathbb{Z}/n\mathbb{Z}$ es un grupo cíclico generado por $1+n\mathbb{Z}$ y por tanto $\mathbb{Z}/n\mathbb{Z}\cong\mathbb{Z}_n$.
 
 El grupo cociente $\mathbb{R}/\mathbb{Z}$ es isomorfo a $([0,1),+_1)$, el grupo de números reales en el intervalo $[0,1)$, bajo la adición módulo 1.
 
