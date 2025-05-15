@@ -182,8 +182,6 @@ footer: {
 preload: {
   // 链接预加载策略
   linkPrefetch: 'viewport' // hover, tap, viewport, load
-  // 评论服务器地址
-  commentURL: 'https://retypeset-comment.radishzz.cc'
   // 图床地址
   imageHostURL: 'https://image.radishzz.cc'
   // 定制 google analytics js

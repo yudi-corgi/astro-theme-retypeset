@@ -182,8 +182,6 @@ footer: {
 preload: {
   // стратегии предзагрузки ссылок
   linkPrefetch: 'viewport' // hover, tap, viewport, load
-  // URL сервера комментариев
-  commentURL: 'https://retypeset-comment.radishzz.cc'
   // URL хостинга изображений
   imageHostURL: 'https://image.radishzz.cc'
   // пользовательский скрипт Google Analytics

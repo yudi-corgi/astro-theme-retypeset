@@ -182,8 +182,6 @@ footer: {
 preload: {
   // リンクプリフェッチ戦略
   linkPrefetch: 'viewport' // hover, tap, viewport, load
-  // コメントサーバー URL
-  commentURL: 'https://retypeset-comment.radishzz.cc'
   // 画像ホスティング URL
   imageHostURL: 'https://image.radishzz.cc'
   // カスタム Google Analytics JS

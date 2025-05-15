@@ -182,8 +182,6 @@ footer: {
 preload: {
   // estrategias de precarga de enlaces
   linkPrefetch: 'viewport' // hover, tap, viewport, load
-  // URL del servidor de comentarios
-  commentURL: 'https://retypeset-comment.radishzz.cc'
   // URL de alojamiento de imágenes
   imageHostURL: 'https://image.radishzz.cc'
   // js personalizado de google analytics

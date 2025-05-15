@@ -2,7 +2,7 @@
 title: Markdown スタイルガイド
 published: 2025-03-08
 updated: 2025-03-23
-tags: 
+tags:
   - ガイド
 pin: 98
 toc: false
