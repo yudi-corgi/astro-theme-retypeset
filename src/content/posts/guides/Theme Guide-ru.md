@@ -234,7 +234,7 @@ const EXCERPT_LENGTHS: Record<ExcerptScene, {
 
 ### Open Graph
 
-Стили изображений Open Graph для социальных сетей.
+Стили [карточек Open Graph для социальных сетей](https://orcascan.com/tools/open-graph-validator?url=https%3A%2F%2Fretypeset.radishzz.cc%2Fru%2Fposts%2Ftheme-guide%2F).
 
 ```ts
 // src/pages/og/[...image].ts
@@ -263,7 +263,7 @@ getImageOptions: (_path, page) => ({
 
 ### RSS-лента
 
-Стили страницы RSS-ленты.
+Стили [страницы RSS-ленты](https://retypeset.radishzz.cc/ru/rss.xml).
 
 ```html
 <!-- public/rss/rss-style.xsl -->

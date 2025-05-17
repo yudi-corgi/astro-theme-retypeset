@@ -234,7 +234,7 @@ const EXCERPT_LENGTHS: Record<ExcerptScene, {
 
 ### Open Graph
 
-Estilos de imágenes sociales Open Graph.
+Estilos de [tarjetas sociales Open Graph](https://orcascan.com/tools/open-graph-validator?url=https%3A%2F%2Fretypeset.radishzz.cc%2Fes%2Fposts%2Ftheme-guide%2F).
 
 ```ts
 // src/pages/og/[...image].ts
@@ -263,7 +263,7 @@ getImageOptions: (_path, page) => ({
 
 ### Canal RSS
 
-Estilos de página del feed RSS.
+Estilos de [página del feed RSS](https://retypeset.radishzz.cc/es/rss.xml).
 
 ```html
 <!-- public/rss/rss-style.xsl -->

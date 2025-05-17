@@ -234,7 +234,7 @@ const EXCERPT_LENGTHS: Record<ExcerptScene, {
 
 ### Open Graph
 
-Open Graph 社交图片样式。
+[Open Graph 社交卡片](https://orcascan.com/tools/open-graph-validator?url=https%3A%2F%2Fretypeset.radishzz.cc%2Fposts%2Ftheme-guide%2F) 样式。
 
 ```ts
 // src/pages/og/[...image].ts
@@ -263,7 +263,7 @@ getImageOptions: (_path, page) => ({
 
 ### RSS 订阅
 
-RSS 订阅页配色。
+[RSS 订阅页](https://retypeset.radishzz.cc/rss.xml) 配色。
 
 ```html
 <!-- public/rss/rss-style.xsl -->
