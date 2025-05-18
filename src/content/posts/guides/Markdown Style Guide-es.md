@@ -61,7 +61,9 @@ Para agregar una imagen, añada un signo de exclamación `!`, seguido de texto a
 ### Sintaxis
 
 ```
-![Descripción de la Imagen](./full/or/relative/path/of/image)
+![Descripción de la Imagen](../_images/image-01.jpeg)
+
+![Descripción de la Imagen](https://image.example.com/image-01.webp)
 ```
 
 ### Resultado

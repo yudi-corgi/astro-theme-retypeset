@@ -61,7 +61,9 @@ To add an image, add an exclamation mark `!`, followed by alt text in brackets `
 ### Syntax
 
 ```
-![Image Description](./full/or/relative/path/of/image)
+![Image Description](../_images/image-01.jpeg)
+
+![Image Description](https://image.example.com/image-01.webp)
 ```
 
 ### Output
@@ -211,51 +213,3 @@ To create a code block, add three backticks ```` ``` ```` at the start and end o
   - Milk
   - Cheese
 ```
-
-#### Output
-
-- Fruit
-  - Apple
-  - Orange
-  - Banana
-- Dairy
-  - Milk
-  - Cheese
-
-## Other Elements
-
-Including `<sup>` superscript, `<sub>` subscript, `<abbr>` abbreviation, `<del>` strikethrough, `<u>` wavy underline, `<kbd>` keyboard input, and `<mark>` highlight.
-
-### Syntax
-
-```html
-H<sub>2</sub>O
-
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
-
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
-
-Good writers always check for <u title="spelling">speling</u> mistakes.
-
-Press <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>Delete</kbd> to end the session.
-
-There is <del>nothing</del> no code either good or bad, but running it makes it so.
-
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
-```
-
-### Output
-
-H<sub>2</sub>O
-
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
-
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
-
-Good writers always check for <u title="spelling">speling</u> mistakes.
-
-Press <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>Delete</kbd> to end the session.
-
-There is <del>nothing</del> no code either good or bad, but running it makes it so.
-
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.

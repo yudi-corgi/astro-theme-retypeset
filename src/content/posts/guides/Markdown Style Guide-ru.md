@@ -61,7 +61,9 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
 ### Синтаксис
 
 ```
-![Описание изображения](./full/or/relative/path/of/image)
+![Описание изображения](../_images/image-01.jpeg)
+
+![Описание изображения](https://image.example.com/image-01.webp)
 ```
 
 ### Результат

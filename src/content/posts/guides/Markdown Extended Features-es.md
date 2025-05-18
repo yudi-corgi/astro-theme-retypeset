@@ -17,9 +17,9 @@ Para crear leyendas automáticas para figuras, utilice la sintaxis estándar de 
 ### Sintaxis
 
 ```
-![Descripción de la imagen](./full/or/relative/path/of/image)
+![Descripción de la imagen](https://image.example.com/image-01.webp)
 
-![_Descripción de la imagen](./full/or/relative/path/of/image)
+![_Descripción de la imagen](https://image.example.com/image-01.webp)
 ```
 
 ### Resultado

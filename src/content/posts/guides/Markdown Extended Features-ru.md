@@ -17,9 +17,9 @@ abbrlink: markdown-extended-features
 ### Синтаксис
 
 ```
-![Описание изображения](./full/or/relative/path/of/image)
+![Описание изображения](https://image.example.com/image-01.webp)
 
-![_Описание изображения](./full/or/relative/path/of/image)
+![_Описание изображения](https://image.example.com/image-01.webp)
 ```
 
 ### Результат
