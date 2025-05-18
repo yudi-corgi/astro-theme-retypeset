@@ -86,6 +86,8 @@ global: {
   dateFormat: 'YYYY-MM-DD'
   // 数式表示のためのKaTeXを有効化
   katex: true // true, false
+  // デフォルトですべての記事に目次を表示
+  toc: true // true, false
 }
 ```
 
@@ -315,7 +317,7 @@ abbrlink: theme-guide
 
 #### toc
 
-目次を自動生成するかどうか。h2からh4までの見出しを表示します。デフォルトは true。
+目次を生成するかどうか。h2からh4までの見出しを表示します。デフォルトではグローバル設定 `global.toc` を使用しますが、記事ごとに個別に設定することも可能です。
 
 #### lang
 

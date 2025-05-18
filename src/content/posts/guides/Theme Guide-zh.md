@@ -86,6 +86,8 @@ global: {
   dateFormat: 'YYYY-MM-DD'
   // 启用 KaTeX 数学公式渲染
   katex: true // true, false
+  // 默认为所有文章开启目录
+  toc: true // true, false
 }
 ```
 
@@ -315,7 +317,7 @@ abbrlink: theme-guide
 
 #### toc
 
-是否生成目录。显示 h2 至 h4 标题。默认为 true。
+是否生成目录。显示 h2 至 h4 标题。默认为全局配置 `global.toc` 的选项，可在文章中单独设置以覆盖全局配置。
 
 #### lang
 

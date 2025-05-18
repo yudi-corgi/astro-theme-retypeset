@@ -86,6 +86,8 @@ global: {
   dateFormat: 'YYYY-MM-DD'
   // habilitar KaTeX para renderizar fórmulas matemáticas
   katex: true // true, false
+  // habilitar tabla de contenidos para todos los artículos por defecto
+  toc: true // true, false
 }
 ```
 
@@ -315,7 +317,7 @@ Fija el artículo en la parte superior. Cuanto mayor sea el número, mayor será
 
 #### toc
 
-Genera tabla de contenidos. Muestra encabezados h2 a h4. El valor predeterminado es true.
+Genera tabla de contenidos. Muestra encabezados de h2 a h4. Utiliza la configuración global `global.toc` por defecto, pero puede ser modificada individualmente en cada artículo.
 
 #### lang
 

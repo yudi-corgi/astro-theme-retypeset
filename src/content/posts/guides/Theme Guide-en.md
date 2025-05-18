@@ -86,6 +86,8 @@ global: {
   dateFormat: 'YYYY-MM-DD'
   // enable KaTeX for mathematical formulas rendering
   katex: true // true, false
+  // enable table of contents for all posts by default
+  toc: true // true, false
 }
 ```
 
@@ -315,7 +317,7 @@ Pins the article to the top. The higher the number, the higher the priority of t
 
 #### toc
 
-Generate table of contents. Shows h2 to h4 headings. Default is true.
+Generate table of contents. Shows h2 to h4 headings. Uses the global `global.toc` configuration by default, but can be overridden individually in each article.
 
 #### lang
 
