@@ -174,7 +174,7 @@ footer: {
     // },
   ]
   // サイト開始年
-  startYear: 2024
+  startYear: 2025
 }
 ```
 

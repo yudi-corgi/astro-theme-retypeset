@@ -174,7 +174,7 @@ footer: {
     // },
   ]
   // 建站年份
-  startYear: 2024
+  startYear: 2025
 }
 ```
 

@@ -174,7 +174,7 @@ footer: {
     // },
   ]
   // year of website start
-  startYear: 2024
+  startYear: 2025
 }
 ```
 
