@@ -86,6 +86,8 @@ global: {
   dateFormat: 'YYYY-MM-DD'
   // включить KaTeX для отображения математических формул
   katex: true // true, false
+  // включить оглавление для всех статей по умолчанию
+  toc: true // true, false
 }
 ```
 
@@ -163,16 +165,16 @@ footer: {
       url: 'https://github.com/radishzzz/astro-theme-retypeset',
     },
     {
-      name: 'X',
-      url: 'https://x.com/radishzz_',
-    },
+      name: 'Email',
+      url: 'email@radishzz.cc',
+    }
     // {
-    //   name: 'Email',
-    //   url: 'https://example@gmail.com',
-    // }
+    //   name: 'X',
+    //   url: 'https://x.com/radishzz_',
+    // },
   ]
   // год начала работы веб-сайта
-  startYear: 2024
+  startYear: 2025
 }
 ```
 
@@ -182,8 +184,6 @@ footer: {
 preload: {
   // стратегии предзагрузки ссылок
   linkPrefetch: 'viewport' // hover, tap, viewport, load
-  // URL сервера комментариев
-  commentURL: 'https://retypeset-comment.radishzz.cc'
   // URL хостинга изображений
   imageHostURL: 'https://image.radishzz.cc'
   // пользовательский скрипт Google Analytics
@@ -236,7 +236,7 @@ const EXCERPT_LENGTHS: Record<ExcerptScene, {
 
 ### Open Graph
 
-Стили изображений Open Graph для социальных сетей.
+Стили [карточек Open Graph для социальных сетей](https://orcascan.com/tools/open-graph-validator?url=https%3A%2F%2Fretypeset.radishzz.cc%2Fru%2Fposts%2Ftheme-guide%2F).
 
 ```ts
 // src/pages/og/[...image].ts
@@ -265,7 +265,7 @@ getImageOptions: (_path, page) => ({
 
 ### RSS-лента
 
-Стили страницы RSS-ленты.
+Стили [страницы RSS-ленты](https://retypeset.radishzz.cc/ru/rss.xml).
 
 ```html
 <!-- public/rss/rss-style.xsl -->
@@ -317,7 +317,7 @@ abbrlink: theme-guide
 
 #### toc
 
-Генерировать оглавление. Показывает заголовки от h2 до h4. По умолчанию — true.
+Генерировать оглавление. Показывает заголовки от h2 до h4. По умолчанию использует глобальный параметр `global.toc`, но может быть изменен индивидуально в каждой статье.
 
 #### lang
 

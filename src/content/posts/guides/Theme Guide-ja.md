@@ -86,6 +86,8 @@ global: {
   dateFormat: 'YYYY-MM-DD'
   // 数式表示のためのKaTeXを有効化
   katex: true // true, false
+  // デフォルトですべての記事に目次を表示
+  toc: true // true, false
 }
 ```
 
@@ -163,16 +165,16 @@ footer: {
       url: 'https://github.com/radishzzz/astro-theme-retypeset',
     },
     {
-      name: 'X',
-      url: 'https://x.com/radishzz_',
-    },
+      name: 'Email',
+      url: 'email@radishzz.cc',
+    }
     // {
-    //   name: 'Email',
-    //   url: 'https://example@gmail.com',
-    // }
+    //   name: 'X',
+    //   url: 'https://x.com/radishzz_',
+    // },
   ]
   // サイト開始年
-  startYear: 2024
+  startYear: 2025
 }
 ```
 
@@ -182,8 +184,6 @@ footer: {
 preload: {
   // リンクプリフェッチ戦略
   linkPrefetch: 'viewport' // hover, tap, viewport, load
-  // コメントサーバー URL
-  commentURL: 'https://retypeset-comment.radishzz.cc'
   // 画像ホスティング URL
   imageHostURL: 'https://image.radishzz.cc'
   // カスタム Google Analytics JS
@@ -236,7 +236,7 @@ const EXCERPT_LENGTHS: Record<ExcerptScene, {
 
 ### Open Graph
 
-Open Graphソーシャル画像スタイル。
+[Open Graphソーシャルカード](https://orcascan.com/tools/open-graph-validator?url=https%3A%2F%2Fretypeset.radishzz.cc%2Fja%2Fposts%2Ftheme-guide%2F)スタイル。
 
 ```ts
 // src/pages/og/[...image].ts
@@ -265,7 +265,7 @@ getImageOptions: (_path, page) => ({
 
 ### RSSフィード
 
-RSSフィードページスタイル。
+[RSSフィードページ](https://retypeset.radishzz.cc/ja/rss.xml)スタイル。
 
 ```html
 <!-- public/rss/rss-style.xsl -->
@@ -317,7 +317,7 @@ abbrlink: theme-guide
 
 #### toc
 
-目次を自動生成するかどうか。h2からh4までの見出しを表示します。デフォルトは true。
+目次を生成するかどうか。h2からh4までの見出しを表示します。デフォルトではグローバル設定 `global.toc` を使用しますが、記事ごとに個別に設定することも可能です。
 
 #### lang
 

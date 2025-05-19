@@ -86,6 +86,8 @@ global: {
   dateFormat: 'YYYY-MM-DD'
   // enable KaTeX for mathematical formulas rendering
   katex: true // true, false
+  // enable table of contents for all posts by default
+  toc: true // true, false
 }
 ```
 
@@ -163,16 +165,16 @@ footer: {
       url: 'https://github.com/radishzzz/astro-theme-retypeset',
     },
     {
-      name: 'X',
-      url: 'https://x.com/radishzz_',
-    },
+      name: 'Email',
+      url: 'email@radishzz.cc',
+    }
     // {
-    //   name: 'Email',
-    //   url: 'https://example@gmail.com',
-    // }
+    //   name: 'X',
+    //   url: 'https://x.com/radishzz_',
+    // },
   ]
   // year of website start
-  startYear: 2024
+  startYear: 2025
 }
 ```
 
@@ -182,8 +184,6 @@ footer: {
 preload: {
   // link prefetch strategies
   linkPrefetch: 'viewport' // hover, tap, viewport, load
-  // comment server url
-  commentURL: 'https://retypeset-comment.radishzz.cc'
   // image hosting url
   imageHostURL: 'https://image.radishzz.cc'
   // custom google analytics js
@@ -236,7 +236,7 @@ const EXCERPT_LENGTHS: Record<ExcerptScene, {
 
 ### Open Graph
 
-Open Graph social image styles.
+[Open Graph social card](https://orcascan.com/tools/open-graph-validator?url=https%3A%2F%2Fretypeset.radishzz.cc%2Fen%2Fposts%2Ftheme-guide%2F) styles.
 
 ```ts
 // src/pages/og/[...image].ts
@@ -265,7 +265,7 @@ getImageOptions: (_path, page) => ({
 
 ### RSS Feed
 
-RSS feed page styles.
+[RSS feed page](https://retypeset.radishzz.cc/en/rss.xml) styles.
 
 ```html
 <!-- public/rss/rss-style.xsl -->
@@ -317,7 +317,7 @@ Pins the article to the top. The higher the number, the higher the priority of t
 
 #### toc
 
-Generate table of contents. Shows h2 to h4 headings. Default is true.
+Generate table of contents. Shows h2 to h4 headings. Uses the global `global.toc` configuration by default, but can be overridden individually in each article.
 
 #### lang
 

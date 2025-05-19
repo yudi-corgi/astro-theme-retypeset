@@ -17,9 +17,9 @@ abbrlink: markdown-extended-features
 ### 语法
 
 ```
-![图片描述](./full/or/relative/path/of/image)
+![图片描述](https://image.example.com/image-01.webp)
 
-![_图片描述](./full/or/relative/path/of/image)
+![_图片描述](https://image.example.com/image-01.webp)
 ```
 
 ### 效果

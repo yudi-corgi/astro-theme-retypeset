@@ -2,7 +2,7 @@
 title: Markdown スタイルガイド
 published: 2025-03-08
 updated: 2025-03-23
-tags: 
+tags:
   - ガイド
 pin: 98
 toc: false
@@ -61,7 +61,9 @@ abbrlink: markdown-style-guide
 ### 構文
 
 ```
-![画像の説明](./full/or/relative/path/of/image)
+![画像の説明](../_images/image-01.jpeg)
+
+![画像の説明](https://image.example.com/image-01.webp)
 ```
 
 ### 効果

@@ -2,7 +2,7 @@
 title: Markdown 樣式指南
 published: 2025-03-08
 updated: 2025-03-23
-tags: 
+tags:
   - 指南
 pin: 98
 toc: false
@@ -61,7 +61,9 @@ abbrlink: markdown-style-guide
 ### 語法
 
 ```
-![圖片描述](./full/or/relative/path/of/image)
+![圖片描述](../_images/image-01.jpeg)
+
+![圖片描述](https://image.example.com/image-01.webp)
 ```
 
 ### 效果

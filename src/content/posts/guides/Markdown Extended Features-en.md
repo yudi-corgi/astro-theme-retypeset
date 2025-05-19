@@ -17,9 +17,9 @@ To create automatic figure captions, use the standard Markdown image syntax `![a
 ### Syntax
 
 ```
-![Image description](./full/or/relative/path/of/image)
+![Image description](https://image.example.com/image-01.webp)
 
-![_Image description](./full/or/relative/path/of/image)
+![_Image description](https://image.example.com/image-01.webp)
 ```
 
 ### Output

@@ -86,6 +86,8 @@ global: {
   dateFormat: 'YYYY-MM-DD'
   // 启用 KaTeX 数学公式渲染
   katex: true // true, false
+  // 默认为所有文章开启目录
+  toc: true // true, false
 }
 ```
 
@@ -163,16 +165,16 @@ footer: {
       url: 'https://github.com/radishzzz/astro-theme-retypeset',
     },
     {
-      name: 'X',
-      url: 'https://x.com/radishzz_',
-    },
+      name: 'Email',
+      url: 'email@radishzz.cc',
+    }
     // {
-    //   name: 'Email',
-    //   url: 'https://example@gmail.com',
-    // }
+    //   name: 'X',
+    //   url: 'https://x.com/radishzz_',
+    // },
   ]
   // 建站年份
-  startYear: 2024
+  startYear: 2025
 }
 ```
 
@@ -182,8 +184,6 @@ footer: {
 preload: {
   // 链接预加载策略
   linkPrefetch: 'viewport' // hover, tap, viewport, load
-  // 评论服务器地址
-  commentURL: 'https://retypeset-comment.radishzz.cc'
   // 图床地址
   imageHostURL: 'https://image.radishzz.cc'
   // 定制 google analytics js
@@ -236,7 +236,7 @@ const EXCERPT_LENGTHS: Record<ExcerptScene, {
 
 ### Open Graph
 
-Open Graph 社交图片样式。
+[Open Graph 社交卡片](https://orcascan.com/tools/open-graph-validator?url=https%3A%2F%2Fretypeset.radishzz.cc%2Fposts%2Ftheme-guide%2F) 样式。
 
 ```ts
 // src/pages/og/[...image].ts
@@ -265,7 +265,7 @@ getImageOptions: (_path, page) => ({
 
 ### RSS 订阅
 
-RSS 订阅页配色。
+[RSS 订阅页](https://retypeset.radishzz.cc/rss.xml) 配色。
 
 ```html
 <!-- public/rss/rss-style.xsl -->
@@ -317,7 +317,7 @@ abbrlink: theme-guide
 
 #### toc
 
-是否生成目录。显示 h2 至 h4 标题。默认为 true。
+是否生成目录。显示 h2 至 h4 标题。默认为全局配置 `global.toc` 的选项，可在文章中单独设置以覆盖全局配置。
 
 #### lang
 

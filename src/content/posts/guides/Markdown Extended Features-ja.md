@@ -17,9 +17,9 @@ abbrlink: markdown-extended-features
 ### 構文
 
 ```
-![画像の説明](./full/or/relative/path/of/image)
+![画像の説明](https://image.example.com/image-01.webp)
 
-![_画像の説明](./full/or/relative/path/of/image)
+![_画像の説明](https://image.example.com/image-01.webp)
 ```
 
 ### 効果
