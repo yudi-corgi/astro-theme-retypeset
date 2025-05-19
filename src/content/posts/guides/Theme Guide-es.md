@@ -84,10 +84,12 @@ global: {
   // 2025-04-13, 04-13-2025, 13-04-2025, Apr 13 2025，13 Apr 2025
   // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
   dateFormat: 'YYYY-MM-DD'
-  // habilitar KaTeX para renderizar fórmulas matemáticas
-  katex: true // true, false
   // habilitar tabla de contenidos para todos los artículos por defecto
   toc: true // true, false
+  // habilitar KaTeX para renderizar fórmulas matemáticas
+  katex: true // true, false
+  // reducir animaciones y transiciones para mejorar el rendimiento
+  reduceMotion: false // true, false
 }
 ```
 
@@ -317,7 +319,7 @@ Fija el artículo en la parte superior. Cuanto mayor sea el número, mayor será
 
 #### toc
 
-Genera tabla de contenidos. Muestra encabezados de h2 a h4. Utiliza la configuración global `global.toc` por defecto, pero puede ser modificada individualmente en cada artículo.
+Genera tabla de contenidos. Muestra encabezados de h2 a h4. Determinado por la configuración global `global.toc` por defecto, pero puede ser modificada individualmente en cada artículo.
 
 #### lang
 

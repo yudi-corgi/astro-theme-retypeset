@@ -84,10 +84,12 @@ global: {
   // 2025-04-13, 04-13-2025, 13-04-2025, Apr 13 2025，13 Apr 2025
   // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
   dateFormat: 'YYYY-MM-DD'
-  // 启用 KaTeX 数学公式渲染
-  katex: true // true, false
   // 默认为所有文章开启目录
   toc: true // true, false
+  // 启用 KaTeX 数学公式渲染
+  katex: true // true, false
+  // 减少动画和过渡效果以提高性能
+  reduceMotion: false // true, false
 }
 ```
 
@@ -317,7 +319,7 @@ abbrlink: theme-guide
 
 #### toc
 
-是否生成目录。显示 h2 至 h4 标题。默认为全局配置 `global.toc` 的选项，可在文章中单独设置以覆盖全局配置。
+是否生成目录。显示 h2 至 h4 标题。默认由全局配置项 `global.toc` 决定，可在文章中单独设置以覆盖全局配置。
 
 #### lang
 

@@ -84,10 +84,12 @@ global: {
   // 2025-04-13, 04-13-2025, 13-04-2025, Apr 13 2025，13 Apr 2025
   // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
   dateFormat: 'YYYY-MM-DD'
-  // enable KaTeX for mathematical formulas rendering
-  katex: true // true, false
   // enable table of contents for all posts by default
   toc: true // true, false
+  // enable KaTeX for mathematical formulas rendering
+  katex: true // true, false
+  // reduce animations and transitions to improve performance
+  reduceMotion: false // true, false
 }
 ```
 
@@ -317,7 +319,7 @@ Pins the article to the top. The higher the number, the higher the priority of t
 
 #### toc
 
-Generate table of contents. Shows h2 to h4 headings. Uses the global `global.toc` configuration by default, but can be overridden individually in each article.
+Generate table of contents. Shows h2 to h4 headings. Determined by the global configuration `global.toc` by default, but can be overridden individually in each article.
 
 #### lang
 

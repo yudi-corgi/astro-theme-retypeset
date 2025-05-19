@@ -84,10 +84,12 @@ global: {
   // 2025-04-13, 04-13-2025, 13-04-2025, Apr 13 2025，13 Apr 2025
   // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
   dateFormat: 'YYYY-MM-DD'
-  // 数式表示のためのKaTeXを有効化
-  katex: true // true, false
   // デフォルトですべての記事に目次を表示
   toc: true // true, false
+  // 数式表示のためのKaTeXを有効化
+  katex: true // true, false
+  // アニメーションと遷移効果を減らしてパフォーマンスを向上させる
+  reduceMotion: false // true, false
 }
 ```
 
@@ -317,7 +319,7 @@ abbrlink: theme-guide
 
 #### toc
 
-目次を生成するかどうか。h2からh4までの見出しを表示します。デフォルトではグローバル設定 `global.toc` を使用しますが、記事ごとに個別に設定することも可能です。
+目次を生成するかどうか。h2からh4までの見出しを表示します。デフォルトではグローバル設定項目 `global.toc` によって決定されますが、記事ごとに個別に設定して上書きすることもできます。
 
 #### lang
 

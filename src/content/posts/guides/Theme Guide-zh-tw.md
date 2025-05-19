@@ -84,10 +84,12 @@ global: {
   // 2025-04-13, 04-13-2025, 13-04-2025, Apr 13 2025，13 Apr 2025
   // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
   dateFormat: 'YYYY-MM-DD'
-  // 啟用 KaTeX 數學公式渲染
-  katex: true // true, false
   // 預設為所有文章開啟目錄
   toc: true // true, false
+  // 啟用 KaTeX 數學公式渲染
+  katex: true // true, false
+  // 減少動畫和過渡效果以提高性能
+  reduceMotion: false // true, false
 }
 ```
 
@@ -317,7 +319,7 @@ abbrlink: theme-guide
 
 #### toc
 
-是否生成目錄。顯示 h2 至 h4 標題。預設為全域配置 `global.toc` 的選項，可在文章中單獨設定以覆蓋全域配置。
+是否生成目錄。顯示 h2 至 h4 標題。預設由全域配置項 `global.toc` 決定，可在文章中單獨設定以覆蓋全域配置。
 
 #### lang
 
