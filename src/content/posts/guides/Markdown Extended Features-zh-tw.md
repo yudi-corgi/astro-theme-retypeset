@@ -30,7 +30,7 @@ abbrlink: markdown-extended-features
 
 ## Github 倉庫卡片
 
-使用雙冒號語法 `::github{repo="owner/repo"}`，即可創建 Github 倉庫卡片。在頁面載入後，從 GitHub API 中獲取倉庫數據。
+使用雙冒號語法 `::github{repo="owner/repo"}`，即可創建 Github 倉庫卡片。在頁面載入後，從 GitHub API 中即時獲取倉庫數據。
 
 ### 語法
 
@@ -83,3 +83,23 @@ abbrlink: markdown-extended-features
 :::note[自定義標題]
 自定義標題的提示塊。
 :::
+
+## 視頻
+
+從 YouTube 或其它視頻平台獲取嵌入代碼，並粘貼至 markdown 文件中，即可創建視頻。不需要保留 `width` 和 `height` 參數。
+
+### 語法
+
+```html
+<!-- Youtube -->
+<iframe src="https://www.youtube.com/embed/9pP0pIgP2kE?si=Rlk4C4ltaVPHXZ80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<!-- Bilibili -->
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=930327443&bvid=BV1sK4y1Z7KG&cid=329802177&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+```
+
+### 效果
+
+<iframe src="https://www.youtube.com/embed/9pP0pIgP2kE?si=Rlk4C4ltaVPHXZ80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=930327443&bvid=BV1sK4y1Z7KG&cid=329802177&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>

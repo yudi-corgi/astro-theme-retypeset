@@ -30,7 +30,7 @@ To create automatic figure captions, use the standard Markdown image syntax `![a
 
 ## Github Repository Cards
 
-To create a Github repository card, use the double colon syntax `::github{repo="owner/repo"}`. Repository data is fetched from the GitHub API after the page loads.
+To create a Github repository card, use the double colon syntax `::github{repo="owner/repo"}`. Repository data is fetched in real-time from the GitHub API after the page loads.
 
 ### Syntax
 
@@ -83,3 +83,23 @@ Advises about risks or negative outcomes of certain actions.
 :::note[YOUR CUSTOM TITLE]
 This is a note with a custom title.
 :::
+
+## Videos
+
+To embed videos, copy the embed code from YouTube or other video platforms and paste it into your markdown file. You don't need to keep the `width` and `height` parameters.
+
+### Syntax
+
+```html
+<!-- Youtube -->
+<iframe src="https://www.youtube.com/embed/9pP0pIgP2kE?si=Rlk4C4ltaVPHXZ80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<!-- Bilibili -->
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=930327443&bvid=BV1sK4y1Z7KG&cid=329802177&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+```
+
+### Output
+
+<iframe src="https://www.youtube.com/embed/9pP0pIgP2kE?si=Rlk4C4ltaVPHXZ80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=930327443&bvid=BV1sK4y1Z7KG&cid=329802177&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>

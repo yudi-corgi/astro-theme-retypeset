@@ -30,7 +30,7 @@ abbrlink: markdown-extended-features
 
 ## Github 仓库卡片
 
-使用双冒号语法 `::github{repo="owner/repo"}`，即可创建 Github 仓库卡片。在页面加载后，从 GitHub API 中获取仓库数据。
+使用双冒号语法 `::github{repo="owner/repo"}`，即可创建 Github 仓库卡片。在页面加载后，从 GitHub API 中实时获取仓库数据。
 
 ### 语法
 
@@ -83,6 +83,26 @@ abbrlink: markdown-extended-features
 :::note[自定义标题]
 自定义标题的提示块。
 :::
+
+## 视频
+
+从 YouTube 或其它视频平台获取嵌入代码，并粘贴至 markdown 文件中，即可创建视频。不需要保留 `width` 和 `height` 参数。
+
+### 语法
+
+```html
+<!-- Youtube -->
+<iframe src="https://www.youtube.com/embed/9pP0pIgP2kE?si=Rlk4C4ltaVPHXZ80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<!-- Bilibili -->
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=930327443&bvid=BV1sK4y1Z7KG&cid=329802177&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+```
+
+### 效果
+
+<iframe src="https://www.youtube.com/embed/9pP0pIgP2kE?si=Rlk4C4ltaVPHXZ80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=930327443&bvid=BV1sK4y1Z7KG&cid=329802177&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
 <!-- <details>
   <summary>

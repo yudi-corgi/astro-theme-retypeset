@@ -30,7 +30,7 @@ abbrlink: markdown-extended-features
 
 ## Карточки репозиториев Github
 
-Для создания карточки репозитория Github используйте синтаксис с двойным двоеточием `::github{repo="owner/repo"}`. Данные репозитория загружаются из API GitHub после загрузки страницы.
+Для создания карточки репозитория Github используйте синтаксис с двойным двоеточием `::github{repo="owner/repo"}`. Данные репозитория в режиме реального времени загружаются из API GitHub после загрузки страницы.
 
 ### Синтаксис
 
@@ -83,3 +83,23 @@ abbrlink: markdown-extended-features
 :::note[ПОЛЬЗОВАТЕЛЬСКИЙ ЗАГОЛОВОК]
 Это примечание с пользовательским заголовком.
 :::
+
+## Видео
+
+Для добавления видео скопируйте код для встраивания с YouTube или другой видеоплатформы и вставьте его в markdown файл. Не нужно сохранять параметры `width` и `height`.
+
+### Синтаксис
+
+```html
+<!-- Youtube -->
+<iframe src="https://www.youtube.com/embed/9pP0pIgP2kE?si=Rlk4C4ltaVPHXZ80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<!-- Bilibili -->
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=930327443&bvid=BV1sK4y1Z7KG&cid=329802177&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+```
+
+### Результат
+
+<iframe src="https://www.youtube.com/embed/9pP0pIgP2kE?si=Rlk4C4ltaVPHXZ80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=930327443&bvid=BV1sK4y1Z7KG&cid=329802177&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>

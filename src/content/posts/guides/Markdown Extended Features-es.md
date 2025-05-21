@@ -30,7 +30,7 @@ Para crear leyendas automáticas para figuras, utilice la sintaxis estándar de 
 
 ## Tarjetas de Repositorios de Github
 
-Para crear una tarjeta de repositorio de Github, utilice la sintaxis de doble dos puntos `::github{repo="owner/repo"}`. Los datos del repositorio se obtienen de la API de GitHub después de que la página se carga.
+Para crear una tarjeta de repositorio de Github, utilice la sintaxis de doble dos puntos `::github{repo="owner/repo"}`. Los datos del repositorio se obtienen en tiempo real de la API de GitHub después de que la página se carga.
 
 ### Sintaxis
 
@@ -83,3 +83,23 @@ Advierte sobre riesgos o resultados negativos de ciertas acciones.
 :::note[TÍTULO PERSONALIZADO]
 Esta es una nota con un título personalizado.
 :::
+
+## Videos
+
+Para incrustar videos, copie el código de inserción de YouTube u otras plataformas de video y péguelo en su archivo markdown. No necesita mantener los parámetros `width` y `height`.
+
+### Sintaxis
+
+```html
+<!-- Youtube -->
+<iframe src="https://www.youtube.com/embed/9pP0pIgP2kE?si=Rlk4C4ltaVPHXZ80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<!-- Bilibili -->
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=930327443&bvid=BV1sK4y1Z7KG&cid=329802177&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+```
+
+### Resultado
+
+<iframe src="https://www.youtube.com/embed/9pP0pIgP2kE?si=Rlk4C4ltaVPHXZ80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=930327443&bvid=BV1sK4y1Z7KG&cid=329802177&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
