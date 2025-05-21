@@ -226,7 +226,7 @@ abbrlink: markdown-style-guide
 
 ## 其他元素
 
-包括 `<sup>` 上标，`<sub>` 下标，`<abbr>` 缩写，`<del>` 删除线，`<u>` 波浪线，`<kbd>` 键盘输入，`<mark>` 高亮。
+包括 `<sup>` 上标，`<sub>` 下标，`<abbr>` 缩写，`<del>` 删除线，`<u>` 波浪线，`<kbd>` 键盘输入，`<mark>` 高亮，`<hr>` 分隔线。
 
 ### 语法
 
@@ -244,6 +244,10 @@ X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 按下 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Delete</kbd> 以结束会话。
 
 大多数<mark>蝾螈</mark>昼伏夜出，以昆虫、蠕虫等小生物为食。
+
+使用三个连字符 `---` 或 `<hr>` 标签，即可创建如下分隔线。
+
+---
 ```
 
 ### 效果
@@ -261,3 +265,7 @@ X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 按下 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Delete</kbd> 以结束会话。
 
 大多数<mark>蝾螈</mark>昼伏夜出，以昆虫、蠕虫等小生物为食。
+
+使用三个连字符 `---` 或 `<hr>` 标签，即可创建如下分隔线。
+
+---

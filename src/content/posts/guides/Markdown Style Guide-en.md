@@ -112,7 +112,7 @@ To create a blockquote, add a `>` in front of a paragraph. To create a blockquot
 
 ## Tables
 
-To add a table, use three or more hyphens `---` to create each column’s header, and use pipes `|` to separate each column.
+To add a table, use three or more hyphens `---` to create each column's header, and use pipes `|` to separate each column.
 
 ### Syntax
 
@@ -226,7 +226,7 @@ To create a code block, add three backticks ```` ``` ```` at the start and end o
 
 ## Other Elements
 
-Including `<sup>` superscript, `<sub>` subscript, `<abbr>` abbreviation, `<del>` strikethrough, `<u>` wavy underline, `<kbd>` keyboard input, and `<mark>` highlight.
+Including `<sup>` superscript, `<sub>` subscript, `<abbr>` abbreviation, `<del>` strikethrough, `<u>` wavy underline, `<kbd>` keyboard input, `<mark>` highlight, and `<hr>` horizontal rule.
 
 ### Syntax
 
@@ -244,6 +244,10 @@ Press <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>Delete</kbd> to end the session.
 There is <del>nothing</del> no code either good or bad, but running it makes it so.
 
 Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+
+Use three hyphens `---` or the `<hr>` tag to create a horizontal rule as shown below.
+
+---
 ```
 
 ### Output
@@ -261,3 +265,7 @@ Press <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>Delete</kbd> to end the session.
 There is <del>nothing</del> no code either good or bad, but running it makes it so.
 
 Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+
+Use three hyphens `---` or the `<hr>` tag to create a horizontal rule as shown below.
+
+---

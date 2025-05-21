@@ -160,7 +160,7 @@ footer: {
   links: [
     {
       name: 'RSS',
-      url: '/rss.xml', // rss.xml, atom.xml
+      url: '/atom.xml', // or /rss.xml
     },
     {
       name: 'GitHub',

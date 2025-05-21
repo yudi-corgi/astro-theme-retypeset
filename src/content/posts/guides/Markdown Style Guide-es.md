@@ -226,7 +226,7 @@ Para crear un bloque de código, agregue tres acentos graves ```` ``` ```` al in
 
 ## Otros Elementos
 
-Incluyendo superíndice `<sup>`, subíndice `<sub>`, abreviatura `<abbr>`, tachado `<del>`, subrayado ondulado `<u>`, entrada de teclado `<kbd>` y resaltado `<mark>`.
+Incluyendo superíndice `<sup>`, subíndice `<sub>`, abreviatura `<abbr>`, tachado `<del>`, subrayado ondulado `<u>`, entrada de teclado `<kbd>`, resaltado `<mark>` y línea horizontal `<hr>`.
 
 ### Sintaxis
 
@@ -244,6 +244,10 @@ Presione <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>Suprimir</kbd> para finalizar l
 No hay <del>nada</del> ningún código que sea bueno o malo, pero ejecutarlo lo hace así.
 
 La mayoría de las <mark>salamandras</mark> son nocturnas y cazan insectos, gusanos y otras criaturas pequeñas.
+
+Use tres guiones `---` o la etiqueta `<hr>` para crear una línea horizontal como se muestra a continuación.
+
+---
 ```
 
 ### Resultado
@@ -261,3 +265,7 @@ Presione <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>Suprimir</kbd> para finalizar l
 No hay <del>nada</del> ningún código que sea bueno o malo, pero ejecutarlo lo hace así.
 
 La mayoría de las <mark>salamandras</mark> son nocturnas y cazan insectos, gusanos y otras criaturas pequeñas.
+
+Use tres guiones `---` o la etiqueta `<hr>` para crear una línea horizontal como se muestra a continuación.
+
+---
