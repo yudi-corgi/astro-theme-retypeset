@@ -75,7 +75,7 @@ global: {
   // language of the site root path '/'
   locale: 'zh' // de, en, es, fr, ja, ko, pl, pt, ru, zh, zh-tw
   // more languages
-  // generate multi-language paths such as '/es/' '/ru/'
+  // generate multi-language paths such as '/en/' '/es/'
   // not fill in the locale code above again, can be an empty array []
   moreLocales: ['en', 'es', 'ja', 'ru', 'zh-tw'] // ['de', 'en', 'es', 'fr', 'ja', 'ko', 'pl', 'pt', 'ru', 'zh', 'zh-tw']
   // font style
@@ -188,6 +188,7 @@ preload: {
   linkPrefetch: 'viewport' // hover, tap, viewport, load
   // image hosting url
   imageHostURL: 'https://image.radishzz.cc'
+  // optimize remote images in Markdown files to avoid cumulative layout shift
   // custom google analytics js
   // for users who route analytics javascript to a customized domain
   customGoogleAnalyticsJS: ''

@@ -75,7 +75,7 @@ global: {
   // язык корневого пути сайта '/'
   locale: 'zh' // de, en, es, fr, ja, ko, pl, pt, ru, zh, zh-tw
   // дополнительные языки
-  // создает многоязычные пути, такие как '/es/' '/ru/'
+  // создает многоязычные пути, такие как '/en/' '/es/'
   // не указывайте код языка, указанный выше, можно оставить пустым массивом []
   moreLocales: ['en', 'es', 'ja', 'ru', 'zh-tw'] // ['de', 'en', 'es', 'fr', 'ja', 'ko', 'pl', 'pt', 'ru', 'zh', 'zh-tw']
   // стиль шрифта
@@ -188,6 +188,7 @@ preload: {
   linkPrefetch: 'viewport' // hover, tap, viewport, load
   // URL хостинга изображений
   imageHostURL: 'https://image.radishzz.cc'
+  // оптимизировать удаленные изображения в файлах Markdown для избежания накопления сдвига макета
   // пользовательский скрипт Google Analytics
   // для пользователей, которые направляют JavaScript аналитики на собственный домен
   customGoogleAnalyticsJS: ''

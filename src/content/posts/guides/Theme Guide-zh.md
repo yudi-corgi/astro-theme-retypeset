@@ -75,7 +75,7 @@ global: {
   // 站点根路径 '/' 的语言
   locale: 'zh' // de, en, es, fr, ja, ko, pl, pt, ru, zh, zh-tw
   // 更多语言
-  // 生成 '/ja/' '/en/' 等多语言路径
+  // 生成 '/en/' '/es/' 等多语言路径
   // 不要重复填写默认语言，可以为空 []
   moreLocales: ['en', 'es', 'ja', 'ru', 'zh-tw'] // ['de', 'en', 'es', 'fr', 'ja', 'ko', 'pl', 'pt', 'ru', 'zh', 'zh-tw']
   // 字体样式
@@ -188,6 +188,7 @@ preload: {
   linkPrefetch: 'viewport' // hover, tap, viewport, load
   // 图床地址
   imageHostURL: 'https://image.radishzz.cc'
+  // 优化 Markdown 文件中的远程图片以避免布局抖动
   // 定制 google analytics js
   // 适用于路由 google analytics js 到自定义域名的用户
   customGoogleAnalyticsJS: ''

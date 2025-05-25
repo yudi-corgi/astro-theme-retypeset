@@ -75,7 +75,7 @@ global: {
   // サイトのルートパス '/' の言語
   locale: 'zh' // de, en, es, fr, ja, ko, pl, pt, ru, zh, zh-tw
   // その他の言語
-  // '/ja/' '/en/' などの多言語パスを生成
+  // '/en/' '/es/' などの多言語パスを生成
   // デフォルト言語を重複して入力しないでください、空の配列 [] も可能です
   moreLocales: ['en', 'es', 'ja', 'ru', 'zh-tw'] // ['de', 'en', 'es', 'fr', 'ja', 'ko', 'pl', 'pt', 'ru', 'zh', 'zh-tw']
   // フォントスタイル
@@ -188,6 +188,7 @@ preload: {
   linkPrefetch: 'viewport' // hover, tap, viewport, load
   // 画像ホスティング URL
   imageHostURL: 'https://image.radishzz.cc'
+  // Markdownファイル内のリモート画像を最適化してレイアウトシフトを防止
   // カスタム Google Analytics JS
   // アナリティクス JavaScript をカスタムドメインにルーティングするユーザー向け
   customGoogleAnalyticsJS: ''
