@@ -73,11 +73,11 @@ color: {
 global: {
   // 默認語言
   // 站點根路徑 '/' 的語言
-  locale: 'zh' // zh, zh-tw, ja, en, es, ru, pt
+  locale: 'zh' // de, en, es, fr, ja, ko, pl, pt, ru, zh, zh-tw
   // 更多語言
   // 生成 '/ja/' '/en/' 等多語言路徑
   // 不要重複填寫默認語言，可以為空 []
-  moreLocales: ['zh-tw', 'ja', 'en', 'es', 'ru'] // ['zh', 'zh-tw', 'ja', 'en', 'es', 'ru', 'pt']
+  moreLocales: ['en', 'es', 'ja', 'ru', 'zh-tw'] // ['de', 'en', 'es', 'fr', 'ja', 'ko', 'pl', 'pt', 'ru', 'zh', 'zh-tw']
   // 字體樣式
   fontStyle: 'sans' // sans, serif
   // 文章日期格式

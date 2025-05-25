@@ -73,11 +73,11 @@ color: {
 global: {
   // default language
   // language of the site root path '/'
-  locale: 'zh' // zh, zh-tw, ja, en, es, ru, pt
+  locale: 'zh' // de, en, es, fr, ja, ko, pl, pt, ru, zh, zh-tw
   // more languages
   // generate multi-language paths such as '/es/' '/ru/'
   // not fill in the locale code above again, can be an empty array []
-  moreLocales: ['zh-tw', 'ja', 'en', 'es', 'ru'] // ['zh', 'zh-tw', 'ja', 'en', 'es', 'ru', 'pt']
+  moreLocales: ['en', 'es', 'ja', 'ru', 'zh-tw'] // ['de', 'en', 'es', 'fr', 'ja', 'ko', 'pl', 'pt', 'ru', 'zh', 'zh-tw']
   // font style
   fontStyle: 'sans' // sans, serif
   // date format for posts
