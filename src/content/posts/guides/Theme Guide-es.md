@@ -26,7 +26,7 @@ site: {
   subtitle: 'Revive the beauty of typography'
   // descripción del sitio
   description: 'Retypeset is a static blog theme...'
-  // usar título/subtítulo/descripción en varios idiomas desde src/i18n/ui.ts en lugar de los estáticos anteriores
+  // usar título/subtítulo/descripción en varios idiomas desde src/i18n/ui.ts en lugar de los estáticos de arriba
   i18nTitle: true // true, false
   // nombre del autor
   author: 'radishzz'

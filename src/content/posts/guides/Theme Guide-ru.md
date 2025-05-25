@@ -26,7 +26,7 @@ site: {
   subtitle: 'Revive the beauty of typography'
   // описание сайта
   description: 'Retypeset is a static blog theme...'
-  // использовать многоязычные заголовок/подзаголовок/описание из src/i18n/ui.ts вместо статических выше
+  // использовать многоязычные заголовок/подзаголовок/описание из src/i18n/ui.ts, а не статические выше
   i18nTitle: true // true, false
   // имя автора
   author: 'radishzz'

@@ -26,7 +26,7 @@ site: {
   subtitle: 'Revive the beauty of typography'
   // 站點描述
   description: 'Retypeset is a static blog theme...'
-  // 使用 src/i18n/ui.ts 中的多語言標題/副標題/站點描述，替換以上靜態配置
+  // 使用 src/i18n/ui.ts 中的多語言標題/副標題/站點描述，而不是上方靜態配置
   i18nTitle: true // true, false
   // 作者名稱
   author: 'radishzz'
