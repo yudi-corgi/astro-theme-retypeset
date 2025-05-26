@@ -81,8 +81,8 @@ global: {
   // 字体样式
   fontStyle: 'sans' // sans, serif
   // 文章日期格式
-  // 2025-04-13, 04-13-2025, 13-04-2025, Apr 13 2025，13 Apr 2025
   // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
+  // 2025-04-13, 04-13-2025, 13-04-2025, Apr 13 2025，13 Apr 2025
   dateFormat: 'YYYY-MM-DD'
   // 默认为所有文章开启目录
   toc: true // true, false
@@ -303,7 +303,7 @@ tags:
 draft: true/false
 pin: 1-99
 toc: true/false
-lang: zh/zh-tw/ja/en/es/ru
+lang: de/en/es/fr/ja/ko/pl/pt/ru/zh/zh-tw
 abbrlink: theme-guide
 ---
 ```
@@ -332,15 +332,15 @@ abbrlink: theme-guide
 # moreLocales: ['es', 'ru']
 
 # lang: ''
-src/content/posts/apple.md   -> example.com/posts/apple/
-                             -> example.com/es/posts/apple/
-                             -> example.com/ru/posts/apple/
+src/content/posts/apple.md   ->  example.com/posts/apple/
+                             ->  example.com/es/posts/apple/
+                             ->  example.com/ru/posts/apple/
 # lang: en
-src/content/posts/apple.md   -> example.com/posts/apple/
+src/content/posts/apple.md   ->  example.com/posts/apple/
 # lang: es
-src/content/posts/apple.md   -> example.com/es/posts/apple/
+src/content/posts/apple.md   ->  example.com/es/posts/apple/
 # lang: ru
-src/content/posts/apple.md   -> example.com/ru/posts/apple/
+src/content/posts/apple.md   ->  example.com/ru/posts/apple/
 ```
 
 #### abbrlink

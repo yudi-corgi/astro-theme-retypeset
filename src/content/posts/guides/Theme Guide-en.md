@@ -81,8 +81,8 @@ global: {
   // font style
   fontStyle: 'sans' // sans, serif
   // date format for posts
-  // 2025-04-13, 04-13-2025, 13-04-2025, Apr 13 2025，13 Apr 2025
   // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
+  // 2025-04-13, 04-13-2025, 13-04-2025, Apr 13 2025，13 Apr 2025
   dateFormat: 'YYYY-MM-DD'
   // enable table of contents for all posts by default
   toc: true // true, false
@@ -303,7 +303,7 @@ tags:
 draft: true/false
 pin: 1-99
 toc: true/false
-lang: en/es/ru/zh/zh-tw/ja
+lang: de/en/es/fr/ja/ko/pl/pt/ru/zh/zh-tw
 abbrlink: theme-guide
 ---
 ```
@@ -332,15 +332,15 @@ Specifies the article language. Only one language can be specified. If not speci
 # moreLocales: ['es', 'ru']
 
 # lang: ''
-src/content/posts/apple.md   -> example.com/posts/apple/
-                             -> example.com/es/posts/apple/
-                             -> example.com/ru/posts/apple/
+src/content/posts/apple.md   ->  example.com/posts/apple/
+                             ->  example.com/es/posts/apple/
+                             ->  example.com/ru/posts/apple/
 # lang: en
-src/content/posts/apple.md   -> example.com/posts/apple/
+src/content/posts/apple.md   ->  example.com/posts/apple/
 # lang: es
-src/content/posts/apple.md   -> example.com/es/posts/apple/
+src/content/posts/apple.md   ->  example.com/es/posts/apple/
 # lang: ru
-src/content/posts/apple.md   -> example.com/ru/posts/apple/
+src/content/posts/apple.md   ->  example.com/ru/posts/apple/
 ```
 
 #### abbrlink
