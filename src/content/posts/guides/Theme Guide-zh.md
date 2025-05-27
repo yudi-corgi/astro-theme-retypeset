@@ -26,7 +26,7 @@ site: {
   subtitle: 'Revive the beauty of typography'
   // 站点描述
   description: 'Retypeset is a static blog theme...'
-  // 使用 src/i18n/ui.ts 中的多语言标题/副标题/站点描述，而不是上方静态配置
+  // 使用 src/i18n/ui.ts 中的多语言标题/副标题/站点描述，代替上方静态配置
   i18nTitle: true // true, false
   // 作者名称
   author: 'radishzz'
@@ -187,8 +187,8 @@ preload: {
   // 链接预加载策略
   linkPrefetch: 'viewport' // hover, tap, viewport, load
   // 图床地址
-  imageHostURL: 'https://image.radishzz.cc'
   // 优化 Markdown 文件中的远程图片以避免布局抖动
+  imageHostURL: 'https://image.radishzz.cc'
   // 定制 google analytics js
   // 适用于路由 google analytics js 到自定义域名的用户
   customGoogleAnalyticsJS: ''
@@ -271,7 +271,7 @@ getImageOptions: (_path, page) => ({
 [RSS 订阅页](https://retypeset.radishzz.cc/rss.xml) 配色。
 
 ```html
-<!-- public/rss/rss-style.xsl -->
+<!-- public/feeds/xxx-style.xsl -->
 
 <style type="text/css">
 body{color:oklch(25% 0.005 298)} /* 字体颜色 */
