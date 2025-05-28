@@ -301,7 +301,7 @@ tags:
 
 # 進階，可選
 draft: true/false
-pin: 1-99
+pin: 0-99
 toc: true/false
 lang: de/en/es/fr/ja/ko/pl/pt/ru/zh/zh-tw
 abbrlink: theme-guide
