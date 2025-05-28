@@ -282,9 +282,18 @@ body{color:oklch(25% 0.005 298)} /* Цвет шрифта */
 
 ## Создание новой статьи
 
-Создайте новый файл с расширением `.md` или `.mdx` в директории `src/content/posts/`, и добавьте метаданные `Front Matter` в верхней части файла.
+Выполните команду `pnpm new-post <filename>` для создания новой статьи, которую затем можно редактировать в директории `src/content/posts/`.
+
+```bash
+pnpm new-post                      ->  src/content/posts/new-post.md
+pnpm new-post first-post           ->  src/content/posts/first-post.md
+pnpm new-post 2025/03/first-post   ->  src/content/posts/2025/03/first-post.md
+pnpm new-post first-post.mdx       ->  src/content/posts/first-post.mdx
+```
 
 ### Front Matter
+
+Только поля `title` и `published` являются обязательными, все остальные конфигурации можно безопасно опустить.
 
 ```markdown
 ---
@@ -332,15 +341,15 @@ abbrlink: theme-guide
 # moreLocales: ['es', 'ru']
 
 # lang: ''
-src/content/posts/apple.md   ->  example.com/posts/apple/
-                             ->  example.com/es/posts/apple/
-                             ->  example.com/ru/posts/apple/
+src/content/posts/apple.md  ->  example.com/posts/apple/
+                            ->  example.com/es/posts/apple/
+                            ->  example.com/ru/posts/apple/
 # lang: en
-src/content/posts/apple.md   ->  example.com/posts/apple/
+src/content/posts/apple.md  ->  example.com/posts/apple/
 # lang: es
-src/content/posts/apple.md   ->  example.com/es/posts/apple/
+src/content/posts/apple.md  ->  example.com/es/posts/apple/
 # lang: ru
-src/content/posts/apple.md   ->  example.com/ru/posts/apple/
+src/content/posts/apple.md  ->  example.com/ru/posts/apple/
 ```
 
 #### abbrlink

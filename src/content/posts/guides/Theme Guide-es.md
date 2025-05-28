@@ -282,9 +282,18 @@ body{color:oklch(25% 0.005 298)} /* Color de fuente */
 
 ## Creación de un Nuevo Artículo
 
-Crea un nuevo archivo con extensión `.md` o `.mdx` en el directorio `src/content/posts/`, y añade los metadatos `Front Matter` en la parte superior del archivo.
+Ejecuta `pnpm new-post <filename>` para crear un nuevo artículo, que luego puede editarse en el directorio `src/content/posts/`.
+
+```bash
+pnpm new-post                      ->  src/content/posts/new-post.md
+pnpm new-post first-post           ->  src/content/posts/first-post.md
+pnpm new-post 2025/03/first-post   ->  src/content/posts/2025/03/first-post.md
+pnpm new-post first-post.mdx       ->  src/content/posts/first-post.mdx
+```
 
 ### Front Matter
+
+Solo los campos `title` y `published` son obligatorios, todas las demás configuraciones pueden omitirse de forma segura.
 
 ```markdown
 ---

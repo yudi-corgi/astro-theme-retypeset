@@ -282,9 +282,18 @@ body{color:oklch(25% 0.005 298)} /* Font color */
 
 ## Creating a New Post
 
-Create a new file with `.md` or `.mdx` extension in the `src/content/posts/` directory, and add `Front Matter` metadata at the top of the file.
+Run `pnpm new-post <filename>` to create a new post, which can then be edited in the `src/content/posts/` directory.
+
+```bash
+pnpm new-post                      ->  src/content/posts/new-post.md
+pnpm new-post first-post           ->  src/content/posts/first-post.md
+pnpm new-post 2025/03/first-post   ->  src/content/posts/2025/03/first-post.md
+pnpm new-post first-post.mdx       ->  src/content/posts/first-post.mdx
+```
 
 ### Front Matter
+
+Only `title` and `published` are required fields, all other configurations can be safely omitted.
 
 ```markdown
 ---

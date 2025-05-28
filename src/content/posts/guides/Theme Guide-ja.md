@@ -282,9 +282,18 @@ body{color:oklch(25% 0.005 298)} /* フォントカラー */
 
 ## 新しい記事の作成
 
-`src/content/posts/` ディレクトリに `.md` または `.mdx` 拡張子を持つ新しいファイルを作成し、ファイルの先頭に `Front Matter` メタデータを追加します。
+`pnpm new-post <filename>` を実行して新しい記事を作成し、`src/content/posts/` ディレクトリで編集できます。
+
+```bash
+pnpm new-post                      ->  src/content/posts/new-post.md
+pnpm new-post first-post           ->  src/content/posts/first-post.md
+pnpm new-post 2025/03/first-post   ->  src/content/posts/2025/03/first-post.md
+pnpm new-post first-post.mdx       ->  src/content/posts/first-post.mdx
+```
 
 ### Front Matter
+
+`title` と `published` のみが必須フィールドで、他のすべての設定は安全に省略できます。
 
 ```markdown
 ---

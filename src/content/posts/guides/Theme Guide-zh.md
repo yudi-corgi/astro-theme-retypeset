@@ -282,11 +282,20 @@ body{color:oklch(25% 0.005 298)} /* 字体颜色 */
 
 ## 创建新文章
 
-在 `src/content/posts/` 目录中新建以 `.md` 或 `.mdx` 为后缀的文件，并在文件顶部添加 `Front Matter` 元数据。
+执行 `pnpm new-post <filename>` 创建新文章，可在 `src/content/posts/` 目录中编辑。
+
+```bash
+pnpm new-post                      ->  src/content/posts/new-post.md
+pnpm new-post first-post           ->  src/content/posts/first-post.md
+pnpm new-post 2025/03/first-post   ->  src/content/posts/2025/03/first-post.md
+pnpm new-post first-post.mdx       ->  src/content/posts/first-post.mdx
+```
 
 ### Front Matter
 
-```markdown
+`title` 和 `published` 为必填项，其余配置均可安全删除。
+
+```md
 ---
 # 必填
 title: 主题上手指南
