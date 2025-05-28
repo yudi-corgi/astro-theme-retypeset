@@ -26,7 +26,7 @@ site: {
   subtitle: 'Revive the beauty of typography'
   // описание сайта
   description: 'Retypeset is a static blog theme...'
-  // использовать многоязычные заголовок/подзаголовок/описание из src/i18n/ui.ts, а не статические выше
+  // использовать многоязычные заголовок/подзаголовок/описание из src/i18n/ui.ts вместо статических выше
   i18nTitle: true // true, false
   // имя автора
   author: 'radishzz'
@@ -187,8 +187,8 @@ preload: {
   // стратегии предзагрузки ссылок
   linkPrefetch: 'viewport' // hover, tap, viewport, load
   // URL хостинга изображений
-  imageHostURL: 'https://image.radishzz.cc'
   // оптимизировать удаленные изображения в файлах Markdown для избежания накопления сдвига макета
+  imageHostURL: 'https://image.radishzz.cc'
   // пользовательский скрипт Google Analytics
   // для пользователей, которые направляют JavaScript аналитики на собственный домен
   customGoogleAnalyticsJS: ''
@@ -271,7 +271,7 @@ getImageOptions: (_path, page) => ({
 Стили [страницы RSS-ленты](https://retypeset.radishzz.cc/ru/rss.xml).
 
 ```html
-<!-- public/rss/rss-style.xsl -->
+<!-- public/feeds/xxx-style.xsl -->
 
 <style type="text/css">
 body{color:oklch(25% 0.005 298)} /* Цвет шрифта */

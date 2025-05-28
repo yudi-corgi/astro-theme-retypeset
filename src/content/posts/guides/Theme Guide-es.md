@@ -187,8 +187,8 @@ preload: {
   // estrategias de precarga de enlaces
   linkPrefetch: 'viewport' // hover, tap, viewport, load
   // URL de alojamiento de imágenes
-  imageHostURL: 'https://image.radishzz.cc'
   // optimizar imágenes remotas en archivos Markdown para evitar cambios de diseño acumulativos
+  imageHostURL: 'https://image.radishzz.cc'
   // js personalizado de google analytics
   // para usuarios que redirigen javascript de analytics a un dominio personalizado
   customGoogleAnalyticsJS: ''
@@ -271,7 +271,7 @@ getImageOptions: (_path, page) => ({
 Estilos de [página del feed RSS](https://retypeset.radishzz.cc/es/rss.xml).
 
 ```html
-<!-- public/rss/rss-style.xsl -->
+<!-- public/feeds/xxx-style.xsl -->
 
 <style type="text/css">
 body{color:oklch(25% 0.005 298)} /* Color de fuente */

@@ -26,7 +26,7 @@ site: {
   subtitle: 'Revive the beauty of typography'
   // サイト説明
   description: 'Retypeset is a static blog theme...'
-  // 上記の静的設定ではなく src/i18n/ui.ts の多言語タイトル/サブタイトル/説明を使用
+  // 上記の静的設定の代わりに src/i18n/ui.ts の多言語タイトル/サブタイトル/説明を使用
   i18nTitle: true // true, false
   // 著者名
   author: 'radishzz'
@@ -187,8 +187,8 @@ preload: {
   // リンクプリフェッチ戦略
   linkPrefetch: 'viewport' // hover, tap, viewport, load
   // 画像ホスティング URL
-  imageHostURL: 'https://image.radishzz.cc'
   // Markdownファイル内のリモート画像を最適化してレイアウトシフトを防止
+  imageHostURL: 'https://image.radishzz.cc'
   // カスタム Google Analytics JS
   // アナリティクス JavaScript をカスタムドメインにルーティングするユーザー向け
   customGoogleAnalyticsJS: ''
@@ -271,7 +271,7 @@ getImageOptions: (_path, page) => ({
 [RSSフィードページ](https://retypeset.radishzz.cc/ja/rss.xml)スタイル。
 
 ```html
-<!-- public/rss/rss-style.xsl -->
+<!-- public/feeds/xxx-style.xsl -->
 
 <style type="text/css">
 body{color:oklch(25% 0.005 298)} /* フォントカラー */
