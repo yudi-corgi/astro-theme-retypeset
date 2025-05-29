@@ -52,8 +52,18 @@ To create admonition blocks, use the GitHub syntax `> [!TYPE]` or the triple col
 > [!NOTE]
 > Useful information that users should know, even when skimming content.
 
-:::note
-Useful information that users should know, even when skimming content.
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+:::warning
+Urgent info that needs immediate user attention to avoid problems.
+:::
+
+:::caution
+Advises about risks or negative outcomes of certain actions.
 :::
 
 :::note[YOUR CUSTOM TITLE]

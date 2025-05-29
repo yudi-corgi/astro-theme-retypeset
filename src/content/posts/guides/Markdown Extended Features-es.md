@@ -52,8 +52,18 @@ Para crear bloques de advertencia, utilice la sintaxis de GitHub `> [!TYPE]` o l
 > [!NOTE]
 > Información útil que los usuarios deben conocer, incluso al leer por encima.
 
-:::note
-Información útil que los usuarios deben conocer, incluso al leer por encima.
+> [!TIP]
+> Consejos útiles para hacer las cosas mejor o más fácilmente.
+
+> [!IMPORTANT]
+> Información clave que los usuarios necesitan saber para lograr su objetivo.
+
+:::warning
+Información urgente que requiere atención inmediata del usuario para evitar problemas.
+:::
+
+:::caution
+Advierte sobre riesgos o resultados negativos de ciertas acciones.
 :::
 
 :::note[TÍTULO PERSONALIZADO]
