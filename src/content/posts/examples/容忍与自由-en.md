@@ -1,7 +1,9 @@
 ---
 title: Tolerance and Freedom
 published: 1959-03-16
-tags: ["Hu Shih","Modern Literature"]
+tags:
+  - Hu Shih
+  - Modern Literature
 lang: en
 abbrlink: tolerance-freedom
 ---

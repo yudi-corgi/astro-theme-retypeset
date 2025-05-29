@@ -2,8 +2,9 @@
 title: Markdown Style Guide
 published: 2025-03-08
 updated: 2025-03-23
-tags: ["Guide"]
-pin: 1
+tags:
+  - Guide
+pin: 98
 toc: false
 lang: en
 abbrlink: markdown-style-guide
@@ -59,13 +60,15 @@ To add an image, add an exclamation mark `!`, followed by alt text in brackets `
 
 ### Syntax
 
-```markdown
-![Image Description](./full/or/relative/path/of/image)
+```
+![Image Description](../_images/image-01.jpeg)
+
+![Image Description](https://image.example.com/image-01.webp)
 ```
 
 ### Output
 
-![Image Description](/image-placeholder)
+![Image Description](https://image.radishzz.cc/picsmaller/03.webp)
 
 ## Blockquotes
 
@@ -109,7 +112,7 @@ To create a blockquote, add a `>` in front of a paragraph. To create a blockquot
 
 ## Tables
 
-To add a table, use three or more hyphens `---` to create each column’s header, and use pipes `|` to separate each column.
+To add a table, use three or more hyphens `---` to create each column's header, and use pipes `|` to separate each column.
 
 ### Syntax
 
@@ -223,7 +226,7 @@ To create a code block, add three backticks ```` ``` ```` at the start and end o
 
 ## Other Elements
 
-Including `<sup>` superscript, `<sub>` subscript, `<abbr>` abbreviation, `<del>` strikethrough, `<u>` wavy underline, `<kbd>` keyboard input, and `<mark>` highlight.
+Including `<sup>` superscript, `<sub>` subscript, `<abbr>` abbreviation, `<del>` strikethrough, `<u>` wavy underline, `<kbd>` keyboard input, `<mark>` highlight, and `<hr>` horizontal rule.
 
 ### Syntax
 
@@ -241,6 +244,10 @@ Press <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>Delete</kbd> to end the session.
 There is <del>nothing</del> no code either good or bad, but running it makes it so.
 
 Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+
+Use three hyphens `---` or the `<hr>` tag to create a horizontal rule as shown below.
+
+---
 ```
 
 ### Output
@@ -258,3 +265,7 @@ Press <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>Delete</kbd> to end the session.
 There is <del>nothing</del> no code either good or bad, but running it makes it so.
 
 Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+
+Use three hyphens `---` or the `<hr>` tag to create a horizontal rule as shown below.
+
+---

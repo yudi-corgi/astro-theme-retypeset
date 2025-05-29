@@ -17,7 +17,7 @@ $$
 t=\frac{1}{|G|}\sum_{g\in G}|\text{Fix}(g)|
 $$
 
-对于每个整数 $n\ge2$，商群 $\mathbb{Z}/n\mathbb{Z}$ 是由 $1+n\mathbb{Z}$ 生成的循环群，因此 $\color{red}{\mathbb{Z}/n\mathbb{Z}\cong\mathbb{Z}_n}$。
+对于每个整数 $n\ge2$，商群 $\mathbb{Z}/n\mathbb{Z}$ 是由 $1+n\mathbb{Z}$ 生成的循环群，因此 $\mathbb{Z}/n\mathbb{Z}\cong\mathbb{Z}_n$。
 
 商群 $\mathbb{R}/\mathbb{Z}$ 同构于 $([0,1),+_1)$，即区间 $[0,1)$ 上以 1 为模的实数加法群。
 

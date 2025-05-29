@@ -1,7 +1,9 @@
 ---
 title: 容忍與自由
 published: 1959-03-16
-tags: ["胡適","近代文學"]
+tags:
+  - 胡適
+  - 近代文學
 lang: zh-tw
 abbrlink: tolerance-freedom
 ---

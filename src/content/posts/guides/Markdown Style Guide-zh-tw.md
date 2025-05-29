@@ -2,8 +2,9 @@
 title: Markdown 樣式指南
 published: 2025-03-08
 updated: 2025-03-23
-tags: ["指南"]
-pin: 1
+tags:
+  - 指南
+pin: 98
 toc: false
 lang: zh-tw
 abbrlink: markdown-style-guide
@@ -59,13 +60,15 @@ abbrlink: markdown-style-guide
 
 ### 語法
 
-```markdown
-![圖片描述](./full/or/relative/path/of/image)
+```
+![圖片描述](../_images/image-01.jpeg)
+
+![圖片描述](https://image.example.com/image-01.webp)
 ```
 
 ### 效果
 
-![圖片描述](/image-placeholder)
+![圖片描述](https://image.radishzz.cc/picsmaller/03.webp)
 
 ## 區塊引用
 
@@ -96,7 +99,7 @@ abbrlink: markdown-style-guide
 >
 > —— <cite>《秋夜》[^1]</cite>
 
-[^1]: [《秋夜》](https://zh.wikisource.org/wiki/%E7%A7%8B%E5%A4%9C_(%E9%AD%AF%E8%BF%85)) 是魯迅散文詩集《野草》中的第一首散文詩，創作於1924年。
+[^1]: 《[秋夜](https://zh.wikisource.org/wiki/%E7%A7%8B%E5%A4%9C_(%E9%AD%AF%E8%BF%85))》是魯迅散文詩集《野草》中的第一首散文詩，創作於1924年。
 ```
 
 #### 效果
@@ -105,7 +108,7 @@ abbrlink: markdown-style-guide
 >
 > —— <cite>《秋夜》[^1]</cite>
 
-[^1]: [《秋夜》](https://zh.wikisource.org/wiki/%E7%A7%8B%E5%A4%9C_(%E9%AD%AF%E8%BF%85)) 是魯迅散文詩集《野草》中的第一首散文詩，創作於1924年。
+[^1]: 《[秋夜](https://zh.wikisource.org/wiki/%E7%A7%8B%E5%A4%9C_(%E9%AD%AF%E8%BF%85))》是魯迅散文詩集《野草》中的第一首散文詩，創作於1924年。
 
 ## 表格
 
@@ -223,11 +226,11 @@ abbrlink: markdown-style-guide
 
 ## 其他元素
 
-包括 `<sup>` 上標，`<sub>` 下標，`<abbr>` 縮寫，`<del>` 刪除線，`<u>` 波浪線，`<kbd>` 鍵盤輸入，`<mark>` 高亮。
+包括 `<sup>` 上標，`<sub>` 下標，`<abbr>` 縮寫，`<del>` 刪除線，`<u>` 波浪線，`<kbd>` 鍵盤輸入，`<mark>` 高亮，`<hr>` 分隔線。
 
 ### 語法
 
-```markdown
+```html
 H<sub>2</sub>O
 
 X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
@@ -236,11 +239,15 @@ X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 
 書籍是人類進步的<del>樓梯</del>階梯。
 
-優秀的作者總是會仔細檢查<u title="拼">拚</u>寫錯誤。
+優秀的作家總是會仔細檢查<u title="拼寫">拚寫</u>問題。
 
 按下 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Delete</kbd> 以結束會話。
 
 大多數<mark>蠑螈</mark>晝伏夜出，以昆蟲、蠕蟲等小生物為食。
+
+使用三個連字符 `---` 或 `<hr>` 標籤，即可創建如下分隔線。
+
+---
 ```
 
 ### 效果
@@ -258,3 +265,7 @@ X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 按下 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Delete</kbd> 以結束會話。
 
 大多數<mark>蠑螈</mark>晝伏夜出，以昆蟲、蠕蟲等小生物為食。
+
+使用三個連字符 `---` 或 `<hr>` 標籤，即可創建如下分隔線。
+
+---

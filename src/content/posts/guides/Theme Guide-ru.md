@@ -1,18 +1,20 @@
 ---
 title: Руководство по теме
 published: 2025-01-26
-updated: 2025-03-12
-tags: ["Тема блога","Руководство"]
+updated: 2025-04-13
+tags:
+  - Тема блога
+  - Руководство
 pin: 99
 lang: ru
 abbrlink: theme-guide
 ---
 
-Retypeset — это статическая тема блога, основанная на фреймворке [Astro](https://astro.build/). Вдохновленная [Typography](https://astro-theme-typography.vercel.app/), Retypeset устанавливает новый визуальный стандарт и переосмысливает компоновку всех страниц, создавая опыт чтения, напоминающий печатные книги, возрождая красоту типографики. Детали в каждом взгляде, элегантность в каждом пространстве.
+Retypeset — это статическая тема блога, основанная на фреймворке [Astro](https://astro.build/). Данное руководство знакомит с тем, как изменять настройки темы и создавать новые статьи, помогая вам быстро настроить личный блог.
 
 ## Конфигурация темы
 
-Ниже приведено руководство по конфигурации темы Retypeset. Настройте свой блог, изменяя конфигурационный файл [src/config.ts](https://github.com/radishzzz/astro-theme-retypeset/blob/master/src/config.ts).
+Настройте свой блог путем изменения конфигурационного файла [src/config.ts](https://github.com/radishzzz/astro-theme-retypeset/blob/master/src/config.ts).
 
 ### Информация о сайте
 
@@ -32,7 +34,7 @@ site: {
   url: 'https://retypeset.radishzz.cc'
   // url фавикона
   // рекомендуемые форматы: svg, png или ico
-  favicon: '/icon/favicon.svg' // или https://example.com/favicon.svg
+  favicon: '/icons/favicon.svg' // или https://example.com/favicon.svg
 }
 ```
 
@@ -56,10 +58,8 @@ color: {
   // темный режим
   dark: {
     // основной цвет
-    // используется для заголовков, эффекта наведения и т.д.
     primary: 'oklch(92% 0.005 298)'
     // вторичный цвет
-    // используется для текста постов
     secondary: 'oklch(77% 0.005 298)'
     // цвет фона
     background: 'oklch(22% 0.005 298)'
@@ -73,19 +73,23 @@ color: {
 global: {
   // язык по умолчанию
   // язык корневого пути сайта '/'
-  locale: 'zh' // zh, zh-tw, ja, en, es, ru
+  locale: 'zh' // de, en, es, fr, ja, ko, pl, pt, ru, zh, zh-tw
   // дополнительные языки
-  // Создает многоязычные пути, такие как '/es/' '/ru/'
-  // не указывайте повторно язык по умолчанию, можно оставить пустым массивом []
-  moreLocales: ['zh-tw', 'ja', 'en', 'es', 'ru'] // ['zh', 'zh-tw', 'ja', 'en', 'es', 'ru']
+  // создает многоязычные пути, такие как '/en/' '/es/'
+  // не указывайте код языка, указанный выше, можно оставить пустым массивом []
+  moreLocales: ['en', 'es', 'ja', 'ru', 'zh-tw'] // ['de', 'en', 'es', 'fr', 'ja', 'ko', 'pl', 'pt', 'ru', 'zh', 'zh-tw']
   // стиль шрифта
   fontStyle: 'sans' // sans, serif
   // формат даты для постов
-  dateFormat: 'YYYY-MM-DD' // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
-  // промежуток между заголовком и подзаголовком
-  titleGap: 2 // 1, 2, 3
+  // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
+  // 2025-04-13, 04-13-2025, 13-04-2025, Apr 13 2025，13 Apr 2025
+  dateFormat: 'YYYY-MM-DD'
+  // включить оглавление для всех статей по умолчанию
+  toc: true // true, false
   // включить KaTeX для отображения математических формул
   katex: true // true, false
+  // уменьшить анимации и переходы для повышения производительности
+  reduceMotion: false // true, false
 }
 ```
 
@@ -156,23 +160,23 @@ footer: {
   links: [
     {
       name: 'RSS',
-      url: '/rss.xml', // rss.xml, atom.xml
+      url: '/atom.xml', // или /rss.xml
     },
     {
       name: 'GitHub',
       url: 'https://github.com/radishzzz/astro-theme-retypeset',
     },
     {
-      name: 'Twitter',
-      url: 'https://x.com/radishzz_',
-    },
+      name: 'Email',
+      url: 'email@radishzz.cc',
+    }
     // {
-    //   name: 'Email',
-    //   url: 'https://example@gmail.com',
-    // }
+    //   name: 'X',
+    //   url: 'https://x.com/radishzz_',
+    // },
   ]
   // год начала работы веб-сайта
-  startYear: 2024
+  startYear: 2025
 }
 ```
 
@@ -182,9 +186,8 @@ footer: {
 preload: {
   // стратегии предзагрузки ссылок
   linkPrefetch: 'viewport' // hover, tap, viewport, load
-  // URL сервера комментариев
-  commentURL: 'https://retypeset-comment.radishzz.cc'
   // URL хостинга изображений
+  // оптимизировать удаленные изображения в файлах Markdown для избежания накопления сдвига макета
   imageHostURL: 'https://image.radishzz.cc'
   // пользовательский скрипт Google Analytics
   // для пользователей, которые направляют JavaScript аналитики на собственный домен
@@ -194,49 +197,143 @@ preload: {
   customUmamiAnalyticsJS: 'https://js.radishzz.cc/jquery.min.js'
 }
 ```
-## Создание Новой Статьи
 
-Создайте новый файл с расширением `.md` или `.mdx` в директории `src/content/posts/` и добавьте метаданные Front Matter в верхней части файла.
+## Дополнительная конфигурация
+
+Кроме файла конфигурации `src/config.ts`, некоторые параметры находятся в других файлах.
+
+### Подсветка синтаксиса
+
+Темы подсветки синтаксиса для блоков кода.
+
+```ts
+// astro.config.ts
+
+shikiConfig: {
+  // Доступные темы: https://shiki.style/themes
+  // Цвет фона по умолчанию следует теме блога, а не теме подсветки синтаксиса
+  themes: {
+    light: 'github-light' // Светлая тема
+    dark: 'github-dark' // Темная тема
+  }
+}
+```
+
+### Отрывок статьи
+
+Количество символов для автоматических отрывков статей.
+
+```ts
+// src/utils/description.ts
+
+const EXCERPT_LENGTHS: Record<ExcerptScene, {
+  cjk: number // Китайский, Японский, Корейский
+  other: number // Другие языки
+}> = {
+  list: { // Список записей на главной странице
+    cjk: 120, // Автоматически берет первые 120 символов
+    other: 240, // Автоматически берет первые 240 символов
+  },
+}
+```
+
+### Open Graph
+
+Стили [карточек Open Graph для социальных сетей](https://orcascan.com/tools/open-graph-validator?url=https%3A%2F%2Fretypeset.radishzz.cc%2Fru%2Fposts%2Ftheme-guide%2F).
+
+```ts
+// src/pages/og/[...image].ts
+
+getImageOptions: (_path, page) => ({
+  logo: {
+    path: './public/icons/og-logo.png', // Требуется локальный путь и формат PNG
+    size: [250], // Ширина логотипа
+  },
+  font: {
+    title: { // Заголовок
+      families: ['Noto Sans SC'], // Шрифт
+      weight: 'Bold', // Вес
+      color: [34, 33, 36], // Цвет
+      lineHeight: 1.5, // Высота строки
+    },
+  },
+  fonts: [ // Пути к шрифтам (локальные или удаленные)
+    'https://cdn.jsdelivr.net/gh/notofonts/noto-cjk@main/Sans/SubsetOTF/SC/NotoSansSC-Bold.otf',
+    'https://cdn.jsdelivr.net/gh/notofonts/noto-cjk@main/Sans/SubsetOTF/SC/NotoSansSC-Regular.otf',
+  ],
+  bgGradient: [[242, 241, 245]], // Цвет фона
+  // Дополнительные настройки: https://github.com/delucis/astro-og-canvas/tree/latest/packages/astro-og-canvas
+})
+```
+
+### RSS-лента
+
+Стили [страницы RSS-ленты](https://retypeset.radishzz.cc/ru/rss.xml).
+
+```html
+<!-- public/feeds/xxx-style.xsl -->
+
+<style type="text/css">
+body{color:oklch(25% 0.005 298)} /* Цвет шрифта */
+.bg-white{background-color:oklch(0.96 0.005 298)!important} /* Цвет фона */
+.text-gray{color:oklch(0.25 0.005 298 / 75%)!important} /* Вторичный цвет шрифта */
+</style>
+```
+
+## Создание новой статьи
+
+Выполните команду `pnpm new-post <filename>` для создания новой статьи, которую затем можно редактировать в директории `src/content/posts/`.
+
+```bash
+pnpm new-post                      ->  src/content/posts/new-post.md
+pnpm new-post first-post           ->  src/content/posts/first-post.md
+pnpm new-post 2025/03/first-post   ->  src/content/posts/2025/03/first-post.md
+pnpm new-post first-post.mdx       ->  src/content/posts/first-post.mdx
+```
 
 ### Front Matter
 
+Только поля `title` и `published` являются обязательными, все остальные конфигурации можно безопасно опустить.
+
 ```markdown
 ---
-# Обязательно
+# Обязательные
 title: Руководство по теме
 published: 2025-01-26
 
-# Опционально
-description: Первые 240 символов статьи будут автоматически выбраны в качестве описания.
+# Опциональные
+description: Первые 240 символов статьи будут автоматически выбраны в качестве отрывка.
 updated: 2025-03-26
-tags: ["Тема блога", "Руководство"]
+tags:
+  - Тема блога
+  - Руководство
 
-# Расширенные настройки, опционально
+# Расширенные, опциональные
 draft: true/false
-pin: 1-99
+pin: 0-99
 toc: true/false
-lang: en/es/ru/zh/zh-tw/ja
+lang: de/en/es/fr/ja/ko/pl/pt/ru/zh/zh-tw
 abbrlink: theme-guide
 ---
 ```
 
-### Расширенная Конфигурация
+### Расширенные настройки
 
 #### draft
 
-Помечает статью как черновик. Если установлено значение true, статья не может быть опубликована и доступна только для предварительного просмотра при локальной разработке. По умолчанию - false.
+Отметить статью как черновик. Когда установлено значение true, статью нельзя опубликовать, и она доступна только для локального предварительного просмотра. По умолчанию — false.
 
 #### pin
 
-Закрепляет статью вверху. Чем выше число, тем выше приоритет закрепленной статьи. По умолчанию - 0, что означает отсутствие закрепления.
+Закрепить статью вверху. Чем выше число, тем выше приоритет закрепленной статьи. По умолчанию — 0, что означает отсутствие закрепления.
 
 #### toc
 
-Генерировать оглавление. По умолчанию: true.
+Генерировать оглавление. Показывает заголовки от h2 до h4. По умолчанию определяется глобальным параметром `global.toc`, но может быть изменен индивидуально в каждой статье.
 
 #### lang
 
-Указывает язык статьи. Можно указать только один язык. Если не указано, статья будет отображаться во всех языковых путях по умолчанию.
+Указывает язык статьи. Можно указать только один язык. Если не указано, статья будет отображаться по умолчанию во всех языковых путях.
 
 ```md
 # src/config.ts
@@ -244,20 +341,20 @@ abbrlink: theme-guide
 # moreLocales: ['es', 'ru']
 
 # lang: ''
-src/content/posts/apple.md   -> example.com/posts/apple/
-                             -> example.com/es/posts/apple/
-                             -> example.com/ru/posts/apple/
+src/content/posts/apple.md  ->  example.com/posts/apple/
+                            ->  example.com/es/posts/apple/
+                            ->  example.com/ru/posts/apple/
 # lang: en
-src/content/posts/apple.md   -> example.com/posts/apple/
+src/content/posts/apple.md  ->  example.com/posts/apple/
 # lang: es
-src/content/posts/apple.md   -> example.com/es/posts/apple/
+src/content/posts/apple.md  ->  example.com/es/posts/apple/
 # lang: ru
-src/content/posts/apple.md   -> example.com/ru/posts/apple/
+src/content/posts/apple.md  ->  example.com/ru/posts/apple/
 ```
 
 #### abbrlink
 
-Настраивает URL статьи.
+Настраивает URL статьи. Может содержать только строчные буквы, цифры и дефисы `-`.
 
 ```md
 # src/config.ts
@@ -275,7 +372,3 @@ src/content/posts/apple.md           ->  example.com/es/posts/banana/
 src/content/posts/guide/apple.md     ->  example.com/es/posts/banana/
 src/content/posts/2025/03/apple.md   ->  example.com/es/posts/banana/
 ```
-
-### Автоматические Функции
-
-Автоматически рассчитывает время чтения статьи. Автоматически генерирует изображения Open Graph для каждой статьи. Статьи с одинаковым abbrlink будут автоматически совместно использовать комментарии Waline, независимо от настройки lang.

@@ -2,8 +2,9 @@
 title: Markdown スタイルガイド
 published: 2025-03-08
 updated: 2025-03-23
-tags: ["ガイド"]
-pin: 1
+tags:
+  - ガイド
+pin: 98
 toc: false
 lang: ja
 abbrlink: markdown-style-guide
@@ -59,13 +60,15 @@ abbrlink: markdown-style-guide
 
 ### 構文
 
-```markdown
-![画像の説明](./full/or/relative/path/of/image)
+```
+![画像の説明](../_images/image-01.jpeg)
+
+![画像の説明](https://image.example.com/image-01.webp)
 ```
 
 ### 効果
 
-![画像の説明](/image-placeholder)
+![画像の説明](https://image.radishzz.cc/picsmaller/03.webp)
 
 ## 引用ブロック
 
@@ -96,7 +99,7 @@ abbrlink: markdown-style-guide
 >
 > —— <cite>『秋の夜』[^1]</cite>
 
-[^1]: [『秋の夜』](https://zh.wikisource.org/wiki/%E7%A7%8B%E5%A4%9C_(%E9%AD%AF%E8%BF%85))は魯迅の散文詩集『野草』の最初の散文詩で、1924年に書かれました。
+[^1]: 『[秋の夜](https://zh.wikisource.org/wiki/%E7%A7%8B%E5%A4%9C_(%E9%AD%AF%E8%BF%85))』は魯迅の散文詩集『野草』の最初の散文詩で、1924年に書かれました。
 ```
 
 #### 効果
@@ -105,7 +108,7 @@ abbrlink: markdown-style-guide
 >
 > —— <cite>『秋の夜』[^1]</cite>
 
-[^1]: [『秋の夜』](https://zh.wikisource.org/wiki/%E7%A7%8B%E5%A4%9C_(%E9%AD%AF%E8%BF%85))は魯迅の散文詩集『野草』の最初の散文詩で、1924年に書かれました。
+[^1]: 『[秋の夜](https://zh.wikisource.org/wiki/%E7%A7%8B%E5%A4%9C_(%E9%AD%AF%E8%BF%85))』は魯迅の散文詩集『野草』の最初の散文詩で、1924年に書かれました。
 
 ## 表
 
@@ -223,11 +226,11 @@ abbrlink: markdown-style-guide
 
 ## その他の要素
 
-`<sup>` 上付き文字、`<sub>` 下付き文字、`<abbr>` 略語、`<del>` 取り消し線、`<u>` 波線、`<kbd>` キーボード入力、`<mark>` ハイライトなどが含まれます。
+`<sup>` 上付き文字、`<sub>` 下付き文字、`<abbr>` 略語、`<del>` 取り消し線、`<u>` 波線、`<kbd>` キーボード入力、`<mark>` ハイライト、`<hr>` 水平線などが含まれます。
 
 ### 構文
 
-```markdown
+```html
 H<sub>2</sub>O
 
 X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
@@ -241,6 +244,10 @@ X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Delete</kbd> を押してセッションを終了します。
 
 ほとんどの<mark>サンショウウオ</mark>は夜行性で、昆虫や虫などの小さな生き物を捕食します。
+
+3つのハイフン `---` または `<hr>` タグを使用して、以下のような水平線を作成できます。
+
+---
 ```
 
 ### 効果
@@ -258,3 +265,7 @@ X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Delete</kbd> を押してセッションを終了します。
 
 ほとんどの<mark>サンショウウオ</mark>は夜行性で、昆虫や虫などの小さな生き物を捕食します。
+
+3つのハイフン `---` または `<hr>` タグを使用して、以下のような水平線を作成できます。
+
+---

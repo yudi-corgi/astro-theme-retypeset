@@ -17,7 +17,7 @@ $$
 t=\frac{1}{|G|}\sum_{g\in G}|\text{Fix}(g)|
 $$
 
-各整数 $n\ge2$ に対して、商群 $\mathbb{Z}/n\mathbb{Z}$ は $1+n\mathbb{Z}$ によって生成される巡回群であり、したがって $\color{red}{\mathbb{Z}/n\mathbb{Z}\cong\mathbb{Z}_n}$ となります。
+各整数 $n\ge2$ に対して、商群 $\mathbb{Z}/n\mathbb{Z}$ は $1+n\mathbb{Z}$ によって生成される巡回群であり、したがって $\mathbb{Z}/n\mathbb{Z}\cong\mathbb{Z}_n$ となります。
 
 商群 $\mathbb{R}/\mathbb{Z}$ は $([0,1),+_1)$ と同型です。これは区間 $[0,1)$ 上の実数のモジュロ1の加法群です。
 

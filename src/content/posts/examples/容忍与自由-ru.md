@@ -1,7 +1,9 @@
 ---
 title: Терпимость и Свобода
 published: 1959-03-16
-tags: ["Ху Ши","Современная литература"]
+tags:
+  - Ху Ши
+  - Современная литература
 lang: ru
 abbrlink: tolerance-freedom
 ---

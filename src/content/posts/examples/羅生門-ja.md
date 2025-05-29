@@ -1,12 +1,14 @@
 ---
 title: 羅生門
 published: 1915-11-05
-tags: ["芥川龍之介","きんだいぶんがく"]
+tags:
+  - 芥川龍之介
+  - きんだいぶんがく
 lang: ja
 abbrlink: rashomon
 ---
 
-![Here's the description of the picture](https://image.radishzz.cc/picsmaller/06.webp)
+![_Here's the description of the picture](https://image.radishzz.cc/picsmaller/06.webp)
 
 或日の暮方の事である。一人の下人が、羅生門の下で雨やみを待つてゐた。
 

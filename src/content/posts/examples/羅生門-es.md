@@ -1,12 +1,14 @@
 ---
 title: Rashōmon
 published: 1915-11-05
-tags: ["Ryunosuke Akutagawa","Literatura Moderna"]
+tags:
+  - Ryunosuke Akutagawa
+  - Literatura Moderna
 lang: es
 abbrlink: rashomon
 ---
 
-![Here's the description of the picture](https://image.radishzz.cc/picsmaller/06.webp)
+![_Here's the description of the picture](https://image.radishzz.cc/picsmaller/06.webp)
 
 Ocurrió al anochecer de un día. Había un sirviente que estaba esperando la lluvia bajo Rashomon.
 

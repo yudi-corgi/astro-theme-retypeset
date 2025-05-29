@@ -2,8 +2,9 @@
 title: Guía de Estilo Markdown
 published: 2025-03-08
 updated: 2025-03-23
-tags: ["Guía"]
-pin: 1
+tags:
+  - Guía
+pin: 98
 toc: false
 lang: es
 abbrlink: markdown-style-guide
@@ -59,13 +60,15 @@ Para agregar una imagen, añada un signo de exclamación `!`, seguido de texto a
 
 ### Sintaxis
 
-```markdown
-![Descripción de la Imagen](./full/or/relative/path/of/image)
+```
+![Descripción de la Imagen](../_images/image-01.jpeg)
+
+![Descripción de la Imagen](https://image.example.com/image-01.webp)
 ```
 
 ### Resultado
 
-![Descripción de la Imagen](/image-placeholder)
+![Descripción de la Imagen](https://image.radishzz.cc/picsmaller/03.webp)
 
 ## Citas en Bloque
 
@@ -223,11 +226,11 @@ Para crear un bloque de código, agregue tres acentos graves ```` ``` ```` al in
 
 ## Otros Elementos
 
-Incluyendo superíndice `<sup>`, subíndice `<sub>`, abreviatura `<abbr>`, tachado `<del>`, subrayado ondulado `<u>`, entrada de teclado `<kbd>` y resaltado `<mark>`.
+Incluyendo superíndice `<sup>`, subíndice `<sub>`, abreviatura `<abbr>`, tachado `<del>`, subrayado ondulado `<u>`, entrada de teclado `<kbd>`, resaltado `<mark>` y línea horizontal `<hr>`.
 
 ### Sintaxis
 
-```markdown
+```html
 H<sub>2</sub>O
 
 X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
@@ -241,6 +244,10 @@ Presione <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>Suprimir</kbd> para finalizar l
 No hay <del>nada</del> ningún código que sea bueno o malo, pero ejecutarlo lo hace así.
 
 La mayoría de las <mark>salamandras</mark> son nocturnas y cazan insectos, gusanos y otras criaturas pequeñas.
+
+Use tres guiones `---` o la etiqueta `<hr>` para crear una línea horizontal como se muestra a continuación.
+
+---
 ```
 
 ### Resultado
@@ -258,3 +265,7 @@ Presione <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>Suprimir</kbd> para finalizar l
 No hay <del>nada</del> ningún código que sea bueno o malo, pero ejecutarlo lo hace así.
 
 La mayoría de las <mark>salamandras</mark> son nocturnas y cazan insectos, gusanos y otras criaturas pequeñas.
+
+Use tres guiones `---` o la etiqueta `<hr>` para crear una línea horizontal como se muestra a continuación.
+
+---

@@ -1,18 +1,20 @@
 ---
 title: Theme Guide
 published: 2025-01-26
-updated: 2025-03-12
-tags: ["Blog Theme","Guide"]
+updated: 2025-04-13
+tags:
+  - Blog Theme
+  - Guide
 pin: 99
 lang: en
 abbrlink: theme-guide
 ---
 
-Retypeset is a static blog theme based on the [Astro](https://astro.build/) framework. Inspired by [Typography](https://astro-theme-typography.vercel.app/), Retypeset establishes a new visual standard and reimagines the layout of all pages, creating a reading experience reminiscent of paper books, reviving the beauty of typography. Details in every sight, elegance in every space.
+Retypeset is a static blog theme based on the [Astro](https://astro.build/) framework. This guide introduces how to modify theme configuration and create new articles, helping you quickly set up your personal blog.
 
 ## Theme Configuration
 
-Below is the theme configuration guide for Retypeset. Customize your blog by modifying the configuration file [src/config.ts](https://github.com/radishzzz/astro-theme-retypeset/blob/master/src/config.ts).
+Customize your blog by modifying the configuration file [src/config.ts](https://github.com/radishzzz/astro-theme-retypeset/blob/master/src/config.ts).
 
 ### Site Information
 
@@ -32,7 +34,7 @@ site: {
   url: 'https://retypeset.radishzz.cc'
   // favicon url
   // recommended formats: svg, png or ico
-  favicon: '/icon/favicon.svg' // or https://example.com/favicon.svg
+  favicon: '/icons/favicon.svg' // or https://example.com/favicon.svg
 }
 ```
 
@@ -56,10 +58,8 @@ color: {
   // dark mode
   dark: {
     // primary color
-    // used for title, hover, etc
     primary: 'oklch(92% 0.005 298)'
     // secondary color
-    // used for post text
     secondary: 'oklch(77% 0.005 298)'
     // background color
     background: 'oklch(22% 0.005 298)'
@@ -73,19 +73,23 @@ color: {
 global: {
   // default language
   // language of the site root path '/'
-  locale: 'zh' // zh, zh-tw, ja, en, es, ru
+  locale: 'zh' // de, en, es, fr, ja, ko, pl, pt, ru, zh, zh-tw
   // more languages
-  // Generate multi-language paths such as '/es/' '/ru/'
-  // do not include the default language again, can be an empty array []
-  moreLocales: ['zh-tw', 'ja', 'en', 'es', 'ru'] // ['zh', 'zh-tw', 'ja', 'en', 'es', 'ru']
+  // generate multi-language paths such as '/en/' '/es/'
+  // not fill in the locale code above again, can be an empty array []
+  moreLocales: ['en', 'es', 'ja', 'ru', 'zh-tw'] // ['de', 'en', 'es', 'fr', 'ja', 'ko', 'pl', 'pt', 'ru', 'zh', 'zh-tw']
   // font style
   fontStyle: 'sans' // sans, serif
   // date format for posts
-  dateFormat: 'YYYY-MM-DD' // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
-  // gap between title and subtitle
-  titleGap: 2 // 1, 2, 3
+  // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
+  // 2025-04-13, 04-13-2025, 13-04-2025, Apr 13 2025，13 Apr 2025
+  dateFormat: 'YYYY-MM-DD'
+  // enable table of contents for all posts by default
+  toc: true // true, false
   // enable KaTeX for mathematical formulas rendering
   katex: true // true, false
+  // reduce animations and transitions to improve performance
+  reduceMotion: false // true, false
 }
 ```
 
@@ -156,23 +160,23 @@ footer: {
   links: [
     {
       name: 'RSS',
-      url: '/rss.xml', // rss.xml, atom.xml
+      url: '/atom.xml', // or /rss.xml
     },
     {
       name: 'GitHub',
       url: 'https://github.com/radishzzz/astro-theme-retypeset',
     },
     {
-      name: 'Twitter',
-      url: 'https://x.com/radishzz_',
-    },
+      name: 'Email',
+      url: 'email@radishzz.cc',
+    }
     // {
-    //   name: 'Email',
-    //   url: 'https://example@gmail.com',
-    // }
+    //   name: 'X',
+    //   url: 'https://x.com/radishzz_',
+    // },
   ]
   // year of website start
-  startYear: 2024
+  startYear: 2025
 }
 ```
 
@@ -182,9 +186,8 @@ footer: {
 preload: {
   // link prefetch strategies
   linkPrefetch: 'viewport' // hover, tap, viewport, load
-  // comment server url
-  commentURL: 'https://retypeset-comment.radishzz.cc'
   // image hosting url
+  // optimize remote images in Markdown files to avoid cumulative layout shift
   imageHostURL: 'https://image.radishzz.cc'
   // custom google analytics js
   // for users who route analytics javascript to a customized domain
@@ -195,11 +198,102 @@ preload: {
 }
 ```
 
+## Additional Configuration
+
+Besides the configuration file `src/config.ts`, some configuration options are located in other files.
+
+### Syntax Highlighting
+
+Code block syntax highlighting themes.
+
+```ts
+// astro.config.ts
+
+shikiConfig: {
+  // Available themes: https://shiki.style/themes
+  // Background color follows the blog theme by default, not the syntax highlighting theme
+  themes: {
+    light: 'github-light' // Light theme
+    dark: 'github-dark' // Dark theme
+  }
+}
+```
+
+### Article Excerpt
+
+Character count for automatic article excerpts.
+
+```ts
+// src/utils/description.ts
+
+const EXCERPT_LENGTHS: Record<ExcerptScene, {
+  cjk: number // Chinese, Japanese, Korean
+  other: number // Other languages
+}> = {
+  list: { // Homepage post list
+    cjk: 120, // Auto-excerpts first 120 characters
+    other: 240, // Auto-excerpts first 240 characters
+  },
+}
+```
+
+### Open Graph
+
+[Open Graph social card](https://orcascan.com/tools/open-graph-validator?url=https%3A%2F%2Fretypeset.radishzz.cc%2Fen%2Fposts%2Ftheme-guide%2F) styles.
+
+```ts
+// src/pages/og/[...image].ts
+
+getImageOptions: (_path, page) => ({
+  logo: {
+    path: './public/icons/og-logo.png', // Required local path and PNG format
+    size: [250], // Logo width
+  },
+  font: {
+    title: { // Title
+      families: ['Noto Sans SC'], // Font
+      weight: 'Bold', // Weight
+      color: [34, 33, 36], // Color
+      lineHeight: 1.5, // Line height
+    },
+  },
+  fonts: [ // Font paths (local or remote)
+    'https://cdn.jsdelivr.net/gh/notofonts/noto-cjk@main/Sans/SubsetOTF/SC/NotoSansSC-Bold.otf',
+    'https://cdn.jsdelivr.net/gh/notofonts/noto-cjk@main/Sans/SubsetOTF/SC/NotoSansSC-Regular.otf',
+  ],
+  bgGradient: [[242, 241, 245]], // Background color
+  // More configurations: https://github.com/delucis/astro-og-canvas/tree/latest/packages/astro-og-canvas
+})
+```
+
+### RSS Feed
+
+[RSS feed page](https://retypeset.radishzz.cc/en/rss.xml) styles.
+
+```html
+<!-- public/feeds/xxx-style.xsl -->
+
+<style type="text/css">
+body{color:oklch(25% 0.005 298)} /* Font color */
+.bg-white{background-color:oklch(0.96 0.005 298)!important} /* Background color */
+.text-gray{color:oklch(0.25 0.005 298 / 75%)!important} /* Secondary font color */
+</style>
+```
+
 ## Creating a New Post
 
-Create a new file with `.md` or `.mdx` extension in the `src/content/posts/` directory, and add Front Matter metadata at the top of the file.
+Run `pnpm new-post <filename>` to create a new post, which can then be edited in the `src/content/posts/` directory.
+
+```bash
+pnpm new-post                      ->  src/content/posts/new-post.md
+pnpm new-post first-post           ->  src/content/posts/first-post.md
+pnpm new-post 2025/03/first-post   ->  src/content/posts/2025/03/first-post.md
+pnpm new-post first-post.mdx       ->  src/content/posts/first-post.mdx
+```
 
 ### Front Matter
+
+Only `title` and `published` are required fields, all other configurations can be safely omitted.
 
 ```markdown
 ---
@@ -208,15 +302,17 @@ title: Theme Guide
 published: 2025-01-26
 
 # Optional
-description: The first 240 characters of the article will be automatically selected as the description.
+description: The first 240 characters of the article will be automatically selected as the excerpt.
 updated: 2025-03-26
-tags: ["Blog Theme", "Guide"]
+tags:
+  - Blog Theme
+  - Guide
 
-# Advanced, optional
+# Advanced, Optional
 draft: true/false
-pin: 1-99
+pin: 0-99
 toc: true/false
-lang: en/es/ru/zh/zh-tw/ja
+lang: de/en/es/fr/ja/ko/pl/pt/ru/zh/zh-tw
 abbrlink: theme-guide
 ---
 ```
@@ -233,7 +329,7 @@ Pins the article to the top. The higher the number, the higher the priority of t
 
 #### toc
 
-Generate table of contents. Default is true.
+Generate table of contents. Shows h2 to h4 headings. Determined by the global configuration `global.toc` by default, but can be overridden individually in each article.
 
 #### lang
 
@@ -245,20 +341,20 @@ Specifies the article language. Only one language can be specified. If not speci
 # moreLocales: ['es', 'ru']
 
 # lang: ''
-src/content/posts/apple.md   -> example.com/posts/apple/
-                             -> example.com/es/posts/apple/
-                             -> example.com/ru/posts/apple/
+src/content/posts/apple.md   ->  example.com/posts/apple/
+                             ->  example.com/es/posts/apple/
+                             ->  example.com/ru/posts/apple/
 # lang: en
-src/content/posts/apple.md   -> example.com/posts/apple/
+src/content/posts/apple.md   ->  example.com/posts/apple/
 # lang: es
-src/content/posts/apple.md   -> example.com/es/posts/apple/
+src/content/posts/apple.md   ->  example.com/es/posts/apple/
 # lang: ru
-src/content/posts/apple.md   -> example.com/ru/posts/apple/
+src/content/posts/apple.md   ->  example.com/ru/posts/apple/
 ```
 
 #### abbrlink
 
-Customizes the article URL.
+Customizes the article URL. Can only contain lowercase letters, numbers, and hyphens `-`.
 
 ```md
 # src/config.ts
@@ -276,7 +372,3 @@ src/content/posts/apple.md           ->  example.com/es/posts/banana/
 src/content/posts/guide/apple.md     ->  example.com/es/posts/banana/
 src/content/posts/2025/03/apple.md   ->  example.com/es/posts/banana/
 ```
-
-### Automated Features
-
-Automatically calculates article reading time. Automatically generates Open Graph images for each article. Articles with the same abbrlink will automatically share Waline comments, regardless of the lang configuration.

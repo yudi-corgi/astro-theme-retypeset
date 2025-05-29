@@ -2,8 +2,9 @@
 title: Markdown 样式指南
 published: 2025-03-08
 updated: 2025-03-23
-tags: ["指南"]
-pin: 1
+tags:
+  - 指南
+pin: 98
 toc: false
 lang: zh
 abbrlink: markdown-style-guide
@@ -59,13 +60,15 @@ abbrlink: markdown-style-guide
 
 ### 语法
 
-```markdown
-![图片描述](./full/or/relative/path/of/image)
+```
+![图片描述](../_images/image-01.jpeg)
+
+![图片描述](https://image.example.com/image-01.webp)
 ```
 
 ### 效果
 
-![图片描述](/image-placeholder)
+![图片描述](https://image.radishzz.cc/picsmaller/03.webp)
 
 ## 块引用
 
@@ -96,7 +99,7 @@ abbrlink: markdown-style-guide
 >
 > —— <cite>《秋夜》[^1]</cite>
 
-[^1]: [《秋夜》](https://zh.wikisource.org/wiki/%E7%A7%8B%E5%A4%9C_(%E9%AD%AF%E8%BF%85)) 是鲁迅散文诗集《野草》中的第一首散文诗，创作于1924年。
+[^1]: 《[秋夜](https://zh.wikisource.org/wiki/%E7%A7%8B%E5%A4%9C_(%E9%AD%AF%E8%BF%85))》是鲁迅散文诗集《野草》中的第一首散文诗，创作于1924年。
 ```
 
 #### 效果
@@ -105,7 +108,7 @@ abbrlink: markdown-style-guide
 >
 > —— <cite>《秋夜》[^1]</cite>
 
-[^1]: [《秋夜》](https://zh.wikisource.org/wiki/%E7%A7%8B%E5%A4%9C_(%E9%AD%AF%E8%BF%85)) 是鲁迅散文诗集《野草》中的第一首散文诗，创作于1924年。
+[^1]: 《[秋夜](https://zh.wikisource.org/wiki/%E7%A7%8B%E5%A4%9C_(%E9%AD%AF%E8%BF%85))》是鲁迅散文诗集《野草》中的第一首散文诗，创作于1924年。
 
 ## 表格
 
@@ -223,11 +226,11 @@ abbrlink: markdown-style-guide
 
 ## 其他元素
 
-包括 `<sup>` 上标，`<sub>` 下标，`<abbr>` 缩写，`<del>` 删除线，`<u>` 波浪线，`<kbd>` 键盘输入，`<mark>` 高亮。
+包括 `<sup>` 上标，`<sub>` 下标，`<abbr>` 缩写，`<del>` 删除线，`<u>` 波浪线，`<kbd>` 键盘输入，`<mark>` 高亮，`<hr>` 分隔线。
 
 ### 语法
 
-```markdown
+```html
 H<sub>2</sub>O
 
 X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
@@ -236,11 +239,15 @@ X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 
 书籍是人类进步的<del>楼梯</del>阶梯。
 
-优秀的作者总是会仔细检查<u title="拼">拚</u>写错误。
+优秀的作家总是会仔细检查<u title="拼写">拚写</u>问题。
 
 按下 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Delete</kbd> 以结束会话。
 
 大多数<mark>蝾螈</mark>昼伏夜出，以昆虫、蠕虫等小生物为食。
+
+使用三个连字符 `---` 或 `<hr>` 标签，即可创建如下分隔线。
+
+---
 ```
 
 ### 效果
@@ -259,14 +266,6 @@ X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 
 大多数<mark>蝾螈</mark>昼伏夜出，以昆虫、蠕虫等小生物为食。
 
-<!-- <details>
-  <summary>
-    我有钥匙却无门，有空间却无房间。你能进入却无法离开。我是什么？
-  </summary>
-  键盘。
-</details>
+使用三个连字符 `---` 或 `<hr>` 标签，即可创建如下分隔线。
 
-<figure>
-  <img src="https://image.radishzz.cc/picsmaller/03.webp">
-  <figcaption text-center="">Node 模块检查器 - 概览</figcaption>
-</figure> -->
+---
