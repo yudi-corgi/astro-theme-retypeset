@@ -384,3 +384,18 @@ src/content/posts/apple.md           ->  example.com/es/posts/banana/
 src/content/posts/guide/apple.md     ->  example.com/es/posts/banana/
 src/content/posts/2025/03/apple.md   ->  example.com/es/posts/banana/
 ```
+
+### 文案排版優化
+
+執行 `pnpm format-posts`，可優化 `src/content/` 目錄中 Markdown 文件的文案排版，給 CJK（中文、日文、韓文）與英文混寫的場景，補充正確的空格，糾正標點符號等。
+
+```bash
+pnpm format-posts
+
+🔍 56 Markdown files found
+✅ src/content/posts/guides/Theme Guide-ja.md
+✅ src/content/posts/guides/Theme Guide-zh-tw.md
+✅ src/content/posts/guides/Theme Guide-zh.md
+
+✨ Formatted 3 files successfully
+```

@@ -384,3 +384,18 @@ src/content/posts/apple.md           ->  example.com/es/posts/banana/
 src/content/posts/guide/apple.md     ->  example.com/es/posts/banana/
 src/content/posts/2025/03/apple.md   ->  example.com/es/posts/banana/
 ```
+
+### Optimización del Formato de Texto
+
+Ejecuta `pnpm format-posts` para optimizar la tipografía en los archivos Markdown dentro del directorio `src/content/`. Este comando corrige automáticamente los espacios entre caracteres CJK (Chino, Japonés, Coreano) y latinos, ajusta los signos de puntuación y mejora la legibilidad general del texto.
+
+```bash
+pnpm format-posts
+
+🔍 56 Markdown files found
+✅ src/content/posts/guides/Theme Guide-ja.md
+✅ src/content/posts/guides/Theme Guide-zh-tw.md
+✅ src/content/posts/guides/Theme Guide-zh.md
+
+✨ Formatted 3 files successfully
+```

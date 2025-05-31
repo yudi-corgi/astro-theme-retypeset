@@ -385,4 +385,17 @@ src/content/posts/guide/apple.md     ->  example.com/es/posts/banana/
 src/content/posts/2025/03/apple.md   ->  example.com/es/posts/banana/
 ```
 
-### 进阶配置
+### 文案排版优化
+
+执行 `pnpm format-posts`，可优化 `src/content/` 目录中 Markdown 文件的文案排版，给 CJK（中文、日文、韩文）与英文混写的场景，补充正确的空格，纠正标点符号等。
+
+```bash
+pnpm format-posts
+
+🔍 56 Markdown files found
+✅ src/content/posts/guides/Theme Guide-ja.md
+✅ src/content/posts/guides/Theme Guide-zh-tw.md
+✅ src/content/posts/guides/Theme Guide-zh.md
+
+✨ Formatted 3 files successfully
+```
