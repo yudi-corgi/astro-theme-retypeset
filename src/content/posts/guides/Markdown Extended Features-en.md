@@ -30,7 +30,7 @@ To create automatic figure captions, use the standard Markdown image syntax `![a
 
 ## Github Repository Cards
 
-To create a Github repository card, use the double colon syntax `::github{repo="owner/repo"}`. Repository data is fetched in real-time from the GitHub API after the page loads.
+To create a Github repository card, use the leaf directive `::github{repo="owner/repo"}`. Repository data is fetched in real-time from the GitHub API after the page loads.
 
 ### Syntax
 
@@ -44,7 +44,7 @@ To create a Github repository card, use the double colon syntax `::github{repo="
 
 ## Admonition
 
-To create admonition blocks, use the GitHub syntax `> [!TYPE]` or the triple colon syntax `:::type`. Following types are supported: `note`, `tip`, `important`, `warning`, and `caution`.
+To create admonition blocks, use the GitHub syntax `> [!TYPE]` or the container directive `:::type`. Following types are supported: `note`, `tip`, `important`, `warning`, and `caution`.
 
 ### Syntax
 

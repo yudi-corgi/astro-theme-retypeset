@@ -30,7 +30,7 @@ Para crear leyendas automáticas para figuras, utilice la sintaxis estándar de 
 
 ## Tarjetas de Repositorios de Github
 
-Para crear una tarjeta de repositorio de Github, utilice la sintaxis de doble dos puntos `::github{repo="owner/repo"}`. Los datos del repositorio se obtienen en tiempo real de la API de GitHub después de que la página se carga.
+Para crear una tarjeta de repositorio de Github, utilice la directiva hoja `::github{repo="owner/repo"}`. Los datos del repositorio se obtienen en tiempo real de la API de GitHub después de que la página se carga.
 
 ### Sintaxis
 
@@ -44,7 +44,7 @@ Para crear una tarjeta de repositorio de Github, utilice la sintaxis de doble do
 
 ## Advertencia
 
-Para crear bloques de advertencia, utilice la sintaxis de GitHub `> [!TYPE]` o la sintaxis de triple dos puntos `:::type`. Se admiten cinco tipos: `note`, `tip`, `important`, `warning` y `caution`.
+Para crear bloques de advertencia, utilice la sintaxis de GitHub `> [!TYPE]` o la directiva contenedor `:::type`. Se admiten cinco tipos: `note`, `tip`, `important`, `warning` y `caution`.
 
 ### Sintaxis
 
