@@ -8,7 +8,7 @@ lang: ja
 abbrlink: theme-color-schemes
 ---
 
-Retypesetは、[OKLCH](https://oklch.com/)カラースペースに基づいてテーマカラーを定義し、デフォルトでは印刷スタイルを模した白黒グレーの配色を採用しています。
+Retypeset は、[OKLCH](https://oklch.com/) カラースペースに基づいてテーマカラーを定義し、デフォルトでは印刷スタイルを模した白黒グレーの配色を採用しています。
 
 個性的なニーズに応えるため、テーマ用にいくつかの配色スキームを作成しました。[src/config.ts](https://github.com/radishzzz/astro-theme-retypeset/blob/master/src/config.ts) でデフォルトの配色を置き換え、**開発サーバーを再起動**して新しい配色をプレビューできます。
 

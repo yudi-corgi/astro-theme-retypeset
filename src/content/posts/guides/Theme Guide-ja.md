@@ -10,7 +10,7 @@ lang: ja
 abbrlink: theme-guide
 ---
 
-Retypesetは、日本語では「再組版」と呼ばれる、[Astro](https://astro.build/) フレームワークをベースにした静的ブログテーマです。本ガイドではテーマの設定変更方法と新しい記事の作成方法を紹介し、個人ブログを素早く構築できるよう支援します。
+Retypeset は、日本語では「再組版」と呼ばれる、[Astro](https://astro.build/) フレームワークをベースにした静的ブログテーマです。本ガイドではテーマの設定変更方法と新しい記事の作成方法を紹介し、個人ブログを素早く構築できるよう支援します。
 
 ## テーマ設定
 
@@ -30,10 +30,10 @@ site: {
   i18nTitle: true // true, false
   // 著者名
   author: 'radishzz'
-  // サイトURL
+  // サイト URL
   url: 'https://retypeset.radishzz.cc'
-  // ファビコンURL
-  // 推奨フォーマット: svg, png, ico
+  // ファビコン URL
+  // 推奨フォーマット：svg, png, ico
   favicon: '/icons/favicon.svg' // または https://example.com/favicon.svg
 }
 ```
@@ -86,7 +86,7 @@ global: {
   dateFormat: 'YYYY-MM-DD'
   // デフォルトですべての記事に目次を表示
   toc: true // true, false
-  // 数式表示のためのKaTeXを有効化
+  // 数式表示のための KaTeX を有効化
   katex: true // true, false
   // アニメーションと遷移効果を減らしてパフォーマンスを向上させる
   reduceMotion: false // true, false
@@ -119,7 +119,7 @@ comment: {
     emoji: [
       'https://unpkg.com/@waline/emojis@1.2.0/tw-emoji'
       // 'https://unpkg.com/@waline/emojis@1.2.0/bmoji'
-      // その他の絵文字: https://waline.js.org/en/guide/features/emoji.html
+      // その他の絵文字：https://waline.js.org/en/guide/features/emoji.html
     ]
     // gif 検索
     search: false // true, false
@@ -152,14 +152,14 @@ seo: {
   umamiAnalyticsID: '520af332-bfb7-4e7c-9386-5f273ee3d697'
   // フォロー認証
   follow: {
-    // フィードID
+    // フィード ID
     feedID: ''
     // ユーザーID
     userID: ''
   }
   // APIFlash アクセスキー
   // OpenGraph 用のウェブサイトスクリーンショットを自動生成
-  // アクセスキーの取得: https://apiflash.com/
+  // アクセスキーの取得：https://apiflash.com/
   apiflashKey: ''
 }
 ```
@@ -199,13 +199,13 @@ preload: {
   // リンクプリフェッチ戦略
   linkPrefetch: 'viewport' // hover, tap, viewport, load
   // 画像ホスティング URL
-  // Markdownファイル内のリモート画像を最適化してレイアウトシフトを防止
+  // Markdown ファイル内のリモート画像を最適化してレイアウトシフトを防止
   imageHostURL: 'https://image.radishzz.cc'
   // カスタム Google Analytics JS
   // アナリティクス JavaScript をカスタムドメインにルーティングするユーザー向け
   customGoogleAnalyticsJS: ''
   // カスタム Umami Analytics JS
-  // Umamiを自己デプロイしたり、アナリティクス JavaScript をカスタムドメインにルーティングするユーザー向け
+  // Umami を自己デプロイしたり、アナリティクス JavaScript をカスタムドメインにルーティングするユーザー向け
   customUmamiAnalyticsJS: 'https://js.radishzz.cc/jquery.min.js'
 }
 ```
@@ -222,7 +222,7 @@ preload: {
 // astro.config.ts
 
 shikiConfig: {
-  // 利用可能なテーマ: https://shiki.style/themes
+  // 利用可能なテーマ：https://shiki.style/themes
   // 背景色はデフォルトでシンタックスハイライトテーマではなく、ブログテーマに従います
   themes: {
     light: 'github-light' // ライトテーマ
@@ -243,22 +243,22 @@ const EXCERPT_LENGTHS: Record<ExcerptScene, {
   other: number // その他の言語
 }> = {
   list: { // ホームページ記事リスト
-    cjk: 120, // 先頭から120文字を自動抜粋
-    other: 240, // 先頭から240文字を自動抜粋
+    cjk: 120, // 先頭から 120 文字を自動抜粋
+    other: 240, // 先頭から 240 文字を自動抜粋
   },
 }
 ```
 
 ### Open Graph
 
-[Open Graphソーシャルカード](https://orcascan.com/tools/open-graph-validator?url=https%3A%2F%2Fretypeset.radishzz.cc%2Fja%2Fposts%2Ftheme-guide%2F)スタイル。
+[Open Graph ソーシャルカード](https://orcascan.com/tools/open-graph-validator?url=https%3A%2F%2Fretypeset.radishzz.cc%2Fja%2Fposts%2Ftheme-guide%2F) スタイル。
 
 ```ts
 // src/pages/og/[...image].ts
 
 getImageOptions: (_path, page) => ({
   logo: {
-    path: './public/icons/og-logo.png', // ローカルパスのPNG形式が必要
+    path: './public/icons/og-logo.png', // ローカルパスの PNG 形式が必要
     size: [250], // ロゴの幅
   },
   font: {
@@ -274,13 +274,13 @@ getImageOptions: (_path, page) => ({
     'https://cdn.jsdelivr.net/gh/notofonts/noto-cjk@main/Sans/SubsetOTF/SC/NotoSansSC-Regular.otf',
   ],
   bgGradient: [[242, 241, 245]], // 背景色
-  // その他の設定: https://github.com/delucis/astro-og-canvas/tree/latest/packages/astro-og-canvas
+  // その他の設定：https://github.com/delucis/astro-og-canvas/tree/latest/packages/astro-og-canvas
 })
 ```
 
-### RSSフィード
+### RSS フィード
 
-[RSSフィードページ](https://retypeset.radishzz.cc/ja/rss.xml)スタイル。
+[RSS フィードページ](https://retypeset.radishzz.cc/ja/rss.xml) スタイル。
 
 ```html
 <!-- public/feeds/xxx-style.xsl -->
@@ -314,7 +314,7 @@ title: テーマ使用ガイド
 published: 2025-01-26
 
 # 任意
-description: 記事の最初の120文字が自動的に要約として選択されます。
+description: 記事の最初の 120 文字が自動的に要約として選択されます。
 updated: 2025-03-26
 tags:
   - ブログテーマ
@@ -341,7 +341,7 @@ abbrlink: theme-guide
 
 #### toc
 
-目次を生成するかどうか。h2からh4までの見出しを表示します。デフォルトではグローバル設定項目 `global.toc` によって決定されますが、記事ごとに個別に設定して上書きすることもできます。
+目次を生成するかどうか。h2 から h4 までの見出しを表示します。デフォルトではグローバル設定項目 `global.toc` によって決定されますが、記事ごとに個別に設定して上書きすることもできます。
 
 #### lang
 
@@ -366,7 +366,7 @@ src/content/posts/apple.md   ->  example.com/ru/posts/apple/
 
 #### abbrlink
 
-記事のURLをカスタマイズします。小文字、数字、ハイフン `-` のみ使用できます。
+記事の URL をカスタマイズします。小文字、数字、ハイフン `-` のみ使用できます。
 
 ```md
 # src/config.ts

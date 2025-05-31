@@ -8,11 +8,11 @@ lang: ja
 abbrlink: markdown-extended-features
 ---
 
-この記事では、RetypesetテーマがサポートするMarkdown拡張機能について、構文例と効果を紹介します。
+この記事では、Retypeset テーマがサポートする Markdown 拡張機能について、構文例と効果を紹介します。
 
 ## 図のキャプション
 
-標準のMarkdown画像構文 `![alt](src)` を使用すると、自動的に図のキャプションが生成されます。`alt` テキストの前にアンダースコア `_` を追加するか、`alt` テキストを空にすると、キャプションが非表示になります。
+標準の Markdown 画像構文 `![alt](src)` を使用すると、自動的に図のキャプションが生成されます。`alt` テキストの前にアンダースコア `_` を追加するか、`alt` テキストを空にすると、キャプションが非表示になります。
 
 ### 構文
 
@@ -28,9 +28,9 @@ abbrlink: markdown-extended-features
 
 ![_画像の説明](https://image.radishzz.cc/image/gallery/06.webp)
 
-## Githubリポジトリカード
+## Github リポジトリカード
 
-二重コロン構文 `::github{repo="owner/repo"}` を使用すると、Githubリポジトリカードを作成できます。ページの読み込み後、GitHub APIからリアルタイムでリポジトリデータが取得されます。
+二重コロン構文 `::github{repo="owner/repo"}` を使用すると、Github リポジトリカードを作成できます。ページの読み込み後、GitHub API からリアルタイムでリポジトリデータが取得されます。
 
 ### 構文
 
@@ -44,7 +44,7 @@ abbrlink: markdown-extended-features
 
 ## アドモニションブロック
 
-GitHub構文 `> [!TYPE]` または三重コロン構文 `:::type` を使用して、アドモニションブロックを作成できます。`note`、`tip`、`important`、`warning`、`caution` の5種類がサポートされています。
+GitHub 構文 `> [!TYPE]` または三重コロン構文 `:::type` を使用して、アドモニションブロックを作成できます。`note`、`tip`、`important`、`warning`、`caution` の 5 種類がサポートされています。
 
 ### 構文
 
@@ -96,7 +96,7 @@ GitHub構文 `> [!TYPE]` または三重コロン構文 `:::type` を使用し�
 
 ## 動画
 
-YouTubeや他の動画プラットフォームから埋め込みコードを取得し、markdownファイルに貼り付けることで、動画を作成できます。`width`と`height`パラメータを保持する必要はありません。
+YouTube や他の動画プラットフォームから埋め込みコードを取得し、markdown ファイルに貼り付けることで、動画を作成できます。`width` と `height` パラメータを保持する必要はありません。
 
 ### 構文
 

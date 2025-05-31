@@ -33,7 +33,7 @@ site: {
   // 站點地址
   url: 'https://retypeset.radishzz.cc'
   // 站點圖標
-  // 推薦格式: svg, png, ico
+  // 推薦格式：svg, png, ico
   favicon: '/icons/favicon.svg' // 或 https://example.com/favicon.svg
 }
 ```
@@ -119,7 +119,7 @@ comment: {
     emoji: [
       'https://unpkg.com/@waline/emojis@1.2.0/tw-emoji'
       // 'https://unpkg.com/@waline/emojis@1.2.0/bmoji'
-      // 更多表情: https://waline.js.org/en/guide/features/emoji.html
+      // 更多表情：https://waline.js.org/en/guide/features/emoji.html
     ]
     // gif 搜索
     search: false // true, false
@@ -159,7 +159,7 @@ seo: {
   }
   // apiflash access key 訪問密鑰
   // 自動生成網站截圖用於 open graph
-  // 獲取訪問密鑰: https://apiflash.com/
+  // 獲取訪問密鑰：https://apiflash.com/
   apiflashKey: ''
 }
 ```

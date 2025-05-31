@@ -99,7 +99,7 @@ abbrlink: markdown-style-guide
 >
 > —— <cite>《秋夜》[^1]</cite>
 
-[^1]: 《[秋夜](https://zh.wikisource.org/wiki/%E7%A7%8B%E5%A4%9C_(%E9%AD%AF%E8%BF%85))》是魯迅散文詩集《野草》中的第一首散文詩，創作於1924年。
+[^1]: 《[秋夜](https://zh.wikisource.org/wiki/%E7%A7%8B%E5%A4%9C_(%E9%AD%AF%E8%BF%85))》是魯迅散文詩集《野草》中的第一首散文詩，創作於 1924 年。
 ```
 
 #### 效果
@@ -108,7 +108,7 @@ abbrlink: markdown-style-guide
 >
 > —— <cite>《秋夜》[^1]</cite>
 
-[^1]: 《[秋夜](https://zh.wikisource.org/wiki/%E7%A7%8B%E5%A4%9C_(%E9%AD%AF%E8%BF%85))》是魯迅散文詩集《野草》中的第一首散文詩，創作於1924年。
+[^1]: 《[秋夜](https://zh.wikisource.org/wiki/%E7%A7%8B%E5%A4%9C_(%E9%AD%AF%E8%BF%85))》是魯迅散文詩集《野草》中的第一首散文詩，創作於 1924 年。
 
 ## 表格
 
