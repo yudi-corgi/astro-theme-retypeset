@@ -97,9 +97,9 @@ global: {
 
 ```ts
 comment: {
-  // コメント機能を有効にする
+  // コメントシステムを有効にする
   enabled: true // true, false
-  // giscus コメント
+  // giscus コメントシステム
   giscus: {
     repo: 'radishzzz/comment-giscus'
     repoID: 'R_kgDOOy1K0w'
@@ -111,7 +111,7 @@ comment: {
     emitMetadata: '0'
     inputPosition: 'bottom'
   }
-  // waline コメント
+  // waline コメントシステム
   waline: {
     // サーバー URL
     serverURL: 'https://retypeset-comment.radishzz.cc'

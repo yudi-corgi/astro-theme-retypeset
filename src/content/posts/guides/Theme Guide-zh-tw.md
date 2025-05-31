@@ -97,9 +97,9 @@ global: {
 
 ```ts
 comment: {
-  // 開啟評論
+  // 開啟評論系統
   enabled: true // true, false
-  // giscus 評論
+  // giscus 評論系統
   giscus: {
     repo: 'radishzzz/comment-giscus'
     repoID: 'R_kgDOOy1K0w'
@@ -111,7 +111,7 @@ comment: {
     emitMetadata: '0'
     inputPosition: 'bottom'
   }
-  // waline 評論
+  // waline 評論系統
   waline: {
     // 服務器地址
     serverURL: 'https://retypeset-comment.radishzz.cc'
