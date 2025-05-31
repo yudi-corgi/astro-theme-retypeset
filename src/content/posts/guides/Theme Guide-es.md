@@ -99,6 +99,18 @@ global: {
 comment: {
   // habilitar sistema de comentarios
   enabled: true // true, false
+  // sistema de comentarios giscus
+  giscus: {
+    repo: 'radishzzz/comment-giscus'
+    repoID: 'R_kgDOOy1K0w'
+    category: 'Announcements'
+    categoryID: 'DIC_kwDOOy1K084CqwuZ'
+    mapping: 'pathname'
+    strict: '0'
+    reactionsEnabled: '1'
+    emitMetadata: '0'
+    inputPosition: 'bottom'
+  }
   // sistema de comentarios waline
   waline: {
     // URL del servidor
@@ -113,19 +125,6 @@ comment: {
     search: false // true, false
     // cargador de imágenes
     imageUploader: false // true, false
-  }
-  // giscus
-  // https://giscus.app/
-  giscus: {
-    repo: 'radishzzz/comment-giscus'
-    repoID: 'R_kgDOOy1K0w'
-    category: 'Announcements'
-    categoryID: 'DIC_kwDOOy1K084CqwuZ'
-    mapping: 'pathname'
-    strict: '0'
-    reactionsEnabled: '1'
-    emitMetadata: '0'
-    inputPosition: 'bottom'
   }
 }
 ```

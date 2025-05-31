@@ -99,6 +99,18 @@ global: {
 comment: {
   // 開啟評論
   enabled: true // true, false
+  // giscus 評論
+  giscus: {
+    repo: 'radishzzz/comment-giscus'
+    repoID: 'R_kgDOOy1K0w'
+    category: 'Announcements'
+    categoryID: 'DIC_kwDOOy1K084CqwuZ'
+    mapping: 'pathname'
+    strict: '0'
+    reactionsEnabled: '1'
+    emitMetadata: '0'
+    inputPosition: 'bottom'
+  }
   // waline 評論
   waline: {
     // 服務器地址
@@ -113,19 +125,6 @@ comment: {
     search: false // true, false
     // 圖片上傳
     imageUploader: false // true, false
-  }
-  // giscus
-  // https://giscus.app/
-  giscus: {
-    repo: 'radishzzz/comment-giscus'
-    repoID: 'R_kgDOOy1K0w'
-    category: 'Announcements'
-    categoryID: 'DIC_kwDOOy1K084CqwuZ'
-    mapping: 'pathname'
-    strict: '0'
-    reactionsEnabled: '1'
-    emitMetadata: '0'
-    inputPosition: 'bottom'
   }
 }
 ```

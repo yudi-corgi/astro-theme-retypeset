@@ -99,6 +99,18 @@ global: {
 comment: {
   // включить систему комментариев
   enabled: true // true, false
+  // система комментариев giscus
+  giscus: {
+    repo: 'radishzzz/comment-giscus'
+    repoID: 'R_kgDOOy1K0w'
+    category: 'Announcements'
+    categoryID: 'DIC_kwDOOy1K084CqwuZ'
+    mapping: 'pathname'
+    strict: '0'
+    reactionsEnabled: '1'
+    emitMetadata: '0'
+    inputPosition: 'bottom'
+  }
   // система комментариев waline
   waline: {
     // URL сервера
@@ -113,19 +125,6 @@ comment: {
     search: false // true, false
     // загрузчик изображений
     imageUploader: false // true, false
-  }
-  // giscus
-  // https://giscus.app/
-  giscus: {
-    repo: 'radishzzz/comment-giscus'
-    repoID: 'R_kgDOOy1K0w'
-    category: 'Announcements'
-    categoryID: 'DIC_kwDOOy1K084CqwuZ'
-    mapping: 'pathname'
-    strict: '0'
-    reactionsEnabled: '1'
-    emitMetadata: '0'
-    inputPosition: 'bottom'
   }
 }
 ```

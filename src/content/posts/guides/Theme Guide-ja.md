@@ -99,6 +99,18 @@ global: {
 comment: {
   // コメント機能を有効にする
   enabled: true // true, false
+  // giscus コメント
+  giscus: {
+    repo: 'radishzzz/comment-giscus'
+    repoID: 'R_kgDOOy1K0w'
+    category: 'Announcements'
+    categoryID: 'DIC_kwDOOy1K084CqwuZ'
+    mapping: 'pathname'
+    strict: '0'
+    reactionsEnabled: '1'
+    emitMetadata: '0'
+    inputPosition: 'bottom'
+  }
   // waline コメント
   waline: {
     // サーバー URL
@@ -113,19 +125,6 @@ comment: {
     search: false // true, false
     // 画像アップローダー
     imageUploader: false // true, false
-  }
-  // giscus
-  // https://giscus.app/
-  giscus: {
-    repo: 'radishzzz/comment-giscus'
-    repoID: 'R_kgDOOy1K0w'
-    category: 'Announcements'
-    categoryID: 'DIC_kwDOOy1K084CqwuZ'
-    mapping: 'pathname'
-    strict: '0'
-    reactionsEnabled: '1'
-    emitMetadata: '0'
-    inputPosition: 'bottom'
   }
 }
 ```
