@@ -305,7 +305,7 @@ pnpm new-post first-post.mdx       ->  src/content/posts/first-post.mdx
 
 ### Front Matter
 
-Only `title` and `published` are required fields, all other configurations can be safely omitted.
+Only `title` and `published` are required fields, all other configurations can be omitted.
 
 ```markdown
 ---

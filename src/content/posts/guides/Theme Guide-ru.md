@@ -305,7 +305,7 @@ pnpm new-post first-post.mdx       ->  src/content/posts/first-post.mdx
 
 ### Front Matter
 
-Только поля `title` и `published` являются обязательными, все остальные конфигурации можно безопасно опустить.
+Только поля `title` и `published` являются обязательными, все остальные конфигурации можно опустить.
 
 ```markdown
 ---

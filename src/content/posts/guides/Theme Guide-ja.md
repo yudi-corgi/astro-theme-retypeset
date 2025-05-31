@@ -305,7 +305,7 @@ pnpm new-post first-post.mdx       ->  src/content/posts/first-post.mdx
 
 ### Front Matter
 
-`title` と `published` のみが必須フィールドで、他のすべての設定は安全に省略できます。
+`title` と `published` のみが必須フィールドで、他のすべての設定は省略できます。
 
 ```markdown
 ---

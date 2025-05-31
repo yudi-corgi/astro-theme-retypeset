@@ -305,7 +305,7 @@ pnpm new-post first-post.mdx       ->  src/content/posts/first-post.mdx
 
 ### Front Matter
 
-`title` 和 `published` 為必填項，其餘配置均可安全刪除。
+`title` 和 `published` 為必填項，其餘配置均可刪除。
 
 ```md
 ---
