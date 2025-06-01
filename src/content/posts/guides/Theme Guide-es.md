@@ -200,7 +200,7 @@ preload: {
   linkPrefetch: 'viewport' // hover, tap, viewport, load
   // URL de alojamiento de imágenes
   // optimizar imágenes remotas en archivos Markdown para evitar cambios de diseño acumulativos
-  imageHostURL: 'https://image.radishzz.cc'
+  imageHostURL: 'image.radishzz.cc'
   // js personalizado de google analytics
   // para usuarios que redirigen javascript de analytics a un dominio personalizado
   customGoogleAnalyticsJS: ''
@@ -385,9 +385,9 @@ src/content/posts/guide/apple.md     ->  example.com/es/posts/banana/
 src/content/posts/2025/03/apple.md   ->  example.com/es/posts/banana/
 ```
 
-### Optimización del Formato de Texto
+### Formato de Texto Mixto
 
-Ejecuta `pnpm format-posts` para optimizar la tipografía en los archivos Markdown dentro del directorio `src/content/`. Este comando corrige automáticamente los espacios entre caracteres CJK (Chino, Japonés, Coreano) y latinos, ajusta los signos de puntuación y mejora la legibilidad general del texto.
+Ejecuta `pnpm format-posts` para optimizar el formato en los archivos Markdown dentro del directorio `src/content/`. Este comando corrige automáticamente los espacios entre caracteres CJK (Chino, Japonés, Coreano) y latinos, ajusta los signos de puntuación y mejora la legibilidad general del texto.
 
 ```bash
 pnpm format-posts

@@ -200,7 +200,7 @@ preload: {
   linkPrefetch: 'viewport' // hover, tap, viewport, load
   // URL хостинга изображений
   // оптимизировать удаленные изображения в файлах Markdown для избежания накопления сдвига макета
-  imageHostURL: 'https://image.radishzz.cc'
+  imageHostURL: 'image.radishzz.cc'
   // пользовательский скрипт Google Analytics
   // для пользователей, которые направляют JavaScript аналитики на собственный домен
   customGoogleAnalyticsJS: ''
@@ -385,9 +385,9 @@ src/content/posts/guide/apple.md     ->  example.com/es/posts/banana/
 src/content/posts/2025/03/apple.md   ->  example.com/es/posts/banana/
 ```
 
-### Оптимизация форматирования текста
+### Форматирование смешанного текста
 
-Запустите `pnpm format-posts` для оптимизации типографики в Markdown-файлах в директории `src/content/`. Эта команда автоматически исправляет пробелы между символами CJK (китайский, японский, корейский) и латиницей, корректирует знаки пунктуации и улучшает общую читаемость текста.
+Запустите `pnpm format-posts` для оптимизации форматирования в Markdown-файлах в директории `src/content/`. Эта команда автоматически исправляет пробелы между символами CJK (китайский, японский, корейский) и латиницей, корректирует знаки пунктуации и улучшает общую читаемость текста.
 
 ```bash
 pnpm format-posts

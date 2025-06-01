@@ -200,7 +200,7 @@ preload: {
   linkPrefetch: 'viewport' // hover, tap, viewport, load
   // 图床地址
   // 优化 Markdown 文件中的远程图片以避免布局抖动
-  imageHostURL: 'https://image.radishzz.cc'
+  imageHostURL: 'image.radishzz.cc'
   // 定制 google analytics js
   // 适用于路由 google analytics js 到自定义域名的用户
   customGoogleAnalyticsJS: ''
@@ -385,9 +385,9 @@ src/content/posts/guide/apple.md     ->  example.com/es/posts/banana/
 src/content/posts/2025/03/apple.md   ->  example.com/es/posts/banana/
 ```
 
-### 文案排版优化
+### 混排优化
 
-执行 `pnpm format-posts`，可优化 `src/content/` 目录中 Markdown 文件的文案排版，给 CJK（中文、日文、韩文）与英文混写的场景，补充正确的空格，纠正标点符号等。
+执行 `pnpm format-posts`，可优化 `src/content/` 目录中 Markdown 文件的排版格式。在 CJK（中文、日文、韩文）与英文混写的场景下，补充正确的空格，纠正标点符号等。
 
 ```bash
 pnpm format-posts

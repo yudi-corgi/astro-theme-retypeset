@@ -200,7 +200,7 @@ preload: {
   linkPrefetch: 'viewport' // hover, tap, viewport, load
   // 画像ホスティング URL
   // Markdown ファイル内のリモート画像を最適化してレイアウトシフトを防止
-  imageHostURL: 'https://image.radishzz.cc'
+  imageHostURL: 'image.radishzz.cc'
   // カスタム Google Analytics JS
   // アナリティクス JavaScript をカスタムドメインにルーティングするユーザー向け
   customGoogleAnalyticsJS: ''
@@ -385,9 +385,9 @@ src/content/posts/guide/apple.md     ->  example.com/es/posts/banana/
 src/content/posts/2025/03/apple.md   ->  example.com/es/posts/banana/
 ```
 
-### 文章表記の最適化
+### 混植の最適化
 
-`pnpm format-posts` コマンドを実行すると、`src/content/` ディレクトリ内の Markdown ファイルの文章表記を最適化できます。特に CJK（日本語や中国語、韓国語）と英字が混在する場合に、適切なスペースを追加し、句読点を修正するなどの処理を行います。
+`pnpm format-posts` コマンドを実行すると、`src/content/` ディレクトリ内の Markdown ファイルの書式を最適化できます。特に CJK（日本語や中国語、韓国語）と英字が混在する場合に、適切なスペースを追加し、句読点を修正するなどの処理を行います。
 
 ```bash
 pnpm format-posts
