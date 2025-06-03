@@ -101,10 +101,10 @@ comment: {
   enabled: true // true, false
   // giscus コメントシステム
   giscus: {
-    repo: 'radishzzz/comment-giscus'
-    repoID: 'R_kgDOOy1K0w'
-    category: 'Announcements'
-    categoryID: 'DIC_kwDOOy1K084CqwuZ'
+    repo: ''
+    repoID: ''
+    category: ''
+    categoryID: ''
     mapping: 'pathname'
     strict: '0'
     reactionsEnabled: '1'
@@ -391,11 +391,10 @@ src/content/posts/2025/03/apple.md   ->  example.com/es/posts/banana/
 
 ```bash
 pnpm format-posts
-
-🔍 56 Markdown files found
+🔍 Scanning Markdown files...
+📦 Found 56 Markdown files
 ✅ src/content/posts/guides/Theme Guide-ja.md
 ✅ src/content/posts/guides/Theme Guide-zh-tw.md
 ✅ src/content/posts/guides/Theme Guide-zh.md
-
 ✨ Formatted 3 files successfully
 ```
