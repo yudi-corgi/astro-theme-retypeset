@@ -46,7 +46,7 @@ color: {
   mode: 'light' // light, dark, auto
   // 亮色模式
   light: {
-    // 高亮颜色
+    // 主要颜色
     // 用于站点标题、鼠标悬停效果等
     primary: 'oklch(25% 0.005 298)'
     // 次要颜色
@@ -54,15 +54,20 @@ color: {
     secondary: 'oklch(40% 0.005 298)'
     // 背景色
     background: 'oklch(96% 0.005 298)'
+    // 高亮颜色
+    // 用于导航栏、选中文本等
+    highlight: 'oklch(0.93 0.195089 103.2532 / 0.5)'
   }
   // 暗色模式
   dark: {
-    // 高亮颜色
+    // 主要颜色
     primary: 'oklch(92% 0.005 298)'
     // 次要颜色
     secondary: 'oklch(77% 0.005 298)'
     // 背景色
     background: 'oklch(22% 0.005 298)'
+    // 高亮颜色
+    highlight: 'oklch(0.93 0.195089 103.2532 / 0.5)'
   }
 }
 ```
@@ -196,8 +201,6 @@ footer: {
 
 ```ts
 preload: {
-  // 链接预加载策略
-  linkPrefetch: 'viewport' // hover, tap, viewport, load
   // 图床地址
   // 优化 Markdown 文件中的远程图片以避免布局抖动
   imageHostURL: 'image.radishzz.cc'

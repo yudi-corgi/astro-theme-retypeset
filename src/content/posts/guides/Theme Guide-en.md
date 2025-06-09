@@ -54,6 +54,9 @@ color: {
     secondary: 'oklch(40% 0.005 298)'
     // background color
     background: 'oklch(96% 0.005 298)'
+    // highlight color
+    // used for navbar, selected text, etc
+    highlight: 'oklch(0.93 0.195089 103.2532 / 0.5)'
   }
   // dark mode
   dark: {
@@ -63,6 +66,8 @@ color: {
     secondary: 'oklch(77% 0.005 298)'
     // background color
     background: 'oklch(22% 0.005 298)'
+    // highlight color
+    highlight: 'oklch(0.93 0.195089 103.2532 / 0.2)'
   }
 }
 ```
@@ -196,8 +201,6 @@ footer: {
 
 ```ts
 preload: {
-  // link prefetch strategies
-  linkPrefetch: 'viewport' // hover, tap, viewport, load
   // image hosting url
   // optimize remote images in Markdown files to avoid cumulative layout shift
   imageHostURL: 'image.radishzz.cc'
