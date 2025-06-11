@@ -126,7 +126,7 @@ iPhone 上总是会出现一些奇怪的 BUG，例如切换页面时背景会闪
 
 - [Typography](https://github.com/moeyua/astro-theme-typography) 主题，提供灵感与主题框架 Astro + Typescript + UnoCSS
 - [Fuwriu](https://github.com/saicaca/fuwari) 主题，参考阅读时间、滚动条、灯箱与目录功能
-- [Redefine](Redefine) 主题，参考主题配置格式
+- [Redefine](https://github.com/EvanNotFound/hexo-theme-redefine) 主题，参考主题配置格式
 - [AstroPaper](https://github.com/satnaing/astro-paper) 主题，参考 View Transition
 - [heti](https://github.com/sivan/heti) 赫嗁，提供中文排版样式增强
 - [EarlySummerSerif](https://github.com/GuiWonder/EarlySummerSerif) 初夏明朝字体

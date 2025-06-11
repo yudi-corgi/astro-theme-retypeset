@@ -54,6 +54,9 @@ color: {
     secondary: 'oklch(40% 0.005 298)'
     // 背景色
     background: 'oklch(96% 0.005 298)'
+    // ハイライトカラー
+    // ナビゲーションバー、選択されたテキストなどに使用
+    highlight: 'oklch(0.93 0.195089 103.2532 / 0.5)'
   }
   // ダークモード
   dark: {
@@ -63,6 +66,8 @@ color: {
     secondary: 'oklch(77% 0.005 298)'
     // 背景色
     background: 'oklch(22% 0.005 298)'
+    // ハイライトカラー
+    highlight: 'oklch(0.93 0.195089 103.2532 / 0.2)'
   }
 }
 ```
@@ -196,8 +201,6 @@ footer: {
 
 ```ts
 preload: {
-  // リンクプリフェッチ戦略
-  linkPrefetch: 'viewport' // hover, tap, viewport, load
   // 画像ホスティング URL
   // Markdown ファイル内のリモート画像を最適化してレイアウトシフトを防止
   imageHostURL: 'image.radishzz.cc'
