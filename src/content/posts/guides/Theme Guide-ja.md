@@ -116,6 +116,11 @@ comment: {
     emitMetadata: '0'
     inputPosition: 'bottom'
   }
+  // twikoo コメントシステム
+  twikoo: {
+    envId: ''
+    // version: twikoo フロントエンドのバージョンは package.json で変更できます
+  }
   // waline コメントシステム
   waline: {
     // サーバー URL
