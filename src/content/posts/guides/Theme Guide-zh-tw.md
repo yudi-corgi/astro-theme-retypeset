@@ -116,6 +116,11 @@ comment: {
     emitMetadata: '0'
     inputPosition: 'bottom'
   }
+  // twikoo 評論系統
+  twikoo: {
+    envId: ''
+    // version: twikoo 前端版本可在 package.json 中修改
+  }
   // waline 評論系統
   waline: {
     // 服務器地址
