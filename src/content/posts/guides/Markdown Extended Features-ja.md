@@ -96,20 +96,18 @@ GitHub 構文 `> [!TYPE]` または三重コロン構文 `:::type` を使用し�
 
 ## 動画
 
-YouTube や他の動画プラットフォームから埋め込みコードを取得し、markdown ファイルに貼り付けることで、動画を作成できます。`width` と `height` パラメータを保持する必要はありません。
+二重コロン構文 `::youtube{id="videoId"}` を使用すると、動画を埋め込むことができます。
 
 ### 構文
 
 ```html
-<!-- Youtube -->
-<iframe src="https://www.youtube.com/embed/9pP0pIgP2kE?si=Rlk4C4ltaVPHXZ80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+::youtube{id="9pP0pIgP2kE"}
 
-<!-- Bilibili -->
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=930327443&bvid=BV1sK4y1Z7KG&cid=329802177&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+::bilibili{id="BV1sK4y1Z7KG"}
 ```
 
 ### 効果
 
-<iframe src="https://www.youtube.com/embed/9pP0pIgP2kE?si=Rlk4C4ltaVPHXZ80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+::youtube{id="9pP0pIgP2kE"}
 
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=930327443&bvid=BV1sK4y1Z7KG&cid=329802177&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+::bilibili{id="BV1sK4y1Z7KG"}

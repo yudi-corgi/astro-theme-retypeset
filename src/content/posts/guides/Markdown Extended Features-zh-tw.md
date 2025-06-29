@@ -96,20 +96,18 @@ abbrlink: markdown-extended-features
 
 ## 視頻
 
-從 YouTube 或其它視頻平台獲取嵌入代碼，並粘貼至 markdown 文件中，即可創建視頻。不需要保留 `width` 和 `height` 參數。
+使用雙冒號語法 `::youtube{id="videoId"}`，即可嵌入視頻。
 
 ### 語法
 
 ```html
-<!-- Youtube -->
-<iframe src="https://www.youtube.com/embed/9pP0pIgP2kE?si=Rlk4C4ltaVPHXZ80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+::youtube{id="9pP0pIgP2kE"}
 
-<!-- Bilibili -->
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=930327443&bvid=BV1sK4y1Z7KG&cid=329802177&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+::bilibili{id="BV1sK4y1Z7KG"}
 ```
 
 ### 效果
 
-<iframe src="https://www.youtube.com/embed/9pP0pIgP2kE?si=Rlk4C4ltaVPHXZ80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+::youtube{id="9pP0pIgP2kE"}
 
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=930327443&bvid=BV1sK4y1Z7KG&cid=329802177&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+::bilibili{id="BV1sK4y1Z7KG"}

@@ -96,20 +96,18 @@ Esta es una nota con un título personalizado.
 
 ## Videos
 
-Para incrustar videos, copie el código de inserción de YouTube u otras plataformas de video y péguelo en su archivo markdown. No necesita mantener los parámetros `width` y `height`.
+Para incrustar videos, utilice la directiva hoja `::youtube{id="videoId"}`.
 
 ### Sintaxis
 
 ```html
-<!-- Youtube -->
-<iframe src="https://www.youtube.com/embed/9pP0pIgP2kE?si=Rlk4C4ltaVPHXZ80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+::youtube{id="9pP0pIgP2kE"}
 
-<!-- Bilibili -->
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=930327443&bvid=BV1sK4y1Z7KG&cid=329802177&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+::bilibili{id="BV1sK4y1Z7KG"}
 ```
 
 ### Resultado
 
-<iframe src="https://www.youtube.com/embed/9pP0pIgP2kE?si=Rlk4C4ltaVPHXZ80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+::youtube{id="9pP0pIgP2kE"}
 
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=930327443&bvid=BV1sK4y1Z7KG&cid=329802177&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+::bilibili{id="BV1sK4y1Z7KG"}
