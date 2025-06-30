@@ -28,20 +28,6 @@ abbrlink: markdown-extended-features
 
 ![_图片描述](https://image.radishzz.cc/image/gallery/06.webp)
 
-## Github 仓库卡片
-
-使用双冒号语法 `::github{repo="owner/repo"}`，即可创建 Github 仓库卡片。在页面加载后，从 GitHub API 中实时获取仓库数据。
-
-### 语法
-
-```
-::github{repo="radishzzz/astro-theme-retypeset"}
-```
-
-### 效果
-
-::github{repo="radishzzz/astro-theme-retypeset"}
-
 ## 提示块
 
 使用 GitHub 语法 `> [!TYPE]` 或三冒号语法 `:::type`，即可创建提示块。支持 `note`、`tip`、`important`、`warning` 和 `caution` 五种类型。
@@ -94,13 +80,27 @@ abbrlink: markdown-extended-features
 这是一个自定义标题的提示块。
 :::
 
+## Github 仓库
+
+使用双冒号语法 `::github{repo="owner/repo"}`，即可创建 Github 仓库卡片。在页面加载后，从 GitHub API 中实时获取仓库数据。
+
+### 语法
+
+```
+::github{repo="radishzzz/astro-theme-retypeset"}
+```
+
+### 效果
+
+::github{repo="radishzzz/astro-theme-retypeset"}
+
 ## 视频
 
 使用双冒号语法 `::youtube{id="videoId"}`，即可嵌入视频。
 
 ### 语法
 
-```html
+```
 ::youtube{id="9pP0pIgP2kE"}
 
 ::bilibili{id="BV1sK4y1Z7KG"}
@@ -112,14 +112,16 @@ abbrlink: markdown-extended-features
 
 ::bilibili{id="BV1sK4y1Z7KG"}
 
-<!-- <details>
-  <summary>
-    我有钥匙却无门，有空间却无房间。你能进入却无法离开。我是什么？
-  </summary>
-  键盘。
-</details>
+## X 帖子
 
-<figure>
-  <img src="https://image.radishzz.cc/picsmaller/03.webp">
-  <figcaption text-center="">Node 模块检查器 - 概览</figcaption>
-</figure> -->
+使用双冒号语法 `::x{url="postLink"}`，即可嵌入 X 帖子卡片。
+
+### 语法
+
+```
+::x{url="https://x.com/astrodotbuild/status/1632809919291457537"}
+```
+
+### 效果
+
+::x{url="https://x.com/astrodotbuild/status/1632809919291457537"}

@@ -28,21 +28,7 @@ abbrlink: markdown-extended-features
 
 ![_Описание изображения](https://image.radishzz.cc/image/gallery/06.webp)
 
-## Карточки репозиториев Github
-
-Для создания карточки репозитория Github используйте листовую директиву `::github{repo="owner/repo"}`. Данные репозитория в режиме реального времени загружаются из API GitHub после загрузки страницы.
-
-### Синтаксис
-
-```
-::github{repo="radishzzz/astro-theme-retypeset"}
-```
-
-### Результат
-
-::github{repo="radishzzz/astro-theme-retypeset"}
-
-## Примечания
+## Блоки примечаний
 
 Для создания блоков примечаний используйте синтаксис GitHub `> [!TYPE]` или контейнерную директиву `:::type`. Поддерживаются пять типов: `note`, `tip`, `important`, `warning` и `caution`.
 
@@ -94,13 +80,27 @@ abbrlink: markdown-extended-features
 Это примечание с пользовательским заголовком.
 :::
 
+## Репозиторий Github
+
+Для создания карточки репозитория Github используйте листовую директиву `::github{repo="owner/repo"}`. Данные репозитория в режиме реального времени загружаются из API GitHub после загрузки страницы.
+
+### Синтаксис
+
+```
+::github{repo="radishzzz/astro-theme-retypeset"}
+```
+
+### Результат
+
+::github{repo="radishzzz/astro-theme-retypeset"}
+
 ## Видео
 
 Для добавления видео используйте листовую директиву `::youtube{id="videoId"}`.
 
 ### Синтаксис
 
-```html
+```
 ::youtube{id="9pP0pIgP2kE"}
 
 ::bilibili{id="BV1sK4y1Z7KG"}
@@ -111,3 +111,17 @@ abbrlink: markdown-extended-features
 ::youtube{id="9pP0pIgP2kE"}
 
 ::bilibili{id="BV1sK4y1Z7KG"}
+
+## Посты X
+
+Для вставки карточек постов X используйте листовую директиву `::x{url="postLink"}`.
+
+### Синтаксис
+
+```
+::x{url="https://x.com/astrodotbuild/status/1632809919291457537"}
+```
+
+### Результат
+
+::x{url="https://x.com/astrodotbuild/status/1632809919291457537"}

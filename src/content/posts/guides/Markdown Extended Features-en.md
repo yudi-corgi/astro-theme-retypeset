@@ -28,21 +28,7 @@ To create automatic figure captions, use the standard Markdown image syntax `![a
 
 ![_Image description](https://image.radishzz.cc/image/gallery/06.webp)
 
-## Github Repository Cards
-
-To create a Github repository card, use the leaf directive `::github{repo="owner/repo"}`. Repository data is fetched in real-time from the GitHub API after the page loads.
-
-### Syntax
-
-```
-::github{repo="radishzzz/astro-theme-retypeset"}
-```
-
-### Output
-
-::github{repo="radishzzz/astro-theme-retypeset"}
-
-## Admonition
+## Admonition Blocks
 
 To create admonition blocks, use the GitHub syntax `> [!TYPE]` or the container directive `:::type`. Following types are supported: `note`, `tip`, `important`, `warning`, and `caution`.
 
@@ -94,13 +80,27 @@ Advises about risks or negative outcomes of certain actions.
 This is a note with a custom title.
 :::
 
+## Github Repository
+
+To create a Github repository card, use the leaf directive `::github{repo="owner/repo"}`. Repository data is fetched in real-time from the GitHub API after the page loads.
+
+### Syntax
+
+```
+::github{repo="radishzzz/astro-theme-retypeset"}
+```
+
+### Output
+
+::github{repo="radishzzz/astro-theme-retypeset"}
+
 ## Videos
 
 To embed videos, use the leaf directive `::youtube{id="videoId"}`.
 
 ### Syntax
 
-```html
+```
 ::youtube{id="9pP0pIgP2kE"}
 
 ::bilibili{id="BV1sK4y1Z7KG"}
@@ -111,3 +111,17 @@ To embed videos, use the leaf directive `::youtube{id="videoId"}`.
 ::youtube{id="9pP0pIgP2kE"}
 
 ::bilibili{id="BV1sK4y1Z7KG"}
+
+## X Posts
+
+To embed X post cards, use the leaf directive `::x{url="postLink"}`.
+
+### Syntax
+
+```
+::x{url="https://x.com/astrodotbuild/status/1632809919291457537"}
+```
+
+### Output
+
+::x{url="https://x.com/astrodotbuild/status/1632809919291457537"}

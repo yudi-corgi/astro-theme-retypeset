@@ -28,7 +28,59 @@ Para crear leyendas automáticas para figuras, utilice la sintaxis estándar de 
 
 ![_Descripción de la imagen](https://image.radishzz.cc/image/gallery/06.webp)
 
-## Tarjetas de Repositorios de Github
+## Bloques de Admonición
+
+Para crear bloques de admonición, utilice la sintaxis de GitHub `> [!TYPE]` o la directiva contenedor `:::type`. Se admiten cinco tipos: `note`, `tip`, `important`, `warning` y `caution`.
+
+### Sintaxis
+
+```
+> [!NOTE]
+> Información útil que los usuarios deben conocer, incluso al leer por encima.
+
+> [!TIP]
+> Consejos útiles para hacer las cosas mejor o más fácilmente.
+
+> [!IMPORTANT]
+> Información clave que los usuarios necesitan saber para lograr su objetivo.
+
+:::warning
+Información urgente que requiere atención inmediata del usuario para evitar problemas.
+:::
+
+:::caution
+Advierte sobre riesgos o resultados negativos de ciertas acciones.
+:::
+
+:::note[TÍTULO PERSONALIZADO]
+Esta es una nota con un título personalizado.
+:::
+```
+
+### Resultado
+
+> [!NOTE]
+> Información útil que los usuarios deben conocer, incluso al leer por encima.
+
+> [!TIP]
+> Consejos útiles para hacer las cosas mejor o más fácilmente.
+
+> [!IMPORTANT]
+> Información clave que los usuarios necesitan saber para lograr su objetivo.
+
+:::warning
+Información urgente que requiere atención inmediata del usuario para evitar problemas.
+:::
+
+:::caution
+Advierte sobre riesgos o resultados negativos de ciertas acciones.
+:::
+
+:::note[TÍTULO PERSONALIZADO]
+Esta es una nota con un título personalizado.
+:::
+
+## Repositorio de Github
 
 Para crear una tarjeta de repositorio de Github, utilice la directiva hoja `::github{repo="owner/repo"}`. Los datos del repositorio se obtienen en tiempo real de la API de GitHub después de que la página se carga.
 
@@ -42,65 +94,13 @@ Para crear una tarjeta de repositorio de Github, utilice la directiva hoja `::gi
 
 ::github{repo="radishzzz/astro-theme-retypeset"}
 
-## Advertencia
-
-Para crear bloques de advertencia, utilice la sintaxis de GitHub `> [!TYPE]` o la directiva contenedor `:::type`. Se admiten cinco tipos: `note`, `tip`, `important`, `warning` y `caution`.
-
-### Sintaxis
-
-```
-> [!NOTE]
-> Información útil que los usuarios deben conocer, incluso al leer por encima.
-
-> [!TIP]
-> Consejos útiles para hacer las cosas mejor o más fácilmente.
-
-> [!IMPORTANT]
-> Información clave que los usuarios necesitan saber para lograr su objetivo.
-
-:::warning
-Información urgente que requiere atención inmediata del usuario para evitar problemas.
-:::
-
-:::caution
-Advierte sobre riesgos o resultados negativos de ciertas acciones.
-:::
-
-:::note[TÍTULO PERSONALIZADO]
-Esta es una nota con un título personalizado.
-:::
-```
-
-### Resultado
-
-> [!NOTE]
-> Información útil que los usuarios deben conocer, incluso al leer por encima.
-
-> [!TIP]
-> Consejos útiles para hacer las cosas mejor o más fácilmente.
-
-> [!IMPORTANT]
-> Información clave que los usuarios necesitan saber para lograr su objetivo.
-
-:::warning
-Información urgente que requiere atención inmediata del usuario para evitar problemas.
-:::
-
-:::caution
-Advierte sobre riesgos o resultados negativos de ciertas acciones.
-:::
-
-:::note[TÍTULO PERSONALIZADO]
-Esta es una nota con un título personalizado.
-:::
-
 ## Videos
 
 Para incrustar videos, utilice la directiva hoja `::youtube{id="videoId"}`.
 
 ### Sintaxis
 
-```html
+```
 ::youtube{id="9pP0pIgP2kE"}
 
 ::bilibili{id="BV1sK4y1Z7KG"}
@@ -111,3 +111,17 @@ Para incrustar videos, utilice la directiva hoja `::youtube{id="videoId"}`.
 ::youtube{id="9pP0pIgP2kE"}
 
 ::bilibili{id="BV1sK4y1Z7KG"}
+
+## Publicaciones de X
+
+Para incrustar tarjetas de publicaciones de X, utilice la directiva hoja `::x{url="postLink"}`.
+
+### Sintaxis
+
+```
+::x{url="https://x.com/astrodotbuild/status/1632809919291457537"}
+```
+
+### Resultado
+
+::x{url="https://x.com/astrodotbuild/status/1632809919291457537"}
