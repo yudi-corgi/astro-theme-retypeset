@@ -96,7 +96,7 @@ Para crear una tarjeta de repositorio de Github, utilice la directiva hoja `::gi
 
 ## Videos
 
-Para incrustar videos, utilice la directiva hoja `::youtube{id="videoId"}`.
+Para crear videos, utilice la directiva hoja `::youtube{id="videoId"}`.
 
 ### Sintaxis
 
@@ -114,7 +114,7 @@ Para incrustar videos, utilice la directiva hoja `::youtube{id="videoId"}`.
 
 ## Publicaciones de X
 
-Para incrustar tarjetas de publicaciones de X, utilice la directiva hoja `::x{url="postLink"}`.
+Para crear tarjetas de publicaciones de X, utilice la directiva hoja `::x{url="postLink"}`.
 
 ### Sintaxis
 

@@ -96,7 +96,7 @@ abbrlink: markdown-extended-features
 
 ## 视频
 
-使用双冒号语法 `::youtube{id="videoId"}`，即可嵌入视频。
+使用双冒号语法 `::youtube{id="videoId"}`，即可创建视频。
 
 ### 语法
 
@@ -114,7 +114,7 @@ abbrlink: markdown-extended-features
 
 ## X 帖子
 
-使用双冒号语法 `::x{url="postLink"}`，即可嵌入 X 帖子卡片。
+使用双冒号语法 `::x{url="postLink"}`，即可创建 X 帖子卡片。
 
 ### 语法
 

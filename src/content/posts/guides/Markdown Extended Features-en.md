@@ -96,7 +96,7 @@ To create a Github repository card, use the leaf directive `::github{repo="owner
 
 ## Videos
 
-To embed videos, use the leaf directive `::youtube{id="videoId"}`.
+To create videos, use the leaf directive `::youtube{id="videoId"}`.
 
 ### Syntax
 
@@ -114,7 +114,7 @@ To embed videos, use the leaf directive `::youtube{id="videoId"}`.
 
 ## X Posts
 
-To embed X post cards, use the leaf directive `::x{url="postLink"}`.
+To create X post cards, use the leaf directive `::x{url="postLink"}`.
 
 ### Syntax
 
