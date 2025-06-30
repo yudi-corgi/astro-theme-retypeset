@@ -107,9 +107,9 @@ comment: {
   // sistema de comentarios giscus
   giscus: {
     repo: ''
-    repoID: ''
+    repoId: ''
     category: ''
-    categoryID: ''
+    categoryId: ''
     mapping: 'pathname'
     strict: '0'
     reactionsEnabled: '1'

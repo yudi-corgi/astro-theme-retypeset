@@ -107,9 +107,9 @@ comment: {
   // giscus 評論系統
   giscus: {
     repo: ''
-    repoID: ''
+    repoId: ''
     category: ''
-    categoryID: ''
+    categoryId: ''
     mapping: 'pathname'
     strict: '0'
     reactionsEnabled: '1'
