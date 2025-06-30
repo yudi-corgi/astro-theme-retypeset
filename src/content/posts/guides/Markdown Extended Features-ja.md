@@ -8,7 +8,7 @@ lang: ja
 abbrlink: markdown-extended-features
 ---
 
-この記事では、Retypeset テーマがサポートする Markdown 拡張機能について、構文例と効果を紹介します。
+この記事では、Retypeset テーマがサポートする Markdown 拡張機能について、構文例とその効果を紹介します。
 
 ## 図のキャプション
 
@@ -27,20 +27,6 @@ abbrlink: markdown-extended-features
 ![画像の説明](https://image.radishzz.cc/image/gallery/06.webp)
 
 ![_画像の説明](https://image.radishzz.cc/image/gallery/06.webp)
-
-## Github リポジトリカード
-
-二重コロン構文 `::github{repo="owner/repo"}` を使用すると、Github リポジトリカードを作成できます。ページの読み込み後、GitHub API からリアルタイムでリポジトリデータが取得されます。
-
-### 構文
-
-```
-::github{repo="radishzzz/astro-theme-retypeset"}
-```
-
-### 効果
-
-::github{repo="radishzzz/astro-theme-retypeset"}
 
 ## アドモニションブロック
 
@@ -94,22 +80,48 @@ GitHub 構文 `> [!TYPE]` または三重コロン構文 `:::type` を使用し�
 これはカスタムタイトルの付いた注釈ブロックです。
 :::
 
-## 動画
+## Github リポジトリ
 
-YouTube や他の動画プラットフォームから埋め込みコードを取得し、markdown ファイルに貼り付けることで、動画を作成できます。`width` と `height` パラメータを保持する必要はありません。
+二重コロン構文 `::github{repo="owner/repo"}` を使用すると、Github リポジトリカードを作成できます。ページの読み込み後、GitHub API からリアルタイムでリポジトリの情報が取得されます。
 
 ### 構文
 
-```html
-<!-- Youtube -->
-<iframe src="https://www.youtube.com/embed/9pP0pIgP2kE?si=Rlk4C4ltaVPHXZ80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-<!-- Bilibili -->
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=930327443&bvid=BV1sK4y1Z7KG&cid=329802177&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+```
+::github{repo="radishzzz/astro-theme-retypeset"}
 ```
 
 ### 効果
 
-<iframe src="https://www.youtube.com/embed/9pP0pIgP2kE?si=Rlk4C4ltaVPHXZ80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+::github{repo="radishzzz/astro-theme-retypeset"}
 
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=930327443&bvid=BV1sK4y1Z7KG&cid=329802177&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+## 動画
+
+二重コロン構文 `::youtube{id="videoId"}` を使用すると、動画を作成できます。
+
+### 構文
+
+```
+::youtube{id="9pP0pIgP2kE"}
+
+::bilibili{id="BV1sK4y1Z7KG"}
+```
+
+### 効果
+
+::youtube{id="9pP0pIgP2kE"}
+
+::bilibili{id="BV1sK4y1Z7KG"}
+
+## X ツイート
+
+二重コロン構文 `::x{url="postLink"}` を使用すると、X ツイートカードを作成できます。
+
+### 構文
+
+```
+::x{url="https://x.com/astrodotbuild/status/1632809919291457537"}
+```
+
+### 効果
+
+::x{url="https://x.com/astrodotbuild/status/1632809919291457537"}

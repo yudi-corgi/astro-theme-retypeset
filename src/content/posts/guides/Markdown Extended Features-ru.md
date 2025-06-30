@@ -28,21 +28,7 @@ abbrlink: markdown-extended-features
 
 ![_Описание изображения](https://image.radishzz.cc/image/gallery/06.webp)
 
-## Карточки репозиториев Github
-
-Для создания карточки репозитория Github используйте листовую директиву `::github{repo="owner/repo"}`. Данные репозитория в режиме реального времени загружаются из API GitHub после загрузки страницы.
-
-### Синтаксис
-
-```
-::github{repo="radishzzz/astro-theme-retypeset"}
-```
-
-### Результат
-
-::github{repo="radishzzz/astro-theme-retypeset"}
-
-## Примечания
+## Блоки примечаний
 
 Для создания блоков примечаний используйте синтаксис GitHub `> [!TYPE]` или контейнерную директиву `:::type`. Поддерживаются пять типов: `note`, `tip`, `important`, `warning` и `caution`.
 
@@ -94,22 +80,48 @@ abbrlink: markdown-extended-features
 Это примечание с пользовательским заголовком.
 :::
 
-## Видео
+## Репозиторий Github
 
-Для добавления видео скопируйте код для встраивания с YouTube или другой видеоплатформы и вставьте его в markdown файл. Не нужно сохранять параметры `width` и `height`.
+Для создания карточки репозитория Github используйте листовую директиву `::github{repo="owner/repo"}`. Данные репозитория в режиме реального времени загружаются из API GitHub после загрузки страницы.
 
 ### Синтаксис
 
-```html
-<!-- Youtube -->
-<iframe src="https://www.youtube.com/embed/9pP0pIgP2kE?si=Rlk4C4ltaVPHXZ80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-<!-- Bilibili -->
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=930327443&bvid=BV1sK4y1Z7KG&cid=329802177&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+```
+::github{repo="radishzzz/astro-theme-retypeset"}
 ```
 
 ### Результат
 
-<iframe src="https://www.youtube.com/embed/9pP0pIgP2kE?si=Rlk4C4ltaVPHXZ80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+::github{repo="radishzzz/astro-theme-retypeset"}
 
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=930327443&bvid=BV1sK4y1Z7KG&cid=329802177&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+## Видео
+
+Для создания видео используйте листовую директиву `::youtube{id="videoId"}`.
+
+### Синтаксис
+
+```
+::youtube{id="9pP0pIgP2kE"}
+
+::bilibili{id="BV1sK4y1Z7KG"}
+```
+
+### Результат
+
+::youtube{id="9pP0pIgP2kE"}
+
+::bilibili{id="BV1sK4y1Z7KG"}
+
+## Посты X
+
+Для создания карточек постов X используйте листовую директиву `::x{url="postLink"}`.
+
+### Синтаксис
+
+```
+::x{url="https://x.com/astrodotbuild/status/1632809919291457537"}
+```
+
+### Результат
+
+::x{url="https://x.com/astrodotbuild/status/1632809919291457537"}

@@ -28,21 +28,7 @@ To create automatic figure captions, use the standard Markdown image syntax `![a
 
 ![_Image description](https://image.radishzz.cc/image/gallery/06.webp)
 
-## Github Repository Cards
-
-To create a Github repository card, use the leaf directive `::github{repo="owner/repo"}`. Repository data is fetched in real-time from the GitHub API after the page loads.
-
-### Syntax
-
-```
-::github{repo="radishzzz/astro-theme-retypeset"}
-```
-
-### Output
-
-::github{repo="radishzzz/astro-theme-retypeset"}
-
-## Admonition
+## Admonition Blocks
 
 To create admonition blocks, use the GitHub syntax `> [!TYPE]` or the container directive `:::type`. Following types are supported: `note`, `tip`, `important`, `warning`, and `caution`.
 
@@ -94,22 +80,48 @@ Advises about risks or negative outcomes of certain actions.
 This is a note with a custom title.
 :::
 
-## Videos
+## Github Repository
 
-To embed videos, copy the embed code from YouTube or other video platforms and paste it into your markdown file. You don't need to keep the `width` and `height` parameters.
+To create a Github repository card, use the leaf directive `::github{repo="owner/repo"}`. Repository data is fetched in real-time from the GitHub API after the page loads.
 
 ### Syntax
 
-```html
-<!-- Youtube -->
-<iframe src="https://www.youtube.com/embed/9pP0pIgP2kE?si=Rlk4C4ltaVPHXZ80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-<!-- Bilibili -->
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=930327443&bvid=BV1sK4y1Z7KG&cid=329802177&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+```
+::github{repo="radishzzz/astro-theme-retypeset"}
 ```
 
 ### Output
 
-<iframe src="https://www.youtube.com/embed/9pP0pIgP2kE?si=Rlk4C4ltaVPHXZ80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+::github{repo="radishzzz/astro-theme-retypeset"}
 
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=930327443&bvid=BV1sK4y1Z7KG&cid=329802177&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+## Videos
+
+To create videos, use the leaf directive `::youtube{id="videoId"}`.
+
+### Syntax
+
+```
+::youtube{id="9pP0pIgP2kE"}
+
+::bilibili{id="BV1sK4y1Z7KG"}
+```
+
+### Output
+
+::youtube{id="9pP0pIgP2kE"}
+
+::bilibili{id="BV1sK4y1Z7KG"}
+
+## X Posts
+
+To create X post cards, use the leaf directive `::x{url="postLink"}`.
+
+### Syntax
+
+```
+::x{url="https://x.com/astrodotbuild/status/1632809919291457537"}
+```
+
+### Output
+
+::x{url="https://x.com/astrodotbuild/status/1632809919291457537"}

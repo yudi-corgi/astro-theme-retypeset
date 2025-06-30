@@ -8,7 +8,7 @@ lang: zh-tw
 abbrlink: markdown-extended-features
 ---
 
-本文介紹 Retypeset 主題支援的 Markdown 擴展功能，包括語法示例與效果展示。
+本文介紹 Retypeset 主題支援的 Markdown 擴展功能，包括語法範例與效果呈現。
 
 ## 圖注
 
@@ -27,20 +27,6 @@ abbrlink: markdown-extended-features
 ![圖片描述](https://image.radishzz.cc/image/gallery/06.webp)
 
 ![_圖片描述](https://image.radishzz.cc/image/gallery/06.webp)
-
-## Github 倉庫卡片
-
-使用雙冒號語法 `::github{repo="owner/repo"}`，即可創建 Github 倉庫卡片。在頁面載入後，從 GitHub API 中即時獲取倉庫數據。
-
-### 語法
-
-```
-::github{repo="radishzzz/astro-theme-retypeset"}
-```
-
-### 效果
-
-::github{repo="radishzzz/astro-theme-retypeset"}
 
 ## 提示塊
 
@@ -94,22 +80,48 @@ abbrlink: markdown-extended-features
 這是一個自定義標題的提示塊。
 :::
 
-## 視頻
+## Github 倉庫
 
-從 YouTube 或其它視頻平台獲取嵌入代碼，並粘貼至 markdown 文件中，即可創建視頻。不需要保留 `width` 和 `height` 參數。
+使用雙冒號語法 `::github{repo="owner/repo"}`，即可創建 Github 倉庫卡片。在頁面載入後，從 GitHub API 中即時獲取倉庫數據。
 
 ### 語法
 
-```html
-<!-- Youtube -->
-<iframe src="https://www.youtube.com/embed/9pP0pIgP2kE?si=Rlk4C4ltaVPHXZ80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-<!-- Bilibili -->
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=930327443&bvid=BV1sK4y1Z7KG&cid=329802177&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+```
+::github{repo="radishzzz/astro-theme-retypeset"}
 ```
 
 ### 效果
 
-<iframe src="https://www.youtube.com/embed/9pP0pIgP2kE?si=Rlk4C4ltaVPHXZ80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+::github{repo="radishzzz/astro-theme-retypeset"}
 
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=930327443&bvid=BV1sK4y1Z7KG&cid=329802177&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+## 視頻
+
+使用雙冒號語法 `::youtube{id="videoId"}`，即可創建視頻。
+
+### 語法
+
+```
+::youtube{id="9pP0pIgP2kE"}
+
+::bilibili{id="BV1sK4y1Z7KG"}
+```
+
+### 效果
+
+::youtube{id="9pP0pIgP2kE"}
+
+::bilibili{id="BV1sK4y1Z7KG"}
+
+## X 貼文
+
+使用雙冒號語法 `::x{url="postLink"}`，即可創建 X 貼文卡片。
+
+### 語法
+
+```
+::x{url="https://x.com/astrodotbuild/status/1632809919291457537"}
+```
+
+### 效果
+
+::x{url="https://x.com/astrodotbuild/status/1632809919291457537"}

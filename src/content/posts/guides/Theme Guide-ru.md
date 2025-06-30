@@ -116,6 +116,11 @@ comment: {
     emitMetadata: '0'
     inputPosition: 'bottom'
   }
+  // система комментариев twikoo
+  twikoo: {
+    envId: ''
+    // version: версию фронтенда twikoo можно изменить в package.json
+  }
   // система комментариев waline
   waline: {
     // URL сервера
