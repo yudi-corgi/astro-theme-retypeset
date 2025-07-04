@@ -246,7 +246,7 @@ Cantidad de caracteres para extractos automáticos de artículos.
 ```ts
 // src/utils/description.ts
 
-const EXCERPT_LENGTHS: Record<ExcerptScene, {
+const excerptLengths: Record<ExcerptScene, {
   cjk: number // Chino, Japonés, Coreano
   other: number // Otros idiomas
 }> = {

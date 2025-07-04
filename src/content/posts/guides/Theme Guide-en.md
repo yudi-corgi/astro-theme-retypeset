@@ -246,7 +246,7 @@ Character count for automatic article excerpts.
 ```ts
 // src/utils/description.ts
 
-const EXCERPT_LENGTHS: Record<ExcerptScene, {
+const excerptLengths: Record<ExcerptScene, {
   cjk: number // Chinese, Japanese, Korean
   other: number // Other languages
 }> = {
