@@ -17,9 +17,9 @@ Para crear leyendas automáticas para figuras, utilice la sintaxis estándar de 
 ### Sintaxis
 
 ```
-![Descripción de la imagen](https://image.example.com/image-01.webp)
+![Descripción de la imagen](https://image.radishzz.cc/image/gallery/06.webp)
 
-![_Descripción de la imagen](https://image.example.com/image-01.webp)
+![_Descripción de la imagen](https://image.radishzz.cc/image/gallery/06.webp)
 ```
 
 ### Resultado
@@ -119,9 +119,9 @@ Para crear tarjetas de tweets, utilice la directiva hoja `::tweet{url="tweetUrl"
 ### Sintaxis
 
 ```
-::tweet{url="https://x.com/astrodotbuild/status/1632809919291457537"}
+::tweet{url="https://x.com/hachi_08/status/1906456524337123549"}
 ```
 
 ### Resultado
 
-::tweet{url="https://x.com/astrodotbuild/status/1632809919291457537"}
+::tweet{url="https://x.com/hachi_08/status/1906456524337123549"}

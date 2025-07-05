@@ -17,9 +17,9 @@ To create automatic figure captions, use the standard Markdown image syntax `![a
 ### Syntax
 
 ```
-![Image description](https://image.example.com/image-01.webp)
+![Image description](https://image.radishzz.cc/image/gallery/06.webp)
 
-![_Image description](https://image.example.com/image-01.webp)
+![_Image description](https://image.radishzz.cc/image/gallery/06.webp)
 ```
 
 ### Output
@@ -119,9 +119,9 @@ To create tweet cards, use the leaf directive `::tweet{url="tweetUrl"}`.
 ### Syntax
 
 ```
-::tweet{url="https://x.com/astrodotbuild/status/1632809919291457537"}
+::tweet{url="https://x.com/hachi_08/status/1906456524337123549"}
 ```
 
 ### Output
 
-::tweet{url="https://x.com/astrodotbuild/status/1632809919291457537"}
+::tweet{url="https://x.com/hachi_08/status/1906456524337123549"}
