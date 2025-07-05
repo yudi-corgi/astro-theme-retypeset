@@ -114,14 +114,14 @@ GitHub 構文 `> [!TYPE]` または三重コロン構文 `:::type` を使用し�
 
 ## X ツイート
 
-二重コロン構文 `::x{url="postLink"}` を使用すると、X ツイートカードを作成できます。
+二重コロン構文 `::tweet{url="tweetUrl"}` を使用すると、X ツイートカードを作成できます。
 
 ### 構文
 
 ```
-::x{url="https://x.com/astrodotbuild/status/1632809919291457537"}
+::tweet{url="https://x.com/astrodotbuild/status/1632809919291457537"}
 ```
 
 ### 効果
 
-::x{url="https://x.com/astrodotbuild/status/1632809919291457537"}
+::tweet{url="https://x.com/astrodotbuild/status/1632809919291457537"}

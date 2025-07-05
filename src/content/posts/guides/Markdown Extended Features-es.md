@@ -112,16 +112,16 @@ Para crear videos, utilice la directiva hoja `::youtube{id="videoId"}`.
 
 ::bilibili{id="BV1sK4y1Z7KG"}
 
-## Publicaciones de X
+## Tweets
 
-Para crear tarjetas de publicaciones de X, utilice la directiva hoja `::x{url="postLink"}`.
+Para crear tarjetas de tweets, utilice la directiva hoja `::tweet{url="tweetUrl"}`.
 
 ### Sintaxis
 
 ```
-::x{url="https://x.com/astrodotbuild/status/1632809919291457537"}
+::tweet{url="https://x.com/astrodotbuild/status/1632809919291457537"}
 ```
 
 ### Resultado
 
-::x{url="https://x.com/astrodotbuild/status/1632809919291457537"}
+::tweet{url="https://x.com/astrodotbuild/status/1632809919291457537"}

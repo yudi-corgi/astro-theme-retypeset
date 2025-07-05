@@ -112,16 +112,16 @@ abbrlink: markdown-extended-features
 
 ::bilibili{id="BV1sK4y1Z7KG"}
 
-## X 帖子
+## X 推文
 
-使用双冒号语法 `::x{url="postLink"}`，即可创建 X 帖子卡片。
+使用双冒号语法 `::tweet{url="tweetUrl"}`，即可创建 X 推文卡片。
 
 ### 语法
 
 ```
-::x{url="https://x.com/astrodotbuild/status/1632809919291457537"}
+::tweet{url="https://x.com/astrodotbuild/status/1632809919291457537"}
 ```
 
 ### 效果
 
-::x{url="https://x.com/astrodotbuild/status/1632809919291457537"}
+::tweet{url="https://x.com/astrodotbuild/status/1632809919291457537"}

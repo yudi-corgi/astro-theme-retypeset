@@ -112,16 +112,16 @@ To create videos, use the leaf directive `::youtube{id="videoId"}`.
 
 ::bilibili{id="BV1sK4y1Z7KG"}
 
-## X Posts
+## Tweets
 
-To create X post cards, use the leaf directive `::x{url="postLink"}`.
+To create tweet cards, use the leaf directive `::tweet{url="tweetUrl"}`.
 
 ### Syntax
 
 ```
-::x{url="https://x.com/astrodotbuild/status/1632809919291457537"}
+::tweet{url="https://x.com/astrodotbuild/status/1632809919291457537"}
 ```
 
 ### Output
 
-::x{url="https://x.com/astrodotbuild/status/1632809919291457537"}
+::tweet{url="https://x.com/astrodotbuild/status/1632809919291457537"}

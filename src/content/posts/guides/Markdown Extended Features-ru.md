@@ -112,16 +112,16 @@ abbrlink: markdown-extended-features
 
 ::bilibili{id="BV1sK4y1Z7KG"}
 
-## Посты X
+## Твиты
 
-Для создания карточек постов X используйте листовую директиву `::x{url="postLink"}`.
+Для создания карточек твитов используйте листовую директиву `::tweet{url="tweetUrl"}`.
 
 ### Синтаксис
 
 ```
-::x{url="https://x.com/astrodotbuild/status/1632809919291457537"}
+::tweet{url="https://x.com/astrodotbuild/status/1632809919291457537"}
 ```
 
 ### Результат
 
-::x{url="https://x.com/astrodotbuild/status/1632809919291457537"}
+::tweet{url="https://x.com/astrodotbuild/status/1632809919291457537"}
