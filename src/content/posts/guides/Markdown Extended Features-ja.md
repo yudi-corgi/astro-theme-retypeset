@@ -17,9 +17,9 @@ abbrlink: markdown-extended-features
 ### 構文
 
 ```
-![画像の説明](https://image.example.com/image-01.webp)
+![画像の説明](https://image.radishzz.cc/image/gallery/06.webp)
 
-![_画像の説明](https://image.example.com/image-01.webp)
+![_画像の説明](https://image.radishzz.cc/image/gallery/06.webp)
 ```
 
 ### 効果
@@ -114,14 +114,14 @@ GitHub 構文 `> [!TYPE]` または三重コロン構文 `:::type` を使用し�
 
 ## X ツイート
 
-二重コロン構文 `::x{url="postLink"}` を使用すると、X ツイートカードを作成できます。
+二重コロン構文 `::tweet{url="tweetUrl"}` を使用すると、X ツイートカードを作成できます。
 
 ### 構文
 
 ```
-::x{url="https://x.com/astrodotbuild/status/1632809919291457537"}
+::tweet{url="https://x.com/hachi_08/status/1906456524337123549"}
 ```
 
 ### 効果
 
-::x{url="https://x.com/astrodotbuild/status/1632809919291457537"}
+::tweet{url="https://x.com/hachi_08/status/1906456524337123549"}

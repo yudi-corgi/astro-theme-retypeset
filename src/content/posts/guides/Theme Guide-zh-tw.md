@@ -246,7 +246,7 @@ shikiConfig: {
 ```ts
 // src/utils/description.ts
 
-const EXCERPT_LENGTHS: Record<ExcerptScene, {
+const excerptLengths: Record<ExcerptScene, {
   cjk: number // 中文、日文、韓文
   other: number // 其他語言
 }> = {

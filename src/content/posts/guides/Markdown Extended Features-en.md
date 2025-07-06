@@ -17,9 +17,9 @@ To create automatic figure captions, use the standard Markdown image syntax `![a
 ### Syntax
 
 ```
-![Image description](https://image.example.com/image-01.webp)
+![Image description](https://image.radishzz.cc/image/gallery/06.webp)
 
-![_Image description](https://image.example.com/image-01.webp)
+![_Image description](https://image.radishzz.cc/image/gallery/06.webp)
 ```
 
 ### Output
@@ -112,16 +112,16 @@ To create videos, use the leaf directive `::youtube{id="videoId"}`.
 
 ::bilibili{id="BV1sK4y1Z7KG"}
 
-## X Posts
+## Tweets
 
-To create X post cards, use the leaf directive `::x{url="postLink"}`.
+To create tweet cards, use the leaf directive `::tweet{url="tweetUrl"}`.
 
 ### Syntax
 
 ```
-::x{url="https://x.com/astrodotbuild/status/1632809919291457537"}
+::tweet{url="https://x.com/hachi_08/status/1906456524337123549"}
 ```
 
 ### Output
 
-::x{url="https://x.com/astrodotbuild/status/1632809919291457537"}
+::tweet{url="https://x.com/hachi_08/status/1906456524337123549"}
