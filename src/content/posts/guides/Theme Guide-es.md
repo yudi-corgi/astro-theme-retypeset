@@ -89,11 +89,11 @@ global: {
   // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
   // 2025-04-13, 04-13-2025, 13-04-2025, Apr 13 2025，13 Apr 2025
   dateFormat: 'YYYY-MM-DD'
-  // habilitar tabla de contenidos para todos los artículos por defecto
+  // tabla de contenidos para publicaciones
   toc: true // true, false
-  // habilitar KaTeX para renderizar fórmulas matemáticas
+  // renderizado matemático KaTeX
   katex: true // true, false
-  // reducir animaciones y transiciones para mejorar el rendimiento
+  // reducir movimiento
   reduceMotion: false // true, false
 }
 ```
@@ -119,7 +119,7 @@ comment: {
   // sistema de comentarios twikoo
   twikoo: {
     envId: ''
-    // version: la versión frontend de twikoo puede cambiarse en package.json
+    // version: la versión frontend puede cambiarse en package.json
   }
   // sistema de comentarios waline
   waline: {

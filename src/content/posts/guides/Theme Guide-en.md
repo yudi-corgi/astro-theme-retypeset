@@ -89,11 +89,11 @@ global: {
   // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
   // 2025-04-13, 04-13-2025, 13-04-2025, Apr 13 2025，13 Apr 2025
   dateFormat: 'YYYY-MM-DD'
-  // enable table of contents for all posts by default
+  // table of contents for posts
   toc: true // true, false
-  // enable KaTeX for mathematical formulas rendering
+  // KaTeX math rendering
   katex: true // true, false
-  // reduce animations and transitions to improve performance
+  // reduce motion
   reduceMotion: false // true, false
 }
 ```
@@ -119,7 +119,7 @@ comment: {
   // twikoo comment system
   twikoo: {
     envId: ''
-    // version: twikoo frontend version can be changed in package.json
+    // version: frontend version can be changed in package.json
   }
   // waline comment system
   waline: {

@@ -72,7 +72,7 @@ Para agregar una imagen, añada un signo de exclamación `!`, seguido de texto a
 
 ## Citas en Bloque
 
-Para crear una cita en bloque, agregue un `>` delante de un párrafo. Para crear una cita en bloque con múltiples párrafos, agregue un símbolo `>` en las líneas en blanco entre los párrafos. Para citar fuentes, puede usar las etiquetas `<cite>` o `<footer>` para referencias bibliográficas, mientras que las notas al pie pueden insertarse usando la sintaxis `[^1]` o `[^note]`.
+Para crear una cita en bloque, agregue un símbolo `>` y un espacio antes del texto. Las citas en bloque pueden contener múltiples párrafos. Para citar fuentes, utilice las etiquetas `<cite>` o `<footer>`, mientras que las notas al pie pueden insertarse usando la sintaxis `[^1]` o `[^note]`.
 
 ### Cita en bloque con múltiples párrafos
 
@@ -132,11 +132,11 @@ Para agregar una tabla, use tres o más guiones `---` para crear el encabezado d
 
 ## Bloques de Código
 
-Para crear un bloque de código, agregue tres acentos graves ```` ``` ```` al inicio y al final de su código. Puede indicar el lenguaje de programación después de los acentos graves de apertura para indicar cómo colorear y estilizar su código, por ejemplo: html, javascript, css, markdown, etc.
+Para crear un bloque de código, envuelva su código con tres acentos graves ```` ``` ````. Puede indicar el lenguaje de programación después de los acentos graves de apertura para indicar cómo colorear y estilizar su código, por ejemplo: html, javascript, css, markdown, etc.
 
 ### Sintaxis
 
-````markdown
+````
 ```html
 <!doctype html>
 <html lang="es">

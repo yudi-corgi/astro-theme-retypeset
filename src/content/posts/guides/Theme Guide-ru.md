@@ -89,11 +89,11 @@ global: {
   // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
   // 2025-04-13, 04-13-2025, 13-04-2025, Apr 13 2025，13 Apr 2025
   dateFormat: 'YYYY-MM-DD'
-  // включить оглавление для всех статей по умолчанию
+  // оглавление для статей
   toc: true // true, false
-  // включить KaTeX для отображения математических формул
+  // математический рендеринг KaTeX
   katex: true // true, false
-  // уменьшить анимации и переходы для повышения производительности
+  // уменьшить движение
   reduceMotion: false // true, false
 }
 ```
@@ -119,7 +119,7 @@ comment: {
   // система комментариев twikoo
   twikoo: {
     envId: ''
-    // version: версию фронтенда twikoo можно изменить в package.json
+    // version: версию фронтенда можно изменить в package.json
   }
   // система комментариев waline
   waline: {

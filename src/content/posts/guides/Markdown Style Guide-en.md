@@ -72,7 +72,7 @@ To add an image, add an exclamation mark `!`, followed by alt text in brackets `
 
 ## Blockquotes
 
-To create a blockquote, add a `>` in front of a paragraph. To create a blockquote with multiple paragraphs, add a `>` symbol to the empty lines between paragraphs. To cite sources, you can use the `<cite>` or `<footer>` tags for bibliographic references, while footnotes may be inserted using the `[^1]` or `[^note]` syntax.
+To create a blockquote, add a `>` symbol and a space before text. Blockquotes can contain multiple paragraphs. To cite sources, use `<cite>` or `<footer>` tags, while footnotes may be inserted using the `[^1]` or `[^note]` syntax.
 
 ### Blockquote with multiple paragraphs
 
@@ -132,11 +132,11 @@ To add a table, use three or more hyphens `---` to create each column's header, 
 
 ## Code Blocks
 
-To create a code block, add three backticks ```` ``` ```` at the start and end of your code. You can indicate the programming language being used after the opening backticks to indicate how to color and style your code, for eg. html, javascript, css, markdown etc.
+To create a code block, wrap your code with three backticks ```` ``` ````. You can indicate the programming language being used after the opening backticks to indicate how to color and style your code, for eg. html, javascript, css, markdown etc.
 
 ### Syntax
 
-````markdown
+````
 ```html
 <!doctype html>
 <html lang="en">

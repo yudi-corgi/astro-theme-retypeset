@@ -89,11 +89,11 @@ global: {
   // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
   // 2025-04-13, 04-13-2025, 13-04-2025, Apr 13 2025，13 Apr 2025
   dateFormat: 'YYYY-MM-DD'
-  // 默认为所有文章开启目录
+  // 文章目录
   toc: true // true, false
-  // 启用 KaTeX 数学公式渲染
+  // KaTeX 数学渲染
   katex: true // true, false
-  // 减少动画和过渡效果以提高性能
+  // 减少动画效果
   reduceMotion: false // true, false
 }
 ```
@@ -119,7 +119,7 @@ comment: {
   // twikoo 评论系统
   twikoo: {
     envId: ''
-    // version: twikoo 前端版本可在 package.json 中修改
+    // version: 前端版本可在 package.json 中修改
   }
   // waline 评论系统
   waline: {

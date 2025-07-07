@@ -89,11 +89,11 @@ global: {
   // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
   // 2025-04-13, 04-13-2025, 13-04-2025, Apr 13 2025，13 Apr 2025
   dateFormat: 'YYYY-MM-DD'
-  // デフォルトですべての記事に目次を表示
+  // 記事の目次
   toc: true // true, false
-  // 数式表示のための KaTeX を有効化
+  // KaTeX 数式レンダリング
   katex: true // true, false
-  // アニメーションと遷移効果を減らしてパフォーマンスを向上させる
+  // アニメーション効果を減らす
   reduceMotion: false // true, false
 }
 ```
@@ -119,7 +119,7 @@ comment: {
   // twikoo コメントシステム
   twikoo: {
     envId: ''
-    // version: twikoo フロントエンドのバージョンは package.json で変更できます
+    // version: フロントエンドのバージョンは package.json で変更できます
   }
   // waline コメントシステム
   waline: {

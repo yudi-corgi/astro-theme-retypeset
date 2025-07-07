@@ -89,11 +89,11 @@ global: {
   // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
   // 2025-04-13, 04-13-2025, 13-04-2025, Apr 13 2025，13 Apr 2025
   dateFormat: 'YYYY-MM-DD'
-  // 預設為所有文章開啟目錄
+  // 文章目錄
   toc: true // true, false
-  // 啟用 KaTeX 數學公式渲染
+  // KaTeX 數學渲染
   katex: true // true, false
-  // 減少動畫和過渡效果以提高性能
+  // 減少動畫效果
   reduceMotion: false // true, false
 }
 ```
@@ -119,7 +119,7 @@ comment: {
   // twikoo 評論系統
   twikoo: {
     envId: ''
-    // version: twikoo 前端版本可在 package.json 中修改
+    // version: 前端版本可在 package.json 中修改
   }
   // waline 評論系統
   waline: {
