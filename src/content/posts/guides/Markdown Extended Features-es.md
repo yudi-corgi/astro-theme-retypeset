@@ -80,6 +80,24 @@ Advierte sobre riesgos o resultados negativos de ciertas acciones.
 Esta es una nota con un título personalizado.
 :::
 
+## Secciones Plegables
+
+Para crear secciones plegables, utilice la sintaxis de directiva contenedor `:::fold[title]`. Haga clic en el título para expandir o contraer.
+
+### Sintaxis
+
+```
+:::fold[Consejos de Uso]
+Si necesita agregar contenido que puede no interesar a todos los lectores, puede colocarlo en una sección plegable.
+:::
+```
+
+### Resultado
+
+:::fold[Consejos de Uso]
+Si necesita agregar contenido que puede no interesar a todos los lectores, puede colocarlo en una sección plegable.
+:::
+
 ## Repositorio de Github
 
 Para crear una tarjeta de repositorio de Github, utilice la directiva hoja `::github{repo="owner/repo"}`. Los datos del repositorio se obtienen en tiempo real de la API de GitHub después de que la página se carga.

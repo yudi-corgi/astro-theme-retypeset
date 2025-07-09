@@ -80,6 +80,24 @@ Advises about risks or negative outcomes of certain actions.
 This is a note with a custom title.
 :::
 
+## Collapsible Sections
+
+To create collapsible sections, use the container directive syntax `:::fold[title]`. Click the title to expand or collapse.
+
+### Syntax
+
+```
+:::fold[Usage Tips]
+If you need to add content that may not interest all readers, you can place it in a collapsible section.
+:::
+```
+
+### Output
+
+:::fold[Usage Tips]
+If you need to add content that may not interest all readers, you can place it in a collapsible section.
+:::
+
 ## Github Repository
 
 To create a Github repository card, use the leaf directive `::github{repo="owner/repo"}`. Repository data is fetched in real-time from the GitHub API after the page loads.
