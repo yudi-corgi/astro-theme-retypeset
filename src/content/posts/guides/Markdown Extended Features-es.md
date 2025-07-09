@@ -88,14 +88,14 @@ Para crear secciones plegables, utilice la sintaxis de directiva contenedor `:::
 
 ```
 :::fold[Consejos de Uso]
-Si necesita agregar contenido que puede no interesar a todos los lectores, puede colocarlo en una sección plegable.
+El contenido que pueda no interesar a todos los lectores puede colocarse en una sección plegable.
 :::
 ```
 
 ### Resultado
 
 :::fold[Consejos de Uso]
-Si necesita agregar contenido que puede no interesar a todos los lectores, puede colocarlo en una sección plegable.
+El contenido que pueda no interesar a todos los lectores puede colocarse en una sección plegable.
 :::
 
 ## Repositorio de Github

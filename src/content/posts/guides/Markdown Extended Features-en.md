@@ -88,14 +88,14 @@ To create collapsible sections, use the container directive syntax `:::fold[titl
 
 ```
 :::fold[Usage Tips]
-If you need to add content that may not interest all readers, you can place it in a collapsible section.
+Content that may not interest all readers can be placed in a collapsible section.
 :::
 ```
 
 ### Output
 
 :::fold[Usage Tips]
-If you need to add content that may not interest all readers, you can place it in a collapsible section.
+Content that may not interest all readers can be placed in a collapsible section.
 :::
 
 ## Github Repository
