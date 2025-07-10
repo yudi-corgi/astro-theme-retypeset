@@ -30,7 +30,7 @@ abbrlink: markdown-extended-features
 
 ## 画廊
 
-使用三冒号语法 `:::gallery`，即可创建图片画廊。水平滚动以展示更多图片。
+使用三冒号语法 `:::gallery`，即可创建图片画廊。水平滚动以查看更多图片。
 
 ### 语法
 
