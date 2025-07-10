@@ -28,32 +28,6 @@ abbrlink: markdown-extended-features
 
 ![_画像の説明](https://image.radishzz.cc/image/gallery/06.webp)
 
-## ギャラリー
-
-三重コロン構文 `:::gallery` を使用すると、画像ギャラリーを作成できます。水平スクロールでより多くの画像を閲覧できます。
-
-### 構文
-
-```
-:::gallery
-![アルパカ](https://image.radishzz.cc/image/gallery/sheep-1.jpg)
-![振り向く](https://image.radishzz.cc/image/gallery/sheep-2.jpg)
-![見つめ合う](https://image.radishzz.cc/image/gallery/sheep-3.jpg)
-![子アルパカ](https://image.radishzz.cc/image/gallery/sheep-4.jpg)
-![可愛すぎる！](https://image.radishzz.cc/image/gallery/sheep-5.jpg)
-:::
-```
-
-### 効果
-
-:::gallery
-![アルパカ](https://image.radishzz.cc/image/gallery/sheep-1.jpg)
-![振り向く](https://image.radishzz.cc/image/gallery/sheep-2.jpg)
-![見つめ合う](https://image.radishzz.cc/image/gallery/sheep-3.jpg)
-![子アルパカ](https://image.radishzz.cc/image/gallery/sheep-4.jpg)
-![可愛すぎる！](https://image.radishzz.cc/image/gallery/sheep-5.jpg)
-:::
-
 ## アドモニションブロック
 
 GitHub 構文 `> [!TYPE]` または三重コロン構文 `:::type` を使用して、アドモニションブロックを作成できます。`note`、`tip`、`important`、`warning`、`caution` の 5 種類がサポートされています。
@@ -122,6 +96,32 @@ GitHub 構文 `> [!TYPE]` または三重コロン構文 `:::type` を使用し�
 
 :::fold[使用のヒント]
 すべての読者が興味を持たない可能性のあるコンテンツは、折りたたみ部分に配置できます。
+:::
+
+## ギャラリー
+
+三重コロン構文 `:::gallery` を使用すると、画像ギャラリーを作成できます。水平スクロールでより多くの画像を閲覧できます。
+
+### 構文
+
+```
+:::gallery
+![アルパカ](https://image.radishzz.cc/image/gallery/sheep-1.jpg)
+![振り向く](https://image.radishzz.cc/image/gallery/sheep-2.jpg)
+![見つめ合う](https://image.radishzz.cc/image/gallery/sheep-3.jpg)
+![子アルパカ](https://image.radishzz.cc/image/gallery/sheep-4.jpg)
+![可愛すぎる！](https://image.radishzz.cc/image/gallery/sheep-5.jpg)
+:::
+```
+
+### 効果
+
+:::gallery
+![アルパカ](https://image.radishzz.cc/image/gallery/sheep-1.jpg)
+![振り向く](https://image.radishzz.cc/image/gallery/sheep-2.jpg)
+![見つめ合う](https://image.radishzz.cc/image/gallery/sheep-3.jpg)
+![子アルパカ](https://image.radishzz.cc/image/gallery/sheep-4.jpg)
+![可愛すぎる！](https://image.radishzz.cc/image/gallery/sheep-5.jpg)
 :::
 
 ## Github リポジトリ
