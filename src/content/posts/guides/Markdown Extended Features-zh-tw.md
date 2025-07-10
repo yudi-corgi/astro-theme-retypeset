@@ -28,6 +28,32 @@ abbrlink: markdown-extended-features
 
 ![_圖片描述](https://image.radishzz.cc/image/gallery/06.webp)
 
+## 畫廊
+
+使用三冒號語法 `:::gallery`，即可建立圖片畫廊。水平捲動以瀏覽更多圖片。
+
+### 語法
+
+```
+:::gallery
+![羊駝](https://image.radishzz.cc/image/gallery/sheep-1.jpg)
+![轉頭](https://image.radishzz.cc/image/gallery/sheep-2.jpg)
+![對視](https://image.radishzz.cc/image/gallery/sheep-3.jpg)
+![小羊駝](https://image.radishzz.cc/image/gallery/sheep-4.jpg)
+![可愛捏](https://image.radishzz.cc/image/gallery/sheep-5.jpg)
+:::
+```
+
+### 效果
+
+:::gallery
+![羊駝](https://image.radishzz.cc/image/gallery/sheep-1.jpg)
+![轉頭](https://image.radishzz.cc/image/gallery/sheep-2.jpg)
+![對視](https://image.radishzz.cc/image/gallery/sheep-3.jpg)
+![小羊駝](https://image.radishzz.cc/image/gallery/sheep-4.jpg)
+![可愛捏](https://image.radishzz.cc/image/gallery/sheep-5.jpg)
+:::
+
 ## 提示塊
 
 使用 GitHub 語法 `> [!TYPE]` 或三冒號語法 `:::type`，即可創建提示塊。支援 `note`、`tip`、`important`、`warning` 和 `caution` 五種類型。

@@ -28,6 +28,32 @@ Para crear leyendas automáticas para figuras, utilice la sintaxis estándar de 
 
 ![_Descripción de la imagen](https://image.radishzz.cc/image/gallery/06.webp)
 
+## Galería
+
+Para crear galerías de imágenes, utilice la directiva contenedor `:::gallery`. Desplácese horizontalmente para ver más imágenes.
+
+### Sintaxis
+
+```
+:::gallery
+![Alpaca](https://image.radishzz.cc/image/gallery/sheep-1.jpg)
+![Girando la cabeza](https://image.radishzz.cc/image/gallery/sheep-2.jpg)
+![Contacto visual](https://image.radishzz.cc/image/gallery/sheep-3.jpg)
+![Alpaca bebé](https://image.radishzz.cc/image/gallery/sheep-4.jpg)
+![¡Ay, qué lindo!](https://image.radishzz.cc/image/gallery/sheep-5.jpg)
+:::
+```
+
+### Resultado
+
+:::gallery
+![Alpaca](https://image.radishzz.cc/image/gallery/sheep-1.jpg)
+![Girando la cabeza](https://image.radishzz.cc/image/gallery/sheep-2.jpg)
+![Contacto visual](https://image.radishzz.cc/image/gallery/sheep-3.jpg)
+![Alpaca bebé](https://image.radishzz.cc/image/gallery/sheep-4.jpg)
+![¡Ay, qué lindo!](https://image.radishzz.cc/image/gallery/sheep-5.jpg)
+:::
+
 ## Bloques de Admonición
 
 Para crear bloques de admonición, utilice la sintaxis de GitHub `> [!TYPE]` o la directiva contenedor `:::type`. Se admiten cinco tipos: `note`, `tip`, `important`, `warning` y `caution`.

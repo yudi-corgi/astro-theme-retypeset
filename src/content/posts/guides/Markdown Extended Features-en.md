@@ -28,6 +28,32 @@ To create automatic figure captions, use the standard Markdown image syntax `![a
 
 ![_Image description](https://image.radishzz.cc/image/gallery/06.webp)
 
+## Gallery
+
+To create image galleries, use the container directive `:::gallery`. Scroll horizontally to view more images.
+
+### Syntax
+
+```
+:::gallery
+![Alpaca](https://image.radishzz.cc/image/gallery/sheep-1.jpg)
+![Turning head](https://image.radishzz.cc/image/gallery/sheep-2.jpg)
+![Eye contact](https://image.radishzz.cc/image/gallery/sheep-3.jpg)
+![Baby alpaca](https://image.radishzz.cc/image/gallery/sheep-4.jpg)
+![Aww, so cute!](https://image.radishzz.cc/image/gallery/sheep-5.jpg)
+:::
+```
+
+### Output
+
+:::gallery
+![Alpaca](https://image.radishzz.cc/image/gallery/sheep-1.jpg)
+![Turning head](https://image.radishzz.cc/image/gallery/sheep-2.jpg)
+![Eye contact](https://image.radishzz.cc/image/gallery/sheep-3.jpg)
+![Baby alpaca](https://image.radishzz.cc/image/gallery/sheep-4.jpg)
+![Aww, so cute!](https://image.radishzz.cc/image/gallery/sheep-5.jpg)
+:::
+
 ## Admonition Blocks
 
 To create admonition blocks, use the GitHub syntax `> [!TYPE]` or the container directive `:::type`. Following types are supported: `note`, `tip`, `important`, `warning`, and `caution`.

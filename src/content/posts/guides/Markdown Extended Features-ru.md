@@ -28,6 +28,32 @@ abbrlink: markdown-extended-features
 
 ![_Описание изображения](https://image.radishzz.cc/image/gallery/06.webp)
 
+## Галерея
+
+Для создания галерей изображений используйте контейнерную директиву `:::gallery`. Прокручивайте горизонтально, чтобы просмотреть больше изображений.
+
+### Синтаксис
+
+```
+:::gallery
+![Альпака](https://image.radishzz.cc/image/gallery/sheep-1.jpg)
+![Поворачивает голову](https://image.radishzz.cc/image/gallery/sheep-2.jpg)
+![Зрительный контакт](https://image.radishzz.cc/image/gallery/sheep-3.jpg)
+![Детёныш альпаки](https://image.radishzz.cc/image/gallery/sheep-4.jpg)
+![Ой, какая прелесть!](https://image.radishzz.cc/image/gallery/sheep-5.jpg)
+:::
+```
+
+### Результат
+
+:::gallery
+![Альпака](https://image.radishzz.cc/image/gallery/sheep-1.jpg)
+![Поворачивает голову](https://image.radishzz.cc/image/gallery/sheep-2.jpg)
+![Зрительный контакт](https://image.radishzz.cc/image/gallery/sheep-3.jpg)
+![Детёныш альпаки](https://image.radishzz.cc/image/gallery/sheep-4.jpg)
+![Ой, какая прелесть!](https://image.radishzz.cc/image/gallery/sheep-5.jpg)
+:::
+
 ## Блоки примечаний
 
 Для создания блоков примечаний используйте синтаксис GitHub `> [!TYPE]` или контейнерную директиву `:::type`. Поддерживаются пять типов: `note`, `tip`, `important`, `warning` и `caution`.
