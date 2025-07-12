@@ -14,7 +14,7 @@ Here are some basic Markdown syntax examples and their stylistic effects in Rety
 
 ## Headings
 
-To create a heading, add number signs `#` in front of a word or phrase. The number of number signs you use should correspond to the heading level.
+To create headings, add number signs `#` in front of a word or phrase. The number of number signs you use should correspond to the heading level.
 
 ### Syntax
 
@@ -36,7 +36,7 @@ To create a heading, add number signs `#` in front of a word or phrase. The numb
 ##### Heading 5
 ###### Heading 6
 
-## Paragraph
+## Paragraphs
 
 To create paragraphs, use a blank line to separate one or more lines of text.
 
@@ -56,7 +56,7 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
 
 ## Images
 
-To add an image, add an exclamation mark `!`, followed by alt text in brackets `[]`, and the path or URL to the image asset in parentheses `()`.
+To add images, add an exclamation mark `!`, followed by alt text in brackets `[]`, and the path or URL to the image asset in parentheses `()`.
 
 ### Syntax
 
@@ -72,7 +72,7 @@ To add an image, add an exclamation mark `!`, followed by alt text in brackets `
 
 ## Blockquotes
 
-To create a blockquote, add a `>` symbol and a space before text. Blockquotes can contain multiple paragraphs. To cite sources, use `<cite>` or `<footer>` tags, while footnotes may be inserted using the `[^1]` or `[^note]` syntax.
+To create blockquotes, add a `>` symbol and a space before text. Blockquotes can contain multiple paragraphs. To cite sources, use `<cite>` or `<footer>` tags, while footnotes may be inserted using the `[^1]` or `[^note]` syntax.
 
 ### Blockquote with multiple paragraphs
 
@@ -112,7 +112,7 @@ To create a blockquote, add a `>` symbol and a space before text. Blockquotes ca
 
 ## Tables
 
-To add a table, use three or more hyphens `---` to create each column's header, and use pipes `|` to separate each column.
+To add tables, use three or more hyphens `---` to create each column's header, and use pipes `|` to separate each column.
 
 ### Syntax
 
@@ -132,7 +132,7 @@ To add a table, use three or more hyphens `---` to create each column's header, 
 
 ## Code Blocks
 
-To create a code block, wrap your code with three backticks ```` ``` ````. You can indicate the programming language being used after the opening backticks to indicate how to color and style your code, for eg. html, javascript, css, markdown etc.
+To create code blocks, wrap your code with three backticks ```` ``` ````. You can indicate the programming language being used after the opening backticks to indicate how to color and style your code, e.g., html, javascript, css, markdown, etc.
 
 ### Syntax
 
@@ -190,14 +190,14 @@ To create a code block, wrap your code with three backticks ```` ``` ````. You c
 
 ```markdown
 - List item
-- Another item
+- Chart item
 - And another item
 ```
 
 #### Output
 
 - List item
-- Another item
+- Chart item
 - And another item
 
 ### Nested list

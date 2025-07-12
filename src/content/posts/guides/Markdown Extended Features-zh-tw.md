@@ -124,9 +124,9 @@ abbrlink: markdown-extended-features
 ![可愛捏](https://image.radishzz.cc/image/gallery/sheep-5.jpg)
 :::
 
-## Github 倉庫
+## GitHub 倉庫
 
-使用雙冒號語法 `::github{repo="owner/repo"}`，即可創建 Github 倉庫卡片。在頁面載入後，從 GitHub API 中即時獲取倉庫數據。
+使用雙冒號語法 `::github{repo="owner/repo"}`，即可創建 GitHub 倉庫卡片。在頁面載入後，從 GitHub API 中即時獲取倉庫數據。
 
 ### 語法
 
@@ -140,7 +140,7 @@ abbrlink: markdown-extended-features
 
 ## 視頻
 
-使用雙冒號語法 `::youtube{id="videoId"}`，即可創建視頻。
+使用雙冒號語法 `::youtube{id="videoId"}`，即可嵌入視頻。
 
 ### 語法
 
@@ -158,7 +158,7 @@ abbrlink: markdown-extended-features
 
 ## X 推文
 
-使用雙冒號語法 `::tweet{url="tweetUrl"}`，即可創建 X 推文卡片。
+使用雙冒號語法 `::tweet{url="tweetUrl"}`，即可嵌入 X 推文卡片。
 
 ### 語法
 

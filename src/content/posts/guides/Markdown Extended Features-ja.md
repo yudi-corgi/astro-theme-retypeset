@@ -124,9 +124,9 @@ GitHub 構文 `> [!TYPE]` または三重コロン構文 `:::type` を使用し�
 ![可愛すぎる！](https://image.radishzz.cc/image/gallery/sheep-5.jpg)
 :::
 
-## Github リポジトリ
+## GitHub リポジトリ
 
-二重コロン構文 `::github{repo="owner/repo"}` を使用すると、Github リポジトリカードを作成できます。ページの読み込み後、GitHub API からリアルタイムでリポジトリの情報が取得されます。
+二重コロン構文 `::github{repo="owner/repo"}` を使用すると、GitHub リポジトリカードを作成できます。ページの読み込み後、GitHub API からリアルタイムでリポジトリの情報が取得されます。
 
 ### 構文
 
@@ -140,7 +140,7 @@ GitHub 構文 `> [!TYPE]` または三重コロン構文 `:::type` を使用し�
 
 ## 動画
 
-二重コロン構文 `::youtube{id="videoId"}` を使用すると、動画を作成できます。
+二重コロン構文 `::youtube{id="videoId"}` を使用すると、動画を埋め込みできます。
 
 ### 構文
 
@@ -158,7 +158,7 @@ GitHub 構文 `> [!TYPE]` または三重コロン構文 `:::type` を使用し�
 
 ## X ツイート
 
-二重コロン構文 `::tweet{url="tweetUrl"}` を使用すると、X ツイートカードを作成できます。
+二重コロン構文 `::tweet{url="tweetUrl"}` を使用すると、X ツイートカードを埋め込みできます。
 
 ### 構文
 

@@ -10,7 +10,7 @@ abbrlink: markdown-extended-features
 
 Here are some extended Markdown features supported by Retypeset, including syntax examples and their stylistic effects.
 
-## Figure Captions
+## Figure Caption
 
 To create automatic figure captions, use the standard Markdown image syntax `![alt](src)`. To hide the caption, add an underscore `_` before the `alt` text or leave the `alt` text empty.
 
@@ -28,9 +28,9 @@ To create automatic figure captions, use the standard Markdown image syntax `![a
 
 ![_Image description](https://image.radishzz.cc/image/gallery/06.webp)
 
-## Admonition Blocks
+## Admonition Block
 
-To create admonition blocks, use the GitHub syntax `> [!TYPE]` or the container directive `:::type`. Following types are supported: `note`, `tip`, `important`, `warning`, and `caution`.
+To create admonition blocks, use the GitHub syntax `> [!TYPE]` or the container directive `:::type`. The following types are supported: `note`, `tip`, `important`, `warning`, and `caution`.
 
 ### Syntax
 
@@ -80,7 +80,7 @@ Advises about risks or negative outcomes of certain actions.
 This is a note with a custom title.
 :::
 
-## Collapsible Sections
+## Collapsible Section
 
 To create collapsible sections, use the container directive syntax `:::fold[title]`. Click the title to expand or collapse.
 
@@ -124,9 +124,9 @@ To create image galleries, use the container directive `:::gallery`. Scroll hori
 ![Aww, so cute!](https://image.radishzz.cc/image/gallery/sheep-5.jpg)
 :::
 
-## Github Repository
+## GitHub Repository
 
-To create a Github repository card, use the leaf directive `::github{repo="owner/repo"}`. Repository data is fetched in real-time from the GitHub API after the page loads.
+To create GitHub repository cards, use the leaf directive `::github{repo="owner/repo"}`. Repository data is fetched in real-time from the GitHub API after the page loads.
 
 ### Syntax
 
@@ -138,9 +138,9 @@ To create a Github repository card, use the leaf directive `::github{repo="owner
 
 ::github{repo="radishzzz/astro-theme-retypeset"}
 
-## Videos
+## Video
 
-To create videos, use the leaf directive `::youtube{id="videoId"}`.
+To embed videos, use the leaf directive `::youtube{id="videoId"}`.
 
 ### Syntax
 
@@ -156,9 +156,9 @@ To create videos, use the leaf directive `::youtube{id="videoId"}`.
 
 ::bilibili{id="BV1sK4y1Z7KG"}
 
-## Tweets
+## Tweet
 
-To create tweet cards, use the leaf directive `::tweet{url="tweetUrl"}`.
+To embed tweet cards, use the leaf directive `::tweet{url="tweetUrl"}`.
 
 ### Syntax
 

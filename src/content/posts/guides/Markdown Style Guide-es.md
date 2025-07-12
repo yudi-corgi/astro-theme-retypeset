@@ -14,7 +14,7 @@ Aquí hay algunos ejemplos básicos de sintaxis Markdown y sus efectos estilíst
 
 ## Encabezados
 
-Para crear un encabezado, agregue signos de numeral `#` delante de una palabra o frase. El número de signos de numeral debe corresponder al nivel del encabezado.
+Para crear encabezados, agregue signos de numeral `#` delante de una palabra o frase. El número de signos de numeral debe corresponder al nivel del encabezado.
 
 ### Sintaxis
 
@@ -56,7 +56,7 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
 
 ## Imágenes
 
-Para agregar una imagen, añada un signo de exclamación `!`, seguido de texto alternativo entre corchetes `[]`, y la ruta o URL de la imagen entre paréntesis `()`.
+Para agregar imágenes, añada un signo de exclamación `!`, seguido de texto alternativo entre corchetes `[]`, y la ruta o URL de la imagen entre paréntesis `()`.
 
 ### Sintaxis
 
@@ -72,7 +72,7 @@ Para agregar una imagen, añada un signo de exclamación `!`, seguido de texto a
 
 ## Citas en Bloque
 
-Para crear una cita en bloque, agregue un símbolo `>` y un espacio antes del texto. Las citas en bloque pueden contener múltiples párrafos. Para citar fuentes, utilice las etiquetas `<cite>` o `<footer>`, mientras que las notas al pie pueden insertarse usando la sintaxis `[^1]` o `[^note]`.
+Para crear citas en bloque, agregue un símbolo `>` y un espacio antes del texto. Las citas en bloque pueden contener múltiples párrafos. Para citar fuentes, utilice las etiquetas `<cite>` o `<footer>`, mientras que las notas al pie pueden insertarse usando la sintaxis `[^1]` o `[^note]`.
 
 ### Cita en bloque con múltiples párrafos
 
@@ -112,7 +112,7 @@ Para crear una cita en bloque, agregue un símbolo `>` y un espacio antes del te
 
 ## Tablas
 
-Para agregar una tabla, use tres o más guiones `---` para crear el encabezado de cada columna, y use barras verticales `|` para separar cada columna.
+Para agregar tablas, use tres o más guiones `---` para crear el encabezado de cada columna, y use barras verticales `|` para separar cada columna.
 
 ### Sintaxis
 
@@ -132,7 +132,7 @@ Para agregar una tabla, use tres o más guiones `---` para crear el encabezado d
 
 ## Bloques de Código
 
-Para crear un bloque de código, envuelva su código con tres acentos graves ```` ``` ````. Puede indicar el lenguaje de programación después de los acentos graves de apertura para indicar cómo colorear y estilizar su código, por ejemplo: html, javascript, css, markdown, etc.
+Para crear bloques de código, envuelva su código con tres acentos graves ```` ``` ````. Puede indicar el lenguaje de programación después de los acentos graves de apertura para indicar cómo colorear y estilizar su código, por ejemplo: html, javascript, css, markdown, etc.
 
 ### Sintaxis
 
@@ -258,7 +258,7 @@ X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 
 <abbr title="Graphics Interchange Format">GIF</abbr> es un formato de imagen de mapa de bits.
 
-Los buenos escritores siempre revisan la <u title="ortografía">ortografia</u>.
+Los buenos escritores siempre revisan la <u title="ortografía">ortografía</u>.
 
 Presione <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>Suprimir</kbd> para finalizar la sesión.
 

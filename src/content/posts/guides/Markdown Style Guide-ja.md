@@ -174,15 +174,15 @@ abbrlink: markdown-style-guide
 
 ```markdown
 1. 最初の項目
-2. 番目の項目
-3. 番目の項目
+2. 二番目の項目
+3. 三番目の項目
 ```
 
 #### 効果
 
 1. 最初の項目
-2. 番目の項目
-3. 番目の項目
+2. 二番目の項目
+3. 三番目の項目
 
 ### 順序なしリスト
 
@@ -237,7 +237,7 @@ X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 
 <abbr title="Graphics Interchange Format">GIF</abbr> はビットマップ画像形式の一種です。
 
-本は人類の進歩の<del>階段</del>梯子である
+本は人類の進歩の<del>階段</del>梯子である。
 
 優れた作家は常に<u title="スペリング">つづり</u>の間違いをチェックします。
 
@@ -258,7 +258,7 @@ X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 
 <abbr title="Graphics Interchange Format">GIF</abbr> はビットマップ画像形式の一種です。
 
-本は人類の進歩の<del>階段</del>梯子である
+本は人類の進歩の<del>階段</del>梯子である。
 
 優れた作家は常に<u title="スペリング">つづり</u>の間違いをチェックします。
 

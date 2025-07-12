@@ -10,7 +10,7 @@ lang: en
 abbrlink: theme-guide
 ---
 
-Retypeset is a static blog theme based on the [Astro](https://astro.build/) framework. This guide introduces how to modify theme configuration and create new articles, helping you quickly set up your personal blog.
+Retypeset is a static blog theme based on the [Astro](https://astro.build/) framework. This guide introduces how to modify theme configuration and create new posts, helping you quickly set up your personal blog.
 
 ## Theme Configuration
 
@@ -239,9 +239,9 @@ shikiConfig: {
 }
 ```
 
-### Article Excerpt
+### Post Excerpt
 
-Character count for automatic article excerpts.
+Character count for automatic post excerpts.
 
 ```ts
 // src/utils/description.ts
@@ -322,7 +322,7 @@ title: Theme Guide
 published: 2025-01-26
 
 # Optional
-description: The first 240 characters of the article will be automatically selected as the excerpt.
+description: The first 240 characters of the post will be automatically selected as the excerpt.
 updated: 2025-03-26
 tags:
   - Blog Theme
@@ -341,19 +341,19 @@ abbrlink: theme-guide
 
 #### draft
 
-Marks the article as a draft. When set to true, the article cannot be published and is only available for local development preview. Default is false.
+Marks the post as a draft. When set to true, the post cannot be published and is only available for local development preview. Default is false.
 
 #### pin
 
-Pins the article to the top. The higher the number, the higher the priority of the pinned article. Default is 0, which means not pinned.
+Pins the post to the top. The higher the number, the higher the priority of the pinned post. Default is 0, which means not pinned.
 
 #### toc
 
-Generate table of contents. Shows h2 to h4 headings. Determined by the global configuration `global.toc` by default, but can be overridden individually in each article.
+Generate table of contents. Shows h2 to h4 headings. Determined by the global configuration `global.toc` by default, but can be overridden individually in each post.
 
 #### lang
 
-Specifies the article language. Only one language can be specified. If not specified, the article will be displayed in all language paths by default.
+Specifies the post language. Only one language can be specified. If not specified, the post will be displayed in all language paths by default.
 
 ```md
 # src/config.ts
@@ -374,7 +374,7 @@ src/content/posts/apple.md   ->  example.com/ru/posts/apple/
 
 #### abbrlink
 
-Customizes the article URL. Can only contain lowercase letters, numbers, and hyphens `-`.
+Customizes the post URL. Can only contain lowercase letters, numbers, and hyphens `-`.
 
 ```md
 # src/config.ts
