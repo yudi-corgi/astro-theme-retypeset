@@ -10,7 +10,7 @@ abbrlink: markdown-extended-features
 
 Aquí presentamos algunas características extendidas de Markdown compatibles con Retypeset, incluyendo ejemplos de sintaxis y sus efectos estilísticos.
 
-## Leyenda de Figura
+## Leyendas de Figuras
 
 Para crear leyendas automáticas para figuras, utilice la sintaxis estándar de imágenes de Markdown `![alt](src)`. Para ocultar la leyenda, añada un guion bajo `_` antes del texto `alt` o deje el texto `alt` vacío.
 
@@ -28,7 +28,7 @@ Para crear leyendas automáticas para figuras, utilice la sintaxis estándar de 
 
 ![_Descripción de la imagen](https://image.radishzz.cc/image/gallery/06.webp)
 
-## Bloque de Admonición
+## Bloques de Admonición
 
 Para crear bloques de admonición, utilice la sintaxis de GitHub `> [!TYPE]` o la directiva contenedor `:::type`. Se admiten los siguientes tipos: `note`, `tip`, `important`, `warning` y `caution`.
 
@@ -80,7 +80,7 @@ Advierte sobre riesgos o resultados negativos de ciertas acciones.
 Esta es una nota con un título personalizado.
 :::
 
-## Sección Plegable
+## Secciones Plegables
 
 Para crear secciones plegables, utilice la sintaxis de directiva contenedor `:::fold[title]`. Haga clic en el título para expandir o contraer.
 
@@ -98,7 +98,7 @@ El contenido que pueda no interesar a todos los lectores puede colocarse en una 
 El contenido que pueda no interesar a todos los lectores puede colocarse en una sección plegable.
 :::
 
-## Galería
+## Galerías
 
 Para crear galerías de imágenes, utilice la directiva contenedor `:::gallery`. Desplácese horizontalmente para ver más imágenes.
 
@@ -124,7 +124,7 @@ Para crear galerías de imágenes, utilice la directiva contenedor `:::gallery`.
 ![¡Ay, qué lindo!](https://image.radishzz.cc/image/gallery/sheep-5.jpg)
 :::
 
-## Repositorio de GitHub
+## Repositorios de GitHub
 
 Para crear una tarjeta de repositorio de GitHub, utilice la directiva hoja `::github{repo="owner/repo"}`. Los datos del repositorio se obtienen en tiempo real de la API de GitHub después de que la página se carga.
 
@@ -138,7 +138,7 @@ Para crear una tarjeta de repositorio de GitHub, utilice la directiva hoja `::gi
 
 ::github{repo="radishzzz/astro-theme-retypeset"}
 
-## Video
+## Videos
 
 Para incrustar videos, utilice la directiva hoja `::youtube{id="videoId"}`.
 
@@ -156,7 +156,7 @@ Para incrustar videos, utilice la directiva hoja `::youtube{id="videoId"}`.
 
 ::bilibili{id="BV1sK4y1Z7KG"}
 
-## Tweet
+## Tweets
 
 Para incrustar tarjetas de tweets, utilice la directiva hoja `::tweet{url="tweetUrl"}`.
 
