@@ -288,7 +288,7 @@ getImageOptions: (_path, page) => ({
 
 ### RSS 订阅
 
-[RSS 订阅页](https://retypeset.radishzz.cc/rss.xml) 配色。
+[RSS 订阅页](https://retypeset.radishzz.cc/atom.xml) 配色。
 
 ```html
 <!-- public/feeds/xxx-style.xsl -->

@@ -288,7 +288,7 @@ getImageOptions: (_path, page) => ({
 
 ### Canal RSS
 
-Estilos de [página del feed RSS](https://retypeset.radishzz.cc/es/rss.xml).
+Estilos de [página del feed RSS](https://retypeset.radishzz.cc/es/atom.xml).
 
 ```html
 <!-- public/feeds/xxx-style.xsl -->

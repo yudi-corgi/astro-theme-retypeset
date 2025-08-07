@@ -288,7 +288,7 @@ getImageOptions: (_path, page) => ({
 
 ### RSS フィード
 
-[RSS フィードページ](https://retypeset.radishzz.cc/ja/rss.xml) スタイル。
+[RSS フィードページ](https://retypeset.radishzz.cc/ja/atom.xml) スタイル。
 
 ```html
 <!-- public/feeds/xxx-style.xsl -->

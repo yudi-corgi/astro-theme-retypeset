@@ -288,7 +288,7 @@ getImageOptions: (_path, page) => ({
 
 ### RSS-лента
 
-Стили [страницы RSS-ленты](https://retypeset.radishzz.cc/ru/rss.xml).
+Стили [страницы RSS-ленты](https://retypeset.radishzz.cc/ru/atom.xml).
 
 ```html
 <!-- public/feeds/xxx-style.xsl -->
