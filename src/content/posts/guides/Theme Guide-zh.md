@@ -32,6 +32,9 @@ site: {
   author: 'radishzz'
   // 站点地址
   url: 'https://retypeset.radishzz.cc'
+  // 基础路径
+  // 所有页面和资产的根目录
+  base: '/' // 例如 '/blog', '/docs'
   // 站点图标
   // 推荐格式：svg, png, ico
   favicon: '/icons/favicon.svg' // 或 https://example.com/favicon.svg

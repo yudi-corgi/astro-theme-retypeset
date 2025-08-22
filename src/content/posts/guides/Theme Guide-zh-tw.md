@@ -32,6 +32,9 @@ site: {
   author: 'radishzz'
   // 站點地址
   url: 'https://retypeset.radishzz.cc'
+  // 基礎路徑
+  // 所有頁面和資產的根目錄
+  base: '/' // 例如 '/blog', '/docs'
   // 站點圖標
   // 推薦格式：svg, png, ico
   favicon: '/icons/favicon.svg' // 或 https://example.com/favicon.svg

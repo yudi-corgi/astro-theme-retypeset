@@ -32,6 +32,9 @@ site: {
   author: 'radishzz'
   // site url
   url: 'https://retypeset.radishzz.cc'
+  // base path
+  // root directory for all pages and assets
+  base: '/' // e.g., '/blog', '/docs'
   // favicon url
   // recommended formats: svg, png or ico
   favicon: '/icons/favicon.svg' // or https://example.com/favicon.svg
