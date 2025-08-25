@@ -126,7 +126,7 @@ Para crear galerías de imágenes, utilice la directiva contenedor `:::gallery`.
 
 ## Repositorios de GitHub
 
-Para crear una tarjeta de repositorio de GitHub, utilice la directiva hoja `::github{repo="owner/repo"}`. Los datos del repositorio se obtienen en tiempo real de la API de GitHub después de que la página se carga.
+Para crear una tarjeta de repositorio de GitHub, utilice la directiva hoja `::github{repo="owner/repo"}`. Los datos del repositorio se obtienen en tiempo real de la API de GitHub cuando la página se carga.
 
 ### Sintaxis
 
@@ -169,3 +169,29 @@ Para incrustar tarjetas de tweets, utilice la directiva hoja `::tweet{url="tweet
 ### Resultado
 
 ::tweet{url="https://x.com/hachi_08/status/1906456524337123549"}
+
+## Diagramas Mermaid
+
+Para crear diagramas Mermaid, envuelve la sintaxis de Mermaid en bloques de código y especifica el tipo de lenguaje como `mermaid`.
+
+### Sintaxis
+
+``````
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+``````
+
+### Resultado
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
