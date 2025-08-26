@@ -32,6 +32,9 @@ site: {
   author: 'radishzz'
   // адрес сайта
   url: 'https://retypeset.radishzz.cc'
+  // базовый путь
+  // корневая директория для всех страниц и ресурсов
+  base: '/' // например, '/blog', '/docs'
   // url фавикона
   // рекомендуемые форматы: svg, png или ico
   favicon: '/icons/favicon.svg' // или https://example.com/favicon.svg

@@ -126,7 +126,7 @@ abbrlink: markdown-extended-features
 
 ## GitHub 倉庫
 
-使用雙冒號語法 `::github{repo="owner/repo"}`，即可創建 GitHub 倉庫卡片。在頁面載入後，從 GitHub API 中即時獲取倉庫數據。
+使用雙冒號語法 `::github{repo="owner/repo"}`，即可創建 GitHub 倉庫卡片。在頁面載入時，從 GitHub API 即時獲取倉庫數據。
 
 ### 語法
 
@@ -169,3 +169,29 @@ abbrlink: markdown-extended-features
 ### 效果
 
 ::tweet{url="https://x.com/hachi_08/status/1906456524337123549"}
+
+## Mermaid 圖表
+
+使用代碼塊包裹 Mermaid 語法，並標註語言類型 `mermaid`，即可創建 Mermaid 圖表。
+
+### 語法
+
+``````
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+``````
+
+### 效果
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```

@@ -32,6 +32,9 @@ site: {
   author: 'radishzz'
   // サイト URL
   url: 'https://retypeset.radishzz.cc'
+  // ベースパス
+  // すべてのページとアセットのルートディレクトリ
+  base: '/' // 例：'/blog', '/docs'
   // ファビコン URL
   // 推奨フォーマット：svg, png, ico
   favicon: '/icons/favicon.svg' // または https://example.com/favicon.svg

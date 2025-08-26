@@ -126,7 +126,7 @@ abbrlink: markdown-extended-features
 
 ## GitHub 仓库
 
-使用双冒号语法 `::github{repo="owner/repo"}`，即可创建 GitHub 仓库卡片。在页面加载后，从 GitHub API 中实时获取仓库数据。
+使用双冒号语法 `::github{repo="owner/repo"}`，即可创建 GitHub 仓库卡片。在页面加载时，从 GitHub API 实时获取仓库数据。
 
 ### 语法
 
@@ -169,3 +169,29 @@ abbrlink: markdown-extended-features
 ### 效果
 
 ::tweet{url="https://x.com/hachi_08/status/1906456524337123549"}
+
+## Mermaid 图表
+
+使用代码块包裹 Mermaid 语法，并标注语言类型 `mermaid`，即可创建 Mermaid 图表。
+
+### 语法
+
+``````
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+``````
+
+### 效果
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
