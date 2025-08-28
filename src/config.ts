@@ -14,7 +14,7 @@ export const themeConfig: ThemeConfig = {
     // author name
     author: 'YUDI-Corgi',
     // site url
-    url: 'https://blog.yudi-corgi.site',
+    url: 'https://yudi-corgi.site',
     // base path
     // root directory for all pages and assets
     base: '/', // e.g., '/blog', '/docs'
