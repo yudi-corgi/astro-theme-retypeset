@@ -46,6 +46,12 @@ abbrlink: ddd
 
 以上四个视频都由美团技术团队发布，侧重于 DDD 的实践，可以在理解了 DDD 的核心知识后观看。
 
+### 开源框架
+
+- [Axon](https://github.com/AxonFramework/AxonFramework)：Axon Framework 是一个基于领域驱动设计（DDD）、命令查询职责分离（CQRS）和事件源原则构建进化、事件驱动的微服务系统的框架
+  - [AxonBank](https://github.com/AxonFramework/AxonBank)：基于银行业务的 Axon 框架应用示例
+- [COLA](https://github.com/alibaba/COLA)：COLA 是阿里开源的「整洁面向对象分层架构」，其按照 DDD 思想设计模块，专注于以业务为核心，解耦外部依赖，分离业务复杂度和技术复杂度等，同时还提供了可落地的工具和实践指导
+
 ## 笔记
 
 ### 基础概念
