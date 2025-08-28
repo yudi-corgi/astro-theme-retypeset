@@ -140,32 +140,99 @@ html.dark .heti pre span {
 
 /* Tables */
 .heti :where(table) {
-  --at-apply: 'my-6 box-border block max-w-full table-fixed overflow-x-auto';
-  scrollbar-width: thin;
-  scrollbar-color: oklch(var(--un-preset-theme-colors-secondary) / 0) transparent;
-  transition: scrollbar-color 0.3s ease-out;
+  --at-apply: 'my-6 box-border w-full border-collapse';
+  border-collapse: collapse;
+  /* 使用自动布局，让表格根据内容智能分配列宽 */
+  table-layout: auto;
+  /* 表格宽度完全适配正文宽度 */
+  width: 100%;
+  max-width: 100%;
 }
+
+/* 表格悬停效果 */
 .heti :where(table):hover {
-  scrollbar-color: oklch(var(--un-preset-theme-colors-secondary) / 0.15) transparent;
+  --at-apply: 'shadow-sm';
 }
+
 .heti :where(th, td) {
-  --at-apply: 'border-b border-b-secondary/25 px-3 pb-1.5';
+  --at-apply: 'border-b border-secondary/25 px-3 py-2 text-left align-top';
+  /* 基础样式设置 */
+  min-width: 120px;
+  /* 允许内容优雅换行 */
+  word-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+  /* 垂直对齐 */
+  vertical-align: top;
 }
-.heti tr :where(td:first-child, th:first-child) {
-  --at-apply: 'pl-0';
+
+/* 通用表格样式：智能列宽分配 */
+.heti :where(table) th,
+.heti :where(table) td {
+  /* 表头内容不换行，数据单元格允许换行 */
+  white-space: nowrap;
 }
-.heti tr :where(td:last-child, th:last-child) {
-  --at-apply: 'pr-0';
+
+.heti :where(table) td {
+  white-space: normal;
 }
+
+/* 第一列特殊优化：给标签列更多空间 */
+.heti :where(table) th:first-child,
+.heti :where(table) td:first-child {
+  min-width: 130px;
+  max-width: 200px;
+}
+
+.heti :where(th) {
+  --at-apply: 'font-semibold bg-secondary/5';
+  /* 表头内容不换行 */
+  white-space: nowrap;
+}
+
 .heti :where(td) {
-  --at-apply: 'pt-1.5';
+  white-space: normal;
+  vertical-align: top;
+  line-height: 1.5;
 }
+
+/* 表格行悬停效果 */
+.heti :where(tr:hover) {
+  --at-apply: 'bg-secondary/5';
+}
+
+/* 确保表格在小屏幕上可以正常显示 */
+@media (max-width: 768px) {
+  .heti :where(table) {
+    --at-apply: 'text-sm';
+    /* 小屏幕上强制显示横向滚动条 */
+    overflow-x: scroll;
+  }
+  
+  .heti :where(th, td) {
+    --at-apply: 'px-2 py-1.5';
+    /* 小屏幕上减少最小宽度 */
+    min-width: 80px;
+  }
+}
+
+.heti tr :where(td:first-child, th:first-child) {
+  --at-apply: 'pl-4';
+}
+
+.heti tr :where(td:last-child, th:last-child) {
+  --at-apply: 'pr-4';
+}
+
 .heti tr:last-child :where(td) {
   --at-apply: 'border-b-0';
 }
+
+/* 保持原有的间距控制 */
 .heti :is(h1, h2, h3, h4, h5, h6, table) + table {
   --at-apply: 'mt-4';
 }
+
 .heti table:has(+ table) {
   --at-apply: 'mb-4';
 }
