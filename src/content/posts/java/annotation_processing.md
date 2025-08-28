@@ -424,4 +424,5 @@ public static void main(String[] args) {
 
 ## 参考资料   
 - [JSR-269](https://jcp.org/en/jsr/detail?id=269)   
--    芋道源码公众号 - [项目终于用上了插入式注解](https://mp.weixin.qq.com/s/q8zA0AkQspXMyzgzyrxPXA)
+- [项目终于用上了插入式注解](https://mp.weixin.qq.com/s/q8zA0AkQspXMyzgzyrxPXA) - 芋道源码公众号
+- [Java 编译器 javac 及 Lombok 实现原理解析](https://nullwy.me/2017/04/javac-api/)
