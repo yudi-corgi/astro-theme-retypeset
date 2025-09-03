@@ -154,7 +154,7 @@ C 根据一阶段的响应结果判断是否可以进行事务的 PreCommit 操�
 **TCC** 是 **Try**、**Confirm**、**Cancel** 三个词语的缩写，其主要实现最终一致性，且面向业务层面的事务控制，通过对业务逻辑（业务系统自己实现）的调度来实现分布式事务。
 
 > [!TIP]
-> 关于 **TCC（Try-Confirm-Cancel）** 的概念，最早是由 Pat Helland 于 2007 年发表的一篇名为《Life beyond Distributed Transactions: an Apostate's Opinion》的论文提出。在该论文中，TCC 还是以 **Tentative-Confirmation-Cancellation** 命名，正式以 **Try-Confirm-Cancel** 作为名称的是 Atomikos 公司。
+> 关于 **TCC（Try-Confirm-Cancel）** 的概念，最早是由 Pat Helland 于 2007 年发表的一篇名为《[Life beyond Distributed Transactions: an Apostate's Opinion](https://database.cs.wisc.edu/cidr/cidr2007/papers/cidr07p15.pdf)》的论文提出。在该论文中，TCC 还是以 **Tentative-Confirmation-Cancellation** 命名，正式以 **Try-Confirm-Cancel** 作为名称的是 Atomikos 公司。
 
 ### TCC 事务操作
 
