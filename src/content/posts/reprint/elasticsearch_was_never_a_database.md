@@ -32,17 +32,17 @@ SQL 中最基础的 JOIN 操作在 Elasticsearch 中付之阙如。这迫使开�
 
 **以下是原文+翻译：**
 
-## Elasticsearch Was Never a Database<br>Elasticsearch 从来都不是一个数据库
+## Elasticsearch 从来都不是一个数据库 <br>Elasticsearch Was Never a Database
 
 [Elasticsearch](https://www.elastic.co/elasticsearch) was never a database. It was built as a search engine API over [Apache Lucene](https://lucene.apache.org/) (an incredibly powerful full-text search library), but not as a system of record. Even Elastic’s own guidance has long suggested that your source of truth should live somewhere else, with Elasticsearch serving as a secondary index. Yet, over the last decade, many teams have tried to stretch the search engine into being their primary database, usually with unexpected results.  
 [Elasticsearch](https://www.elastic.co/elasticsearch) 从来都不是一个数据库。它是基于 [Apache Lucene](https://lucene.apache.org/) （一个极其强大的全文搜索库）构建的搜索引擎 API，而非记录系统。就连 Elastic 自己的指南也早就建议，你的数据来源应该放在其他地方，而 Elasticsearch 应该作为二级索引。然而，在过去十年中，许多团队尝试将搜索引擎扩展为主要数据库，结果往往出乎意料。
 
-## What Do We Mean by “Database”? <br>“数据库”是什么意思？
+## “数据库”是什么意思？ <br>What Do We Mean by “Database”? 
 
 Just to be clear up front, when we say *database* in this context we mean a system you can use as your primary datastore for OLTP transactional workloads: the place where your application’s truth lives. Think Postgres (voted [most loved database](https://survey.stackoverflow.co/2025/technology#most-popular-technologies-database-prof) three years running), MySQL, or even Oracle.
 首先要明确一点，我们所说的*数据库*指的是一个可以用作 OLTP 事务性工作负载主数据存储的系统：应用程序真实数据所在的地方。例如 Postgres（连续三年被评为[最受欢迎的数据库 ](https://survey.stackoverflow.co/2025/technology#most-popular-technologies-database-prof)）、MySQL，甚至 Oracle。
 
-## How Did We Get Here? <br>我们是如何走到这一步的？
+## 我们是如何走到这一步的？ <br>How Did We Get Here? 
 
 The story often begins with a simple need: search. A team is already using Postgres or MySQL to store their application data, but the built-in text search features don’t scale. Elasticsearch looks like the perfect solution; it’s fast, flexible, and easy to spin up.
 故事通常始于一个简单的需求：搜索。一个团队已经在使用 Postgres 或 MySQL 来存储他们的应用程序数据，但内置的文本搜索功能无法扩展。Elasticsearch 看起来是一个完美的解决方案；它快速、灵活，而且易于启动。
@@ -53,7 +53,7 @@ At first, it’s just an index. Documents live in the database, and a copy lives
 That’s where the trouble begins. A database isn’t just a place to keep JSON, text documents, and some metadata. It’s the authoritative source of truth, the arbiter that keeps your application data safe. This role carries expectations: atomic transactions, predictable updates, the ability to evolve schema safely, rich queries that let you ask questions beyond retrieval, and reliability under failure. Elasticsearch wasn’t built to solve this set of problems. It’s brilliant as an index, but brittle as a database.
 问题就在这里。数据库不仅仅是存储 JSON、文本文档和一些元数据的地方。它是权威的真相来源，是保障应用程序数据安全的仲裁者。这个角色承载着人们的期望：原子事务、可预测的更新、安全地演进模式的能力、允许你提出超越检索问题的丰富查询，以及故障下的可靠性。Elasticsearch 并非为解决这些问题而构建的。它作为索引非常出色，但作为数据库却很脆弱。
 
-## Transactions That Never Were <br>从未发生过的交易
+## 从未发生过的交易 <br>Transactions That Never Were
 
 The first cracks appear around consistency. In a relational database, transactions guarantee that related writes succeed or fail together. If you insert an order and decrement inventory, those two operations are atomic. Either both happen, or neither does.
 第一个漏洞出现在一致性方面。在关系数据库中，事务保证相关的写入操作同时成功或失败。如果你插入订单并减少库存，这两个操作是原子的。要么都发生，要么都不发生。
@@ -67,7 +67,7 @@ You can see the same problem on the read side. Elasticsearch actually has two ki
 Databases solve these issues with transaction boundaries and isolation levels. Elasticsearch has neither, because it doesn’t need them to be an effective search engine.
 数据库通过事务边界和隔离级别来解决这些问题。Elasticsearch 则没有，因为它不需要它们就能成为一个高效的搜索引擎。
 
-## Schema Migrations That Need Reindexes<br> 需要重新索引的架构迁移
+## 需要重新索引的数据库模式迁移 <br>Schema Migrations That Need Reindexes
 
 Then the application changes. A field that was once an integer now needs decimals. A text field is renamed. In Postgres or MySQL, this would be a straightforward `ALTER TABLE`. In Elasticsearch, [index mappings](https://www.elastic.co/docs/manage-data/data-store/mapping#mapping-manage-update) are immutable once set, so sometimes the [only option](https://www.elastic.co/docs/manage-data/migrate) is to create a new index with the updated mapping and transfer every document into it.
 随后，应用程序发生了变化。一个曾经是整数的字段现在需要小数。一个文本字段被重命名。在 Postgres 或 MySQL 中，这只需要一个简单的 `ALTER TABLE` 语句。在 Elasticsearch 中，[ 索引映射](https://www.elastic.co/docs/manage-data/data-store/mapping#mapping-manage-update)一旦设置就不可更改，因此有时[唯一的选择](https://www.elastic.co/docs/manage-data/migrate)是创建一个具有更新映射的新索引，并将所有文档都转移到其中。
@@ -75,7 +75,7 @@ Then the application changes. A field that was once an integer now needs decimal
 When Elasticsearch is downstream of another database this is painful (a full network transfer) but safe, you can replay from the real source of truth. But when Elasticsearch is the only store, schema migrations require moving the entire system of record into a new structure, under load, with no safety net (other than a restore). What should be a routine schema change can become a high-risk operation.
 当 Elasticsearch 位于另一个数据库的下游时，这很麻烦（需要完整的网络传输），但很安全，您可以从真实的数据源进行回放。但是，当 Elasticsearch 是唯一的存储时，模式迁移需要将整个记录系统迁移到新的结构中，在负载下，没有任何安全保障（除了恢复之外）。原本应该是常规的模式更改，现在却变成了高风险操作。
 
-## **Queries Without Joins <br>不带连接的查询**
+## 不带连接的查询 <br>Queries Without Joins 
 
 Once Elasticsearch is the primary store, developers naturally want more than just search. They want to ask questions of the data. This is where you start to hit another wall.
 一旦 Elasticsearch 成为主要存储，开发人员自然会想要的不仅仅是搜索。他们想要对数据进行探索。这时，你就会开始遇到另一个障碍。
@@ -108,7 +108,7 @@ Elastic 一直在努力弥补这一差距。较新的 ES|QL 引入了[类似的�
 It is progress, but not parity with a relational database.
 这是进步，但与关系数据库还不相等。
 
-## Reliability That Can Fall Short <br>可靠性可能不足
+## 可靠性可能不足 <br>Reliability That Can Fall Short 
 
 Eventually every system fails. The difference between an index and a database is how they recover. Databases use write-ahead or redo logs to guarantee that once a transaction is committed, *all* of its changes are durable and will replay cleanly after a crash.
 每个系统最终都会失败。索引和数据库的区别在于它们的恢复方式。数据库使用预写日志或重做日志来保证事务提交后， *所有*更改都是持久的，并且在崩溃后能够干净地重放。
@@ -119,7 +119,7 @@ Under normal operation Elasticsearch is also durable at the level it was designe
 That assumption is fine when Elasticsearch is an index layered on top of a database. If it’s your only store, though, the gap in transactional durability becomes a gap in correctness. Outages don’t just slow down search, they put your system of record at risk.
 当 Elasticsearch 是数据库之上的索引层时，这种假设是合理的。但如果它是你唯一的存储，那么事务持久性的缺口就变成了正确性的缺口。宕机不仅会减慢搜索速度，还会危及你的记录系统。
 
-## Operations That Strain Stability <br>破坏稳定的行动
+## 破坏稳定的行为 <br>Operations That Strain Stability 
 
 Operating Elasticsearch at scale introduces another reality check. Databases are supposed to be steady foundations: you run them, monitor them, and trust they’ll keep your data safe. Elasticsearch was designed for a different priority: elasticity. Shards can move, clusters can grow and shrink, and data can be reindexed or rebalanced. That flexibility is powerful, but distributed systems come with operational tradeoffs. Shards drift out of balance, JVM heaps demand careful tuning, reindexing consumes cluster capacity, and rolling upgrades can stall traffic.
 大规模运行 Elasticsearch 需要面对另一个现实考验。数据库本应是稳固的基础：您运行它们、监控它们，并相信它们会保障数据安全。Elasticsearch 的设计初衷并非如此：弹性。分片可以移动，集群可以扩展或收缩，数据可以重新索引或重新平衡。这种灵活性固然强大，但分布式系统也存在一些运维上的权衡。分片可能会失去平衡，JVM 堆需要仔细调优，重新索引会消耗集群容量，滚动升级可能会造成流量拥堵。
@@ -127,7 +127,7 @@ Operating Elasticsearch at scale introduces another reality check. Databases are
 Elastic has added tools to ease these challenges, and many teams do run large clusters successfully. But the baseline expectation is different. A relational database is engineered for stability and correctness because it assumes it will be your source of truth. Elasticsearch is [“optimized for speed and relevance”](https://www.elastic.co/docs/get-started/), and running it also as a system of record means accepting more operational risk than a database would impose.
 Elastic 增加了一些工具来缓解这些挑战，许多团队也确实成功运行了大型集群。但基准预期有所不同。关系数据库的设计目标是稳定性和正确性，因为它假设自己将成为您的数据来源。Elasticsearch 则 [“针对速度和相关性进行了优化”](https://www.elastic.co/docs/get-started/) ，将其作为记录系统运行意味着要承担比数据库更大的运营风险。
 
-## The Cost of Misuse <br>滥用的代价
+## 滥用的代价 <br>The Cost of Misuse
 
 Elasticsearch is already complex to operate and heavy on resources. When you try to make it your primary database as well, both of those costs are magnified. Running on a single system feels like a simplification, but it often makes everything harder because you have two different optimization goals.
 Elasticsearch 本身就操作复杂，资源占用大。如果尝试将其作为主数据库，则上述成本会进一步放大。在单个系统上运行看似简单，但实际上却往往让一切变得更加困难，因为您有两个不同的优化目标。
@@ -135,7 +135,7 @@ Elasticsearch 本身就操作复杂，资源占用大。如果尝试将其作为
 Transaction gaps, brittle migrations, limited queries, complex operations, and workarounds all pile up. Instead of reducing complexity, you’ve concentrated it in the most fragile place possible. The result is worse than your original solution: increased engineering effort, higher operational cost, and still none of the guarantees you would expect from a source of truth.
 事务缺口、脆弱的迁移、有限的查询、复杂的操作以及各种变通方案层出不穷。您非但没有降低复杂性，反而将其集中在最脆弱的地方。结果比您最初的解决方案更糟糕：工程工作量增加，运营成本上升，而且仍然得不到任何您期望从事实来源获得的保证。
 
-## So Where Does That Leave Elasticsearch? <br>如此一来，Elasticsearch 该何去何从？
+## 如此一来，Elasticsearch 该何去何从？ <br>So Where Does That Leave Elasticsearch? 
 
 Honestly, that leaves it right where it should be, and where it started: a search engine. Elasticsearch (and Apache Lucene under it) is an incredible achievement, bringing world-class search to developers everywhere. As long as you’re not trying to use it as a system of record, it does exactly what it was built for.
 说实话，这让它回到了它本该在的位置，回到了它最初的起点：一个搜索引擎。Elasticsearch（以及它旗下的 Apache Lucene）是一项了不起的成就，为世界各地的开发者带来了世界一流的搜索功能。只要你不打算把它当作一个记录系统，它就能完全发挥它的初衷。
