@@ -8,6 +8,7 @@ import rehypeMermaid from 'rehype-mermaid'
 import rehypeSlug from 'rehype-slug'
 import remarkDirective from 'remark-directive'
 import remarkMath from 'remark-math'
+import remarkBreaks from 'remark-breaks';
 import UnoCSS from 'unocss/astro'
 import { base, defaultLocale, themeConfig } from './src/config'
 import { langMap } from './src/i18n/config'
@@ -67,6 +68,7 @@ export default defineConfig({
       remarkContainerDirectives,
       remarkLeafDirectives,
       remarkReadingTime,
+      remarkBreaks,
     ],
     rehypePlugins: [
       rehypeKatex,
