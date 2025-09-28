@@ -9,7 +9,7 @@ abbrlink: elasticsearch-was-never-a-database
 
 ## 写在前头
 
-本篇是 [Elasticsearch Was Never a Database](https://www.paradedb.com/blog/elasticsearch-was-never-a-database) 一文的中文翻译，其讲述 ES 并非是一个数据库的种种理由，如果你的团队正在将 ES 作为数据库使用，或许你可先思考下，面对文章提到的问题是否都有对应的解决方案。
+本篇是 [Elasticsearch Was Never a Database](https://www.paradedb.com/blog/elasticsearch-was-never-a-database) 一文的中文翻译，其讲述 ES 并非是一个数据库的种种理由，你的团队正在将 ES 作为数据库使用，那么你可先思考下，面对文章提到的问题是否都有对应的解决方案。
 
 **以下是太长不看版（由 AI 整理）**：
 
